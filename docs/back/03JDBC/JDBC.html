@@ -1,0 +1,1580 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JDBC · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../04JavaWeb/JavaWeb.html" />
+    
+    
+    <link rel="prev" href="../MySQL 高级/Mysql高级-day04.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../front/02模块化,浏览器内置对象,事件.html">
+            
+                <a href="../../front/02模块化,浏览器内置对象,事件.html">
+            
+                    
+                    模块化,浏览器内置对象,事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../front/03作用域,闭包,this指针.html">
+            
+                <a href="../../front/03作用域,闭包,this指针.html">
+            
+                    
+                    作用域,闭包,this指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../front/04面向对象编程,原型及原型链,继承.html">
+            
+                <a href="../../front/04面向对象编程,原型及原型链,继承.html">
+            
+                    
+                    面向对象编程,原型及原型链,继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../front/05ES6规范详解.html">
+            
+                <a href="../../front/05ES6规范详解.html">
+            
+                    
+                    ES6规范详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../front/06前端工程化.html">
+            
+                <a href="../../front/06前端工程化.html">
+            
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../front/07vue基础.html">
+            
+                <a href="../../front/07vue基础.html">
+            
+                    
+                    vue基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../front/09vue高级.html">
+            
+                <a href="../../front/09vue高级.html">
+            
+                    
+                    vue高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../front/10vue-cli详解.html">
+            
+                <a href="../../front/10vue-cli详解.html">
+            
+                    
+                    vue-cli详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../front/11前端路由及异步组件.html">
+            
+                <a href="../../front/11前端路由及异步组件.html">
+            
+                    
+                    前端路由及异步组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../../front/12状态管理及路由同构.html">
+            
+                <a href="../../front/12状态管理及路由同构.html">
+            
+                    
+                    状态管理及路由同构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../../front/13vue实战.html">
+            
+                <a href="../../front/13vue实战.html">
+            
+                    
+                    vue实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../../front/14vue组件库设计.html">
+            
+                <a href="../../front/14vue组件库设计.html">
+            
+                    
+                    vue组件库设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../../front/15vue&vuex源码解析.html">
+            
+                <a href="../../front/15vue&vuex源码解析.html">
+            
+                    
+                    vue&vuex源码解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../../front/16小程序基础.html">
+            
+                <a href="../../front/16小程序基础.html">
+            
+                    
+                    小程序基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../../front/20react基础.html">
+            
+                <a href="../../front/20react基础.html">
+            
+                    
+                    react基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../../front/21react高级.html">
+            
+                <a href="../../front/21react高级.html">
+            
+                    
+                    react高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../../front/23react状态管理redux,mobx.html">
+            
+                <a href="../../front/23react状态管理redux,mobx.html">
+            
+                    
+                    react状态管理redux,mobx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../../front/24react路由及服务端渲染同构.html">
+            
+                <a href="../../front/24react路由及服务端渲染同构.html">
+            
+                    
+                    react路由及服务端渲染同构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../../front/25react实战.html">
+            
+                <a href="../../front/25react实战.html">
+            
+                    
+                    react实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" data-path="../../front/26react组件库设计.html">
+            
+                <a href="../../front/26react组件库设计.html">
+            
+                    
+                    react组件库设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" data-path="../../front/27react源码解析.html">
+            
+                <a href="../../front/27react源码解析.html">
+            
+                    
+                    react源码解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" data-path="../../front/28nodejs基础.html">
+            
+                <a href="../../front/28nodejs基础.html">
+            
+                    
+                    nodejs基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23" data-path="../../front/29nodejs框架及实战.html">
+            
+                <a href="../../front/29nodejs框架及实战.html">
+            
+                    
+                    nodejs框架及实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24" data-path="../../front/30nodejs原理详解.html">
+            
+                <a href="../../front/30nodejs原理详解.html">
+            
+                    
+                    nodejs原理详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25" data-path="../../front/31nodejs HTTP.html">
+            
+                <a href="../../front/31nodejs HTTP.html">
+            
+                    
+                    nodejs HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.26" data-path="../../front/32nodejs实战cli&爬虫.html">
+            
+                <a href="../../front/32nodejs实战cli&爬虫.html">
+            
+                    
+                    nodejs实战cli&爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27" data-path="../../front/33现代Hybrid开发与原理解析.html">
+            
+                <a href="../../front/33现代Hybrid开发与原理解析.html">
+            
+                    
+                    现代Hybrid开发与原理解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.28" data-path="../../front/34react native入门.html">
+            
+                <a href="../../front/34react native入门.html">
+            
+                    
+                    react native入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.29" data-path="../../front/35electron入门与原理介绍.html">
+            
+                <a href="../../front/35electron入门与原理介绍.html">
+            
+                    
+                    electron入门与原理介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.30" data-path="../../front/36RN 项目实战.html">
+            
+                <a href="../../front/36RN 项目实战.html">
+            
+                    
+                    RN 项目实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.31" data-path="../../front/37Flutter入门.html">
+            
+                <a href="../../front/37Flutter入门.html">
+            
+                    
+                    Flutter入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.32" data-path="../../front/39AST必知必会.html">
+            
+                <a href="../../front/39AST必知必会.html">
+            
+                    
+                    AST必知必会
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.33" data-path="../../front/40Flutter实战.html">
+            
+                <a href="../../front/40Flutter实战.html">
+            
+                    
+                    Flutter实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.34" data-path="../../front/41排序算法.html">
+            
+                <a href="../../front/41排序算法.html">
+            
+                    
+                    排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.35" data-path="../../front/42复杂算法详解.html">
+            
+                <a href="../../front/42复杂算法详解.html">
+            
+                    
+                    复杂算法详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.36" data-path="../../front/43树和图类算法.html">
+            
+                <a href="../../front/43树和图类算法.html">
+            
+                    
+                    树和图类算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.37" data-path="../../front/44常见JS设计模式解析.html">
+            
+                <a href="../../front/44常见JS设计模式解析.html">
+            
+                    
+                    常见JS设计模式解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.38" data-path="../../front/45设计模式实战.html">
+            
+                <a href="../../front/45设计模式实战.html">
+            
+                    
+                    设计模式实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.39" data-path="../../front/46JS常见开发优化总结.html">
+            
+                <a href="../../front/46JS常见开发优化总结.html">
+            
+                    
+                    JS常见开发优化总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.40" data-path="../../front/47大厂常见问题解决方案.html">
+            
+                <a href="../../front/47大厂常见问题解决方案.html">
+            
+                    
+                    大厂常见问题解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.41" data-path="../../front/48浏览器原理.html">
+            
+                <a href="../../front/48浏览器原理.html">
+            
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.42" data-path="../../front/49,50webpack前端打包工具.html">
+            
+                <a href="../../front/49,50webpack前端打包工具.html">
+            
+                    
+                    webpack前端打包工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    后端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../bxd_Java基础/01/bxd_Java基础01.html">
+            
+                <a href="../bxd_Java基础/01/bxd_Java基础01.html">
+            
+                    
+                    bxd_Java 基础 01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../bxd_Java基础/02/bxd_Java基础02.html">
+            
+                <a href="../bxd_Java基础/02/bxd_Java基础02.html">
+            
+                    
+                    bxd_Java 基础 02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../01基础加强/基础加强.html">
+            
+                <a href="../01基础加强/基础加强.html">
+            
+                    
+                    基础加强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <span>
+            
+                    
+                    MySQL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../02MySQL/MySQL.html">
+            
+                <a href="../02MySQL/MySQL.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../07MySQL加强/MySQL基础加强.html">
+            
+                <a href="../07MySQL加强/MySQL基础加强.html">
+            
+                    
+                    MySQL 加强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../MySQL性能优化/MySQL性能优化.html">
+            
+                <a href="../MySQL性能优化/MySQL性能优化.html">
+            
+                    
+                    MySQL 性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../MySQL 高级/Mysql高级-day01.html">
+            
+                <a href="../MySQL 高级/Mysql高级-day01.html">
+            
+                    
+                    MySQL 高级01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="../MySQL 高级/Mysql高级-day02.html">
+            
+                <a href="../MySQL 高级/Mysql高级-day02.html">
+            
+                    
+                    MySQL 高级02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="../MySQL 高级/Mysql高级-day03.html">
+            
+                <a href="../MySQL 高级/Mysql高级-day03.html">
+            
+                    
+                    MySQL 高级03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.7" data-path="../MySQL 高级/Mysql高级-day04.html">
+            
+                <a href="../MySQL 高级/Mysql高级-day04.html">
+            
+                    
+                    MySQL 高级04
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="JDBC.html">
+            
+                <a href="JDBC.html">
+            
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../04JavaWeb/JavaWeb.html">
+            
+                <a href="../04JavaWeb/JavaWeb.html">
+            
+                    
+                    JavaWeb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../05Struts2/Struts2.html">
+            
+                <a href="../05Struts2/Struts2.html">
+            
+                    
+                    Struct2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../08Hibernate/Hibernate.html">
+            
+                <a href="../08Hibernate/Hibernate.html">
+            
+                    
+                    Hibernate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../09Spring/Spring.html">
+            
+                <a href="../09Spring/Spring.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../11JavaScript-Ajax-jQuery/JavaScript-Ajax-jQuery.html">
+            
+                <a href="../11JavaScript-Ajax-jQuery/JavaScript-Ajax-jQuery.html">
+            
+                    
+                    JavaScript-Ajax-jQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../12UML_Maven/UML_Maven.html">
+            
+                <a href="../12UML_Maven/UML_Maven.html">
+            
+                    
+                    UML_Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../13WMS/WMS.html">
+            
+                <a href="../13WMS/WMS.html">
+            
+                    
+                    WMS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../14JS加强/JS加强.html">
+            
+                <a href="../14JS加强/JS加强.html">
+            
+                    
+                    JS 加强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../15EasyUI/EasyUI.html">
+            
+                <a href="../15EasyUI/EasyUI.html">
+            
+                    
+                    EasyUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../16SpringMVC/SpringMVC.html">
+            
+                <a href="../16SpringMVC/SpringMVC.html">
+            
+                    
+                    SpringMVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../17MyBatis/MyBatis.html">
+            
+                <a href="../17MyBatis/MyBatis.html">
+            
+                    
+                    MyBatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../19CRM/CRM.html">
+            
+                <a href="../19CRM/CRM.html">
+            
+                    
+                    CRM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../20Lucene/Lucene.html">
+            
+                <a href="../20Lucene/Lucene.html">
+            
+                    
+                    Lucene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="../redis/redis.html">
+            
+                <a href="../redis/redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="../Docker/Docker基础篇之快速上手.html">
+            
+                <a href="../Docker/Docker基础篇之快速上手.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="../nginx/Nginx.html">
+            
+                <a href="../nginx/Nginx.html">
+            
+                    
+                    Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="../other/Gradle.html">
+            
+                <a href="../other/Gradle.html">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="../other/Shiro.html">
+            
+                <a href="../other/Shiro.html">
+            
+                    
+                    Shiro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="../other/SpringSecurity.html">
+            
+                <a href="../other/SpringSecurity.html">
+            
+                    
+                    SpringSecurity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >JDBC</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="jdbc">JDBC</h1>
+<h2 id="jdbc&#x6982;&#x8FF0;">JDBC&#x6982;&#x8FF0;</h2>
+<p>01</p>
+<p>&#x6301;&#x4E45;&#x5316;(persistence)</p>
+<p>JPA:JavaEE&#x7684;&#x89C4;&#x8303;&#xFF0C;Java persistence api</p>
+<p>JDBC:Java DataBase Connectivity</p>
+<blockquote>
+<p>Java.util&#x5305;</p>
+</blockquote>
+<h2 id="&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;">&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;</h2>
+<p>02</p>
+<ol>
+<li><p>&#x52A0;&#x8F7D;&#x6CE8;&#x518C;&#x9A71;&#x52A8;</p>
+<pre><code class="lang-java"> Class.forName(<span class="hljs-string">&quot;com.mysql.jdbc.Driver&quot;</span>);
+ <span class="hljs-comment">/*
+ 1):&#x628A;com.mysql.jdbc.Driver&#x8FD9;&#x4EFD;&#x5B57;&#x8282;&#x7801;&#x6587;&#x4EF6;&#x52A0;&#x8F7D;&#x8FDB;JVM.
+ 2):&#x628A;&#x5B57;&#x8282;&#x7801;&#x52A0;&#x8F7D;&#x8FDB;JVM&#x4E4B;&#x540E;,&#x5C31;&#x4F1A;&#x7ACB;&#x523B;&#x6267;&#x884C;&#x8BE5;&#x7C7B;&#x7684;&#x9759;&#x6001;&#x4EE3;&#x7801;&#x5757;.
+    &#x6E90;&#x4EE3;&#x7801;&#x5982;&#x4E0B;
+ */</span>
+</code></pre>
+<p> <img src="img/03_01.png" alt="img/03_01.png"></p>
+</li>
+<li><p>&#x83B7;&#x53D6;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;&#xFF0C;&#x901A;&#x8FC7;DriverManager&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;(getConnection)</p>
+<pre><code class="lang-java"> Connection conn = DriverManager.getConnection(String url,String username,String password);
+</code></pre>
+</li>
+</ol>
+<font color="red">&#x4ECE;Java6(JDBC4.0)&#x5F00;&#x59CB;,&#x53EF;&#x4EE5;&#x4E0D;&#x518D;&#x52A0;&#x8F7D;&#x6CE8;&#x518C;&#x9A71;&#x52A8;</font>&#xFF0C;&#x76F4;&#x63A5;&#x901A;&#x8FC7;DriverManager&#x83B7;&#x53D6;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;
+
+&gt; &#x4E3A;&#x5565;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x6CE8;&#x518C;&#x9A71;&#x52A8;&#x4E86;
+&gt;
+&gt; &#x4ECE;Java6&#x5F00;&#x59CB;,&#x89C4;&#x8303;&#x8981;&#x6C42;&#x6BCF;&#x4E00;&#x4E2A;JDBC&#x9A71;&#x52A8;&#x7684;&#x5305;,&#x90FD;&#x5FC5;&#x987B;&#x5E26;&#x6709;META-INF/services/java.sql.Driver&#x6587;&#x4EF6;
+&gt;
+&gt; &#x5F00;&#x53D1;&#x5EFA;&#x8BAE;:<font color="blue">&#x4F9D;&#x7136;&#x8FD8;&#x662F;&#x5EFA;&#x8BAE;&#x624B;&#x52A8;&#x7684;&#x52A0;&#x8F7D;&#x6CE8;&#x518C;&#x9A71;&#x52A8;. &#x5982;&#x6B64;,&#x53EF;&#x4EE5;&#x517C;&#x5BB9;&#x4E4B;&#x524D;&#x7684;JDK&#x7248;&#x672C;,&#x5728;JavaWeb&#x4E2D;&#x5FC5;&#x987B;&#x624B;&#x52A8;&#x52A0;&#x8F7D;</font>
+
+<h2 id="&#x521B;&#x5EFA;&#x8868;&#x64CD;&#x4F5C;">&#x521B;&#x5EFA;&#x8868;&#x64CD;&#x4F5C;</h2>
+<p>03</p>
+<h3 id="connection&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;">Connection&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h3>
+<p><code>Statement createStatement()</code>&#x521B;&#x5EFA;&#x4E00;&#x4E2A; Statement &#x5BF9;&#x8C61;&#x6765;&#x5C06; SQL &#x8BED;&#x53E5;&#x53D1;&#x9001;&#x5230;&#x6570;&#x636E;&#x5E93;</p>
+<p><code>PreparedStatement prepareStatement(String sql)</code> :&#x83B7;&#x53D6;&#x9884;&#x7F16;&#x8BD1;&#x8BED;&#x53E5;&#x5BF9;&#x8C61;</p>
+<p>  &#x53C2;&#x6570;:sql,&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x9759;&#x6001;SQL,&#x800C;&#x662F;&#x5E26;&#x6709;&#x5360;&#x4F4D;&#x7B26;&#x7684;SQL(<strong>?</strong>)</p>
+<h3 id="statement&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;">Statement&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h3>
+<p>&#x7528;&#x4E8E;&#x6267;&#x884C;<strong>&#x9759;&#x6001; SQL</strong> (<strong>&#x5199;&#x6B7B;&#x7684;SQL</strong>,&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x8FD0;&#x884C;&#x7684;*SQL)&#x8BED;&#x53E5;&#x5E76;&#x8FD4;&#x56DE;&#x5B83;&#x6240;&#x751F;&#x6210;&#x7ED3;&#x679C;&#x7684;&#x5BF9;&#x8C61; </p>
+<p><code>int executeUpdate(String sql)</code>:&#x53EF;&#x4EE5;&#x6267;&#x884C;DML(&#x589E;&#x5220;&#x6539;)&#x548C;DDL&#x8BED;&#x53E5;,&#x5982;&#x679C;&#x662F;&#x6267;&#x884C;DDL&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x8FD4;&#x56DE;,&#x6267;&#x884C;DML&#x8FD4;&#x56DE;&#x53D7;&#x5F71;&#x54CD;&#x7684;&#x884C;&#x6570;</p>
+<p><code>ResultSet executeQuery(String sql)</code> :&#x6267;&#x884C;&#x7ED9;&#x5B9A;&#x7684; DQL&#x8BED;&#x53E5;&#xFF0C;&#x8BE5;&#x8BED;&#x53E5;&#x6267;&#x884C;&#x4E4B;&#x540E;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; ResultSet &#x5BF9;&#x8C61;</p>
+<h2 id="dql&#x64CD;&#x4F5C;-&#x67E5;&#x8BE2;&#x591A;&#x6761;&#x8BED;&#x53E5;">DQL&#x64CD;&#x4F5C; &#x67E5;&#x8BE2;&#x591A;&#x6761;&#x8BED;&#x53E5;</h2>
+<p>07</p>
+<p><img src="img/03_07.png" alt="img/03_07.png"></p>
+<h2 id="dao&#x7684;&#x601D;&#x60F3;&#x548C;&#x8BBE;&#x8BA1;&#x5206;&#x6790;">DAO&#x7684;&#x601D;&#x60F3;&#x548C;&#x8BBE;&#x8BA1;&#x5206;&#x6790;</h2>
+<p>09</p>
+<p>&#x4EC0;&#x4E48;&#x662F;DAO</p>
+<blockquote>
+<p>&#x4E3B;&#x8981;&#x5C31;&#x5305;&#x62EC;CRUD(&#x589E;&#x5220;&#x6539;&#x67E5;&#x64CD;&#x4F5C;)</p>
+<p>DAO(Data Access Object)&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x8BBF;&#x95EE;&#x63A5;&#x53E3;&#xFF0C;&#x6570;&#x636E;&#x8BBF;&#x95EE;&#xFF1A;&#x987E;&#x540D;&#x601D;&#x4E49;&#x5C31;&#x662F;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x6253;&#x4EA4;&#x9053;&#x3002;&#x5939;&#x5728;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x8D44;&#x6E90;&#x4E2D;&#x95F4;</p>
+</blockquote>
+<h2 id="dao&#x7684;get&#x548C;list&#x65B9;&#x6CD5;">DAO&#x7684;get&#x548C;list&#x65B9;&#x6CD5;</h2>
+<p>12</p>
+<p><img src="img/03_12.png" alt="img/03_12.png"></p>
+<h2 id="jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784;---&#x62BD;&#x53D6;&#x51FA;jdbcutil&#x7C7B;">Jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784; - &#x62BD;&#x53D6;&#x51FA;JdbcUtil&#x7C7B;</h2>
+<p>16</p>
+<p>&#x5728;&#x9759;&#x6001;&#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x53BB;&#x52A0;&#x8F7D;&#x548C;&#x6CE8;&#x518C;&#x6570;&#x636E;&#x5E93;&#x9A71;&#x52A8;&#xFF0C;&#x53EA;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x6B21;</p>
+<p>Connection&#x5BF9;&#x8C61;&#x9700;&#x8981;&#x4FDD;&#x8BC1;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x653E;&#x5728;&#x9759;&#x6001;&#x4EE3;&#x7801;&#x5757;&#x4E2D;</p>
+<p><img src="img/03_16.png" alt="img/03_16.png"></p>
+<p>&#x5728;JdbcUtil&#x7C7B;&#x4E2D;&#x63D0;&#x4F9B;close&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x5173;&#x95ED;&#x4E09;&#x4E2A;&#x8D44;&#x6E90;&#x5BF9;&#x8C61;</p>
+<p><img src="img/03_16_2.png" alt="img/03_16_2.png"></p>
+<h2 id="jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784;---&#x62BD;&#x53D6;&#x51FA;dbproperties&#x6587;&#x4EF6;">Jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784; - &#x62BD;&#x53D6;&#x51FA;db.properties&#x6587;&#x4EF6;</h2>
+<p>17</p>
+<p>&#x628A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8FDE;&#x63A5;&#x4FE1;&#x606F;&#x5B58;&#x653E;&#x5230;&#x5C5E;&#x6027;&#x6587;&#x4EF6;&#x4E2D;(db.properties)</p>
+<pre><code class="lang-properties">#key=value
+driverClassName=com.mysql.jdbc.Driver
+url=jdbc:mysql://localhost:3306/jdbcDemo
+username=root
+password=admin
+</code></pre>
+<p>JdbcUtil&#x5BF9;&#x5E94;&#x4EE3;&#x7801;&#x66F4;&#x6539;&#xFF0C;&#x53CD;&#x5C04;&#x673A;&#x5236;</p>
+<p><img src="img/03_17.png" alt="img/03_17.png"></p>
+<h2 id="preparedstatement&#x57FA;&#x672C;&#x4F7F;&#x7528;">PreparedStatement&#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
+<p>18</p>
+<h3 id="statement&#x548C;preparedstatement&#x7684;&#x533A;&#x522B;">Statement&#x548C;PreparedStatement&#x7684;&#x533A;&#x522B;</h3>
+<p>PreparedStatement &#x7684;&#x4F18;&#x70B9;</p>
+<ol>
+<li><p>PreparedStatement &#x4EE3;&#x7801;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#x548C;&#x53EF;&#x7EF4;&#x62A4;&#x6027;(SQL&#x6A21;&#x677F;,&#x4F7F;&#x7528;&#x5360;&#x4F4D;&#x7B26;&#x8868;&#x793A;&#x53C2;&#x6570;)</p>
+<blockquote>
+<p>&#x8BBE;&#x7F6E;&#x5360;&#x4F4D;&#x7B26;&#x53C2;&#x6570;(&#x544A;&#x8BC9;SQL&#x4E2D;&#x7684;?&#x5230;&#x5E95;&#x8868;&#x793A;&#x54EA;&#x4E00;&#x4E2A;&#x503C;):
+<code>void  setXxx(int parameterIndex, Xxx value)</code></p>
+<p>xxx                                                        &#x6570;&#x636E;&#x7C7B;&#x578B;,&#x6BD4;&#x5982;:String,int,Long&#x7B49;.
+parameterIndex                                &#x8BBE;&#x7F6E;&#x7B2C;&#x51E0;&#x4E2A;&#x5360;&#x4F4D;&#x7B26;?(&#x4ECE;1&#x5F00;&#x59CB;).
+value                                                    &#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x7684;&#x53C2;&#x6570;&#x503C;.</p>
+</blockquote>
+</li>
+<li><p>PreparedStatement &#x80FD;&#x6700;&#x5927;&#x53EF;&#x80FD;&#x63D0;&#x9AD8;&#x6027;&#x80FD;(&#x9884;&#x7F16;&#x8BD1;),MySQL&#x4E0D;&#x652F;&#x6301;PreparedStatement&#x7684;&#x6027;&#x80FD;&#x4F18;&#x5316;</p>
+</li>
+<li><p>PreparedStatement &#x80FD;&#x4FDD;&#x8BC1;&#x5B89;&#x5168;&#x6027;</p>
+</li>
+</ol>
+<p>&#x53EF;&#x4EE5;&#x9632;&#x6B62;SQL&#x6CE8;&#x5165;:&#x6F14;&#x793A;&#x767B;&#x9646;&#x64CD;&#x4F5C;
+&#x9009;&#x62E9;:&#x4F7F;&#x7528;PreparedStatement</p>
+<h2 id="jdbc&#x7684;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;">JDBC&#x7684;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;</h2>
+<p>22</p>
+<ol>
+<li>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;,&#x5728;JDBC&#x4E2D;&#x6267;&#x884C;DML&#x64CD;&#x4F5C;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;,&#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x5F97;&#x8BBE;&#x7F6E;&#x4E8B;&#x52A1;&#x7684;&#x624B;&#x52A8;&#x63D0;&#x4EA4;&#x673A;&#x5236;(&#x53D6;&#x6D88;&#x4E8B;&#x52A1;&#x7684;&#x81EA;&#x52A8;&#x63D0;&#x4EA4;)</li>
+<li><p>&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;,&#x4E0D;&#x6D89;&#x53CA;&#x6570;&#x636E;&#x7684;&#x66F4;&#x6539;,&#x6240;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x4E8B;&#x52A1;</p>
+</li>
+<li><p>MySQL&#x4E2D;InnoDB&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x652F;&#x6301;&#x4E8B;&#x52A1;,MyISAM&#x4E0D;&#x652F;&#x6301;</p>
+</li>
+</ol>
+<p>&#x64CD;&#x4F5C;&#x4E8B;&#x52A1;&#x7684;&#x6A21;&#x677F;:</p>
+<pre><code class="lang-java"><span class="hljs-keyword">try</span>{
+    <span class="hljs-comment">//&#x53D6;&#x6D88;&#x4E8B;&#x52A1;&#x81EA;&#x52A8;&#x63D0;&#x4EA4;:</span>
+    Connection&#x5BF9;&#x8C61;.setAutoCommit(<span class="hljs-keyword">false</span>);
+    &#x64CD;&#x4F5C;<span class="hljs-number">1</span>
+    &#x64CD;&#x4F5C;<span class="hljs-number">2</span>
+    &#x64CD;&#x4F5C;<span class="hljs-number">3</span>     
+    <span class="hljs-comment">//&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;</span>
+    Connection&#x5BF9;&#x8C61;.commit();
+} <span class="hljs-keyword">catch</span>(Exception e) {
+    <span class="hljs-comment">//&#x5904;&#x7406;&#x5F02;&#x5E38;</span>
+    <span class="hljs-comment">//&#x56DE;&#x6EDA;&#x4E8B;&#x52A1;</span>
+    Connection&#x5BF9;&#x8C61;.rollback();
+} <span class="hljs-keyword">finally</span> {
+    <span class="hljs-comment">//&#x91CA;&#x653E;&#x8D44;&#x6E90;</span>
+}
+</code></pre>
+<h2 id="jdbc&#x7684;&#x6279;&#x91CF;&#x64CD;&#x4F5C;">JDBC&#x7684;&#x6279;&#x91CF;&#x64CD;&#x4F5C;</h2>
+<p>23</p>
+<p>JDBC&#x7684;&#x6279;&#x91CF;&#x5904;&#x7406;&#x8BED;&#x53E5;&#x5305;&#x62EC;&#x4E0B;&#x9762;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;</p>
+<blockquote>
+<p><code>addBatch(String sql)</code>    &#x6DFB;&#x52A0;&#x9700;&#x8981;&#x6279;&#x91CF;&#x5904;&#x7406;&#x7684;SQL&#x8BED;&#x53E5;</p>
+<p><code>addBatch()</code>    &#x7528;&#x4E8E;PreparedStatement&#x6DFB;&#x52A0;&#x9700;&#x8981;&#x6279;&#x91CF;&#x5904;&#x7406;&#x7684;SQL&#x8BED;&#x53E5;</p>
+<p><code>executeBatch()</code>    &#x6267;&#x884C;&#x6279;&#x91CF;&#x5904;&#x7406;</p>
+<p><code>clearParameters()</code>    &#x7528;&#x4E8E;PreparedStatement&#x6E05;&#x9664;&#x5360;&#x4F4D;&#x7B26;&#x53C2;&#x6570;</p>
+<p><code>clearBatch()</code>    &#x6E05;&#x9664;&#x6279;&#x5904;&#x7406;</p>
+</blockquote>
+<p><strong>MySQL&#x670D;&#x52A1;&#x5668;&#x65E2;&#x4E0D;&#x652F;&#x6301;PreparedStatement&#x7684;&#x6027;&#x80FD;&#x4F18;&#x5316;,&#x4E5F;&#x4E0D;&#x652F;&#x6301;JDBC&#x4E2D;&#x7684;&#x6279;&#x91CF;&#x64CD;&#x4F5C;</strong>.
+&#x4F46;&#x662F;,&#x5728;<font color="red">&#x65B0;&#x7684;JDBC&#x9A71;&#x52A8;</font>&#x4E2D;,&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;<code>rewriteBatchedStatements=true</code>&#x6765;&#x4F18;&#x5316;.</p>
+<pre><code class="lang-properties">url=jdbc:mysql://localhost:3306/jdbcdemo?rewriteBatchedStatements=true
+</code></pre>
+<h2 id="blob&#x548C;text&#x7C7B;&#x578B;&#x5904;&#x7406;">BLOB&#x548C;TEXT&#x7C7B;&#x578B;&#x5904;&#x7406;</h2>
+<p>24</p>
+<p><img src="img/03_24.png" alt="img/03_24.png"></p>
+<h2 id="&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;">&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;</h2>
+<p>25</p>
+<h3 id="&#x5982;&#x4F55;&#x5728;jdbc&#x4E2D;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;&#x5462;">&#x5982;&#x4F55;&#x5728;JDBC&#x4E2D;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;&#x5462;</h3>
+<p><strong>Statement</strong></p>
+<p><code>int executeUpdate(String sql,int autoGeneratedKeys)</code></p>
+<blockquote>
+<p>&#x53C2;&#x6570;:autoGeneratedKeys,&#x662F;&#x5426;&#x9700;&#x8981;&#x8FD4;&#x56DE;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;</p>
+<p>&#x5E38;&#x91CF;&#x503C;:<code>Statement.RETURN_GENERATED_KEYS</code></p>
+<p><code>ResultSet getGeneratedKeys()</code>:&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;</p>
+</blockquote>
+<p><strong>PreparedStatement</strong></p>
+<p><code>PreparedStatement prepareStatement(String sql, int autoGeneratedKeys)</code></p>
+<blockquote>
+<p>&#x521B;&#x5EFA;PreparedStatement&#x5BF9;&#x8C61;,&#x5E76;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x9700;&#x8981;&#x8FD4;&#x56DE;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;</p>
+<p>&#x53C2;&#x6570;&#x7684;&#x5E38;&#x91CF;&#x503C;:Statement.RETURN_GENERATED_KEYS</p>
+</blockquote>
+<font color="blue">Hibernate&#x4E2D;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x8FD4;&#x56DE;</font>
+
+<h2 id="&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;">&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;</h2>
+<p>29</p>
+<h3 id="&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;">&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;</h3>
+<p>&#x5728;Java&#x4E2D;,&#x8FDE;&#x63A5;&#x6C60;&#x4F7F;&#x7528;javax.sql.DataSource&#x63A5;&#x53E3;&#x6765;&#x8868;&#x793A;&#x8FDE;&#x63A5;&#x6C60;/&#x6570;&#x636E;&#x6E90;</p>
+<blockquote>
+<p>DataSource&#x548C;JDBC&#x4E00;&#x6837;&#x4EC5;&#x4EC5;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;,&#x7531;&#x5404;&#x5927;&#x670D;&#x52A1;&#x5668;&#x5382;&#x5546;&#x6765;&#x5B9E;&#x73B0;(Tomcat,JBoss&#x7B49;)</p>
+</blockquote>
+<h3 id="&#x5E38;&#x7528;&#x7684;datasource&#x7684;&#x5B9E;&#x73B0;">&#x5E38;&#x7528;&#x7684;DataSource&#x7684;&#x5B9E;&#x73B0;</h3>
+<ul>
+<li>C3P0:  Hibernate&#x63A8;&#x8350;&#x7684;,&#x4F46;&#x662F;&#x8BE5;&#x8FDE;&#x63A5;&#x6C60;&#x5728;07&#x5E74;&#x4E4B;&#x540E;&#x5C31;&#x4E0D;&#x518D;&#x66F4;&#x65B0;&#x4E86;,&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;:&#x6027;&#x80FD;&#x592A;&#x592A;&#x5DEE;&#x4E86;</li>
+<li>DBCP:  Apache&#x7EC4;&#x7EC7;&#x7684;&#x9879;&#x76EE;,Spring&#x63A8;&#x8350;&#x7684;.  &#x771F;&#x5FC3;&#x4E0D;&#x9519;</li>
+<li>Druid:  &#x963F;&#x91CC;&#x5DF4;&#x5DF4;&#x7684;&#x9879;&#x76EE;(&#x5FB7;&#x9C81;&#x4F0A;),&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x597D;&#x8FDE;&#x63A5;&#x6C60;</li>
+</ul>
+<p>DataSource(&#x6570;&#x636E;&#x6E90;)&#x548C;&#x8FDE;&#x63A5;&#x6C60;(Connection Pool)&#x662F;&#x540C;&#x4E00;&#x4E2A;</p>
+<h3 id="&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x548C;&#x4E0D;&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;">&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x548C;&#x4E0D;&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;?</h3>
+<p>&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;</p>
+<blockquote>
+<p>&#x6CA1;&#x6709;&#x8FDE;&#x63A5;&#x6C60;: &#x901A;&#x8FC7;DriverManager&#x6765;&#x83B7;&#x53D6;,&#x76F4;&#x63A5;&#x548C;DBMS&#x8FDE;&#x63A5;.
+&#x5B58;&#x5728;&#x8FDE;&#x63A5;&#x6C60;:  &#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x8FDE;&#x63A5;&#x6C60;&#x6765;&#x83B7;&#x53D6;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;.
+                        <code>Connection conn = DataSource&#x5BF9;&#x8C61;.getConnection();</code></p>
+</blockquote>
+<p>&#x91CA;&#x653E;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;:</p>
+<blockquote>
+<p>&#x6CA1;&#x6709;&#x8FDE;&#x63A5;&#x6C60;: conn.close():&#x548C;&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;(DBMS)&#x65AD;&#x5F00;&#x8FDE;&#x63A5;.
+&#x5B58;&#x5728;&#x8FDE;&#x63A5;&#x6C60;: conn.close():&#x628A;Connection&#x5BF9;&#x8C61;&#x5F52;&#x8FD8;&#x7ED9;&#x8FDE;&#x63A5;&#x6C60;,&#x5E76;&#x6CA1;&#x6709;&#x548C;DBMS&#x65AD;&#x5F00;.</p>
+</blockquote>
+<h2 id="dbcp&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;">DBCP&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
+<p>30</p>
+<h2 id="dbcp&#x8FDE;&#x63A5;&#x6C60;">DBCP&#x8FDE;&#x63A5;&#x6C60;:</h2>
+<p>&#x73AF;&#x5883;&#x51C6;&#x5907;</p>
+<ul>
+<li><p>commons-dbcp.jar</p>
+</li>
+<li><p>commons-pool.jar</p>
+</li>
+</ul>
+<p>&#x53C2;&#x8003;&#x6587;&#x6863;</p>
+<ul>
+<li>\commons-dbcp-1.3-src\doc\BasicDataSourceExample.java</li>
+</ul>
+<p><img src="img/03_30.png" alt="img/03_30.png"></p>
+<h2 id="druid&#x8FDE;&#x63A5;&#x6C60;&#x4F7F;&#x7528;">Druid&#x8FDE;&#x63A5;&#x6C60;&#x4F7F;&#x7528;</h2>
+<p>32</p>
+<p>Druid&#x8FDE;&#x63A5;&#x6C60;(&#x5FB7;&#x9C81;&#x4F0A;),&#x963F;&#x91CC;&#x5DF4;&#x5DF4;&#x7684;&#x8FDE;&#x63A5;&#x6C60;,&#x53F7;&#x79F0;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x597D;&#x7684;&#x8FDE;&#x63A5;&#x6C60;.
+<a href="https://github.com/alibaba/druid/wiki" target="_blank">https://github.com/alibaba/druid/wiki</a>
+Java&#x8BED;&#x8A00;&#x9886;&#x57DF;&#x6027;&#x80FD;&#x6700;&#x597D;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;
+&#x7C7B;&#x4F3C;&#x4E8E;DBCP&#x8FDE;&#x63A5;&#x6C60;.</p>
+<p>&#x51C6;&#x5907;&#x73AF;&#x5883;</p>
+<ul>
+<li>druid-1.0.15.jar</li>
+</ul>
+<p>Druid&#x548C;DBCP&#x7684;&#x8FDE;&#x63A5;&#x5C5E;&#x6027;&#x662F;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;,&#x521B;&#x5EFA;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x5BF9;&#x8C61;&#x4E0D;&#x540C;.</p>
+<p><img src="img/03_32.png" alt="img/03_32.png"></p>
+<h2 id="jdbctemplate&#x7684;dml&#x589E;&#x5220;&#x6539;&#x64CD;&#x4F5C;&#x6A21;&#x677F;">JdbcTemplate&#x7684;DML(&#x589E;&#x5220;&#x6539;)&#x64CD;&#x4F5C;&#x6A21;&#x677F;</h2>
+<p>33</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">update</span><span class="hljs-params">(String sql,Object... args)</span> </span>{
+    Conncetion conn = <span class="hljs-keyword">null</span>;
+    PreparedStatement ps = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">try</span> {
+        conn = getCon();
+        ps = conn.prepareStatement(sql);
+        <span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x5360;&#x4F4D;&#x7B26;&#x53C2;&#x6570;</span>
+        <span class="hljs-keyword">if</span> (args.length &gt; <span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; args.length; i++)
+                ps.setObject(i + <span class="hljs-number">1</span>, args[i]);
+        }
+        ps.executeUpdate();
+    } <span class="hljs-keyword">catch</span> (SQLException e) {
+        e.printStackTrace();
+    } <span class="hljs-keyword">finally</span> {
+        close(conn,ps,<span class="hljs-keyword">null</span>);
+    }
+}
+</code></pre>
+<h3 id="execute&#x548C;executeupdate">execute()&#x548C;executeUpdate()</h3>
+<p>&#x76F8;&#x540C;&#x70B9;</p>
+<ul>
+<li>&#x90FD;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x589E;&#x5220;&#x6539;&#x64CD;&#x4F5C;</li>
+</ul>
+<p>&#x4E0D;&#x540C;&#x70B9;</p>
+<ul>
+<li><p>execute()&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x67E5;&#x8BE2;&#xFF0C;executeUpdate()&#x4E0D;&#x53EF;&#x4EE5;</p>
+</li>
+<li><p>execute()&#x8FD4;&#x56DE;boolean&#x7C7B;&#x578B;</p>
+<ul>
+<li>true    &#x6267;&#x884C;&#x7684;&#x662F;&#x67E5;&#x8BE2;</li>
+<li><p>false   &#x6267;&#x884C;&#x7684;&#x662F;&#x589E;&#x5220;&#x6539;</p>
+<p>executeUpdate()&#x8FD4;&#x56DE;int&#x7C7B;&#x578B;&#xFF0C;&#x8868;&#x793A;&#x591A;&#x5C11;&#x6570;&#x636E;&#x53D7;&#x5230;&#x4E86;&#x5F71;&#x54CD;</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="jdbctemplate&#x7684;dql&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#x6A21;&#x677F;">JdbcTemplate&#x7684;DQL(&#x67E5;&#x8BE2;)&#x64CD;&#x4F5C;&#x6A21;&#x677F;</h2>
+<p>37</p>
+<p>&#x5185;&#x7701;&#x673A;&#x5236;</p>
+<p><strong>&#x5FC5;&#x987B;&#x8981;&#x5236;&#x5B9A;&#x7684;&#x89C4;&#x8303;</strong></p>
+<ol>
+<li><font color="red">&#x4FDD;&#x8BC1;&#x8868;&#x4E2D;&#x7684;&#x5217;&#x540D;&#x548C;JavaBean&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x76F8;&#x540C;</font>
+</li>
+<li><p>&#x4FDD;&#x8BC1;&#x8868;&#x4E2D;&#x7684;&#x5217;&#x7684;&#x7C7B;&#x578B; &#x548C; JavaBean&#x4E2D;&#x5C5E;&#x6027;&#x7684;&#x7C7B;&#x578B;&#x8981;&#x5BF9;&#x5E94;</p>
+<p> VARCHAR---&gt;String/DECIMAL---&gt;BigDecimal</p>
+</li>
+</ol>
+<p>&#x7ED3;&#x679C;&#x96C6;&#x5904;&#x7406;&#x63A5;&#x53E3;</p>
+<pre><code class="lang-java"><span class="hljs-comment">/* &#x6307;&#x5B9A;&#x7ED3;&#x679C;&#x96C6;&#x5904;&#x7406;&#x5668;&#x7684;&#x89C4;&#x8303; */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">ResultSetHandler</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
+    <span class="hljs-comment">/* &#x5904;&#x7406;&#x7ED3;&#x679C;&#x96C6; */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> T <span class="hljs-title">handle</span><span class="hljs-params">(ResultSet rs)</span> <span class="hljs-keyword">throws</span> Exception</span>;
+}
+</code></pre>
+<p>&#x5355;&#x4E2A;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x96C6;&#x5904;&#x7406;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BeanHandler</span>&lt;<span class="hljs-title">T</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">ResultSetHandler</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
+    <span class="hljs-comment">/* T&#x5B9E;&#x4F53;&#x7684;JavaBean&#x5BF9;&#x8C61;&#x7C7B;&#x578B; */</span>
+    <span class="hljs-keyword">private</span> Class&lt;T&gt; classType;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">BeanHandler</span><span class="hljs-params">(Class&lt;T&gt; classType)</span> </span>{
+        <span class="hljs-keyword">this</span>.classType = classType;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> T <span class="hljs-title">handle</span><span class="hljs-params">(ResultSet rs)</span> </span>{
+        <span class="hljs-keyword">if</span> (rs.next()) {
+            <span class="hljs-comment">//&#x521B;&#x5EFA;T&#x5B9E;&#x4F8B;</span>
+            T t = classType.newInstance();           
+            <span class="hljs-comment">//&#x83B7;&#x53D6;&#x5B57;&#x8282;&#x7801;&#x6587;&#x4EF6;&#x7684;JavaBean&#x5BF9;&#x8C61;</span>
+            BeanInfo beanInfo = Introspector.getBeanInfo(classType,Object.class);
+            <span class="hljs-comment">//&#x8FD4;&#x56DE;JavaBean&#x5BF9;&#x8C61;&#x4E2D;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x7684;&#x63CF;&#x8FF0;&#x5668;</span>
+            PropertyDescriptor[] pds = beanInfo.getPropertyDescriptors();
+            <span class="hljs-keyword">for</span> (PropertyDescriptor pd : pds) {
+                String propName = pd.getName();<span class="hljs-comment">//&#x5C5E;&#x6027;&#x540D;&#x79F0;</span>
+                <span class="hljs-comment">//&#x8C03;&#x7528;set&#x65B9;&#x6CD5;&#xFF0C;&#x8BBE;&#x7F6E;t&#x5B9E;&#x4F8B;&#x7684;&#x5C5E;&#x6027;</span>
+                pd.getWriteMethod().invoke(t,rs.getObject(propName));
+            }
+            <span class="hljs-keyword">return</span> t;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+    }
+}
+</code></pre>
+<p>List&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x96C6;&#x5904;&#x7406;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BeanListHandler</span>&lt;<span class="hljs-title">T</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">ResultSetHandler</span>&lt;<span class="hljs-title">List</span>&lt;<span class="hljs-title">T</span>&gt;&gt; </span>{
+    <span class="hljs-comment">/* T&#x5B9E;&#x4F53;&#x7684;JavaBean&#x5BF9;&#x8C61;&#x7C7B;&#x578B; */</span>
+    <span class="hljs-keyword">private</span> Class&lt;T&gt; classType;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">BeanHandler</span><span class="hljs-params">(Class&lt;T&gt; classType)</span> </span>{
+        <span class="hljs-keyword">this</span>.classType = classType;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> List&lt;T&gt; <span class="hljs-title">handle</span><span class="hljs-params">(ResultSet rs)</span> </span>{
+        List&lt;T&gt; list = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+        <span class="hljs-keyword">while</span> (rs.next()) {
+            <span class="hljs-comment">//&#x521B;&#x5EFA;T&#x5B9E;&#x4F8B;</span>
+            T t = classType.newInstance();           
+            <span class="hljs-comment">//&#x83B7;&#x53D6;&#x5B57;&#x8282;&#x7801;&#x6587;&#x4EF6;&#x7684;JavaBean&#x5BF9;&#x8C61;</span>
+            BeanInfo beanInfo = Introspector.getBeanInfo(classType,Object.class);
+            <span class="hljs-comment">//&#x8FD4;&#x56DE;JavaBean&#x5BF9;&#x8C61;&#x4E2D;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x7684;&#x63CF;&#x8FF0;&#x5668;</span>
+            PropertyDescriptor[] pds = beanInfo.getPropertyDescriptors();
+            <span class="hljs-keyword">for</span> (PropertyDescriptor pd : pds) {
+                String propName = pd.getName();<span class="hljs-comment">//&#x5C5E;&#x6027;&#x540D;&#x79F0;</span>
+                <span class="hljs-comment">//&#x8C03;&#x7528;set&#x65B9;&#x6CD5;&#xFF0C;&#x8BBE;&#x7F6E;t&#x5B9E;&#x4F8B;&#x7684;&#x5C5E;&#x6027;</span>
+                pd.getWriteMethod().invoke(t,rs.getObject(propName));
+            }
+            list.add(t);
+        }
+        <span class="hljs-keyword">return</span> list;
+    }
+}
+</code></pre>
+<p>&#x4E3B;&#x67E5;&#x8BE2;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> &lt;T&gt; <span class="hljs-function">T <span class="hljs-title">query</span><span class="hljs-params">(String sql,ResultSetHandler&lt;T&gt; h,Object... args)</span> </span>{
+    Conncetion conn = <span class="hljs-keyword">null</span>;
+    PreparedStatement ps = <span class="hljs-keyword">null</span>;
+    ResultSet rs = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">try</span> {
+        conn = getCon();
+        ps = conn.prepareStatement(sql);
+        <span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x5360;&#x4F4D;&#x7B26;&#x53C2;&#x6570;</span>
+        <span class="hljs-keyword">if</span> (args.length &gt; <span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; args.length; i++)
+                ps.setObject(i + <span class="hljs-number">1</span>, args[i]);
+        }
+        rs = ps.executeQuery();
+        <span class="hljs-keyword">return</span> h.handle(rs);
+    } <span class="hljs-keyword">catch</span> (SQLException e) {
+        e.printStackTrace();
+    } <span class="hljs-keyword">finally</span> {
+        close(conn,ps,<span class="hljs-keyword">null</span>);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../MySQL 高级/Mysql高级-day04.html" class="navigation navigation-prev " aria-label="Previous page: MySQL 高级04">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../04JavaWeb/JavaWeb.html" class="navigation navigation-next " aria-label="Next page: JavaWeb">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JDBC","level":"1.3.5","depth":2,"next":{"title":"JavaWeb","level":"1.3.6","depth":2,"path":"back/04JavaWeb/JavaWeb.md","ref":"./back/04JavaWeb/JavaWeb.md","articles":[]},"previous":{"title":"MySQL 高级04","level":"1.3.4.7","depth":3,"path":"back/MySQL 高级/Mysql高级-day04.md","ref":"./back/MySQL 高级/Mysql高级-day04.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button"],"pluginsConfig":{"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"back/03JDBC/JDBC.md","mtime":"2022-07-24T02:13:46.591Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-31T08:53:45.469Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

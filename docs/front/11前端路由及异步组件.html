@@ -1,0 +1,1553 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>前端路由及异步组件 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="12状态管理及路由同构.html" />
+    
+    
+    <link rel="prev" href="10vue-cli详解.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="02模块化,浏览器内置对象,事件.html">
+            
+                <a href="02模块化,浏览器内置对象,事件.html">
+            
+                    
+                    模块化,浏览器内置对象,事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="03作用域,闭包,this指针.html">
+            
+                <a href="03作用域,闭包,this指针.html">
+            
+                    
+                    作用域,闭包,this指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="04面向对象编程,原型及原型链,继承.html">
+            
+                <a href="04面向对象编程,原型及原型链,继承.html">
+            
+                    
+                    面向对象编程,原型及原型链,继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="05ES6规范详解.html">
+            
+                <a href="05ES6规范详解.html">
+            
+                    
+                    ES6规范详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="06前端工程化.html">
+            
+                <a href="06前端工程化.html">
+            
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="07vue基础.html">
+            
+                <a href="07vue基础.html">
+            
+                    
+                    vue基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="09vue高级.html">
+            
+                <a href="09vue高级.html">
+            
+                    
+                    vue高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="10vue-cli详解.html">
+            
+                <a href="10vue-cli详解.html">
+            
+                    
+                    vue-cli详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.9" data-path="11前端路由及异步组件.html">
+            
+                <a href="11前端路由及异步组件.html">
+            
+                    
+                    前端路由及异步组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="12状态管理及路由同构.html">
+            
+                <a href="12状态管理及路由同构.html">
+            
+                    
+                    状态管理及路由同构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="13vue实战.html">
+            
+                <a href="13vue实战.html">
+            
+                    
+                    vue实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="14vue组件库设计.html">
+            
+                <a href="14vue组件库设计.html">
+            
+                    
+                    vue组件库设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="15vue&vuex源码解析.html">
+            
+                <a href="15vue&vuex源码解析.html">
+            
+                    
+                    vue&vuex源码解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="16小程序基础.html">
+            
+                <a href="16小程序基础.html">
+            
+                    
+                    小程序基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="20react基础.html">
+            
+                <a href="20react基础.html">
+            
+                    
+                    react基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="21react高级.html">
+            
+                <a href="21react高级.html">
+            
+                    
+                    react高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="23react状态管理redux,mobx.html">
+            
+                <a href="23react状态管理redux,mobx.html">
+            
+                    
+                    react状态管理redux,mobx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="24react路由及服务端渲染同构.html">
+            
+                <a href="24react路由及服务端渲染同构.html">
+            
+                    
+                    react路由及服务端渲染同构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="25react实战.html">
+            
+                <a href="25react实战.html">
+            
+                    
+                    react实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" data-path="26react组件库设计.html">
+            
+                <a href="26react组件库设计.html">
+            
+                    
+                    react组件库设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" data-path="27react源码解析.html">
+            
+                <a href="27react源码解析.html">
+            
+                    
+                    react源码解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" data-path="28nodejs基础.html">
+            
+                <a href="28nodejs基础.html">
+            
+                    
+                    nodejs基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23" data-path="29nodejs框架及实战.html">
+            
+                <a href="29nodejs框架及实战.html">
+            
+                    
+                    nodejs框架及实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24" data-path="30nodejs原理详解.html">
+            
+                <a href="30nodejs原理详解.html">
+            
+                    
+                    nodejs原理详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25" data-path="31nodejs HTTP.html">
+            
+                <a href="31nodejs HTTP.html">
+            
+                    
+                    nodejs HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.26" data-path="32nodejs实战cli&爬虫.html">
+            
+                <a href="32nodejs实战cli&爬虫.html">
+            
+                    
+                    nodejs实战cli&爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27" data-path="33现代Hybrid开发与原理解析.html">
+            
+                <a href="33现代Hybrid开发与原理解析.html">
+            
+                    
+                    现代Hybrid开发与原理解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.28" data-path="34react native入门.html">
+            
+                <a href="34react native入门.html">
+            
+                    
+                    react native入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.29" data-path="35electron入门与原理介绍.html">
+            
+                <a href="35electron入门与原理介绍.html">
+            
+                    
+                    electron入门与原理介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.30" data-path="36RN 项目实战.html">
+            
+                <a href="36RN 项目实战.html">
+            
+                    
+                    RN 项目实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.31" data-path="37Flutter入门.html">
+            
+                <a href="37Flutter入门.html">
+            
+                    
+                    Flutter入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.32" data-path="39AST必知必会.html">
+            
+                <a href="39AST必知必会.html">
+            
+                    
+                    AST必知必会
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.33" data-path="40Flutter实战.html">
+            
+                <a href="40Flutter实战.html">
+            
+                    
+                    Flutter实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.34" data-path="41排序算法.html">
+            
+                <a href="41排序算法.html">
+            
+                    
+                    排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.35" data-path="42复杂算法详解.html">
+            
+                <a href="42复杂算法详解.html">
+            
+                    
+                    复杂算法详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.36" data-path="43树和图类算法.html">
+            
+                <a href="43树和图类算法.html">
+            
+                    
+                    树和图类算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.37" data-path="44常见JS设计模式解析.html">
+            
+                <a href="44常见JS设计模式解析.html">
+            
+                    
+                    常见JS设计模式解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.38" data-path="45设计模式实战.html">
+            
+                <a href="45设计模式实战.html">
+            
+                    
+                    设计模式实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.39" data-path="46JS常见开发优化总结.html">
+            
+                <a href="46JS常见开发优化总结.html">
+            
+                    
+                    JS常见开发优化总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.40" data-path="47大厂常见问题解决方案.html">
+            
+                <a href="47大厂常见问题解决方案.html">
+            
+                    
+                    大厂常见问题解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.41" data-path="48浏览器原理.html">
+            
+                <a href="48浏览器原理.html">
+            
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.42" data-path="49,50webpack前端打包工具.html">
+            
+                <a href="49,50webpack前端打包工具.html">
+            
+                    
+                    webpack前端打包工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    后端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../back/bxd_Java基础/01/bxd_Java基础01.html">
+            
+                <a href="../back/bxd_Java基础/01/bxd_Java基础01.html">
+            
+                    
+                    bxd_Java 基础 01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../back/bxd_Java基础/02/bxd_Java基础02.html">
+            
+                <a href="../back/bxd_Java基础/02/bxd_Java基础02.html">
+            
+                    
+                    bxd_Java 基础 02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../back/01基础加强/基础加强.html">
+            
+                <a href="../back/01基础加强/基础加强.html">
+            
+                    
+                    基础加强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <span>
+            
+                    
+                    MySQL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../back/02MySQL/MySQL.html">
+            
+                <a href="../back/02MySQL/MySQL.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../back/07MySQL加强/MySQL基础加强.html">
+            
+                <a href="../back/07MySQL加强/MySQL基础加强.html">
+            
+                    
+                    MySQL 加强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../back/MySQL性能优化/MySQL性能优化.html">
+            
+                <a href="../back/MySQL性能优化/MySQL性能优化.html">
+            
+                    
+                    MySQL 性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../back/MySQL 高级/Mysql高级-day01.html">
+            
+                <a href="../back/MySQL 高级/Mysql高级-day01.html">
+            
+                    
+                    MySQL 高级01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="../back/MySQL 高级/Mysql高级-day02.html">
+            
+                <a href="../back/MySQL 高级/Mysql高级-day02.html">
+            
+                    
+                    MySQL 高级02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="../back/MySQL 高级/Mysql高级-day03.html">
+            
+                <a href="../back/MySQL 高级/Mysql高级-day03.html">
+            
+                    
+                    MySQL 高级03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.7" data-path="../back/MySQL 高级/Mysql高级-day04.html">
+            
+                <a href="../back/MySQL 高级/Mysql高级-day04.html">
+            
+                    
+                    MySQL 高级04
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../back/03JDBC/JDBC.html">
+            
+                <a href="../back/03JDBC/JDBC.html">
+            
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../back/04JavaWeb/JavaWeb.html">
+            
+                <a href="../back/04JavaWeb/JavaWeb.html">
+            
+                    
+                    JavaWeb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../back/05Struts2/Struts2.html">
+            
+                <a href="../back/05Struts2/Struts2.html">
+            
+                    
+                    Struct2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../back/08Hibernate/Hibernate.html">
+            
+                <a href="../back/08Hibernate/Hibernate.html">
+            
+                    
+                    Hibernate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../back/09Spring/Spring.html">
+            
+                <a href="../back/09Spring/Spring.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../back/11JavaScript-Ajax-jQuery/JavaScript-Ajax-jQuery.html">
+            
+                <a href="../back/11JavaScript-Ajax-jQuery/JavaScript-Ajax-jQuery.html">
+            
+                    
+                    JavaScript-Ajax-jQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../back/12UML_Maven/UML_Maven.html">
+            
+                <a href="../back/12UML_Maven/UML_Maven.html">
+            
+                    
+                    UML_Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../back/13WMS/WMS.html">
+            
+                <a href="../back/13WMS/WMS.html">
+            
+                    
+                    WMS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../back/14JS加强/JS加强.html">
+            
+                <a href="../back/14JS加强/JS加强.html">
+            
+                    
+                    JS 加强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../back/15EasyUI/EasyUI.html">
+            
+                <a href="../back/15EasyUI/EasyUI.html">
+            
+                    
+                    EasyUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../back/16SpringMVC/SpringMVC.html">
+            
+                <a href="../back/16SpringMVC/SpringMVC.html">
+            
+                    
+                    SpringMVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../back/17MyBatis/MyBatis.html">
+            
+                <a href="../back/17MyBatis/MyBatis.html">
+            
+                    
+                    MyBatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../back/19CRM/CRM.html">
+            
+                <a href="../back/19CRM/CRM.html">
+            
+                    
+                    CRM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../back/20Lucene/Lucene.html">
+            
+                <a href="../back/20Lucene/Lucene.html">
+            
+                    
+                    Lucene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="../back/redis/redis.html">
+            
+                <a href="../back/redis/redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="../back/Docker/Docker基础篇之快速上手.html">
+            
+                <a href="../back/Docker/Docker基础篇之快速上手.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="../back/nginx/Nginx.html">
+            
+                <a href="../back/nginx/Nginx.html">
+            
+                    
+                    Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="../back/other/Gradle.html">
+            
+                <a href="../back/other/Gradle.html">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="../back/other/Shiro.html">
+            
+                <a href="../back/other/Shiro.html">
+            
+                    
+                    Shiro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="../back/other/SpringSecurity.html">
+            
+                <a href="../back/other/SpringSecurity.html">
+            
+                    
+                    SpringSecurity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >前端路由及异步组件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="vue-&#x8DEF;&#x7531;&#x53CA;&#x5F02;&#x6B65;&#x7EC4;&#x4EF6;">Vue &#x8DEF;&#x7531;&#x53CA;&#x5F02;&#x6B65;&#x7EC4;&#x4EF6;</h1>
+<h2 id="&#x524D;&#x7AEF;&#x8DEF;&#x7531;-router-&#x539F;&#x7406;&#x53CA;&#x8868;&#x73B0;">&#x524D;&#x7AEF;&#x8DEF;&#x7531; router &#x539F;&#x7406;&#x53CA;&#x8868;&#x73B0;</h2>
+<h3 id="&#x80CC;&#x666F;">&#x80CC;&#x666F;</h3>
+<p>&#x8DEF;&#x7531;&#x5168;&#x90E8;&#x90FD;&#x662F;&#x7531;&#x670D;&#x52A1;&#x7AEF;&#x63A7;&#x5236;&#x7684;, &#x524D;&#x7AEF;&#x4EE3;&#x7801;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x4EE3;&#x7801;&#x8FC7;&#x5EA6;&#x878D;&#x5408;&#x5728;&#x4E00;&#x8D77;.</p>
+<p>&#x5BA2;&#x6237;&#x7AEF;/&#x524D;&#x7AEF;&#x53D1;&#x8D77; http &#x8BF7;&#x6C42; -&gt; &#x670D;&#x52A1;&#x5668; -&gt; url &#x8DEF;&#x5F84;&#x53BB;&#x5339;&#x914D;&#x4E0D;&#x540C;&#x7684;&#x8DEF;&#x7531;/&#x8FD4;&#x56DE;&#x4E0D;&#x540C;&#x7684;&#x6570;&#x636E;</p>
+<p>&#x4F18;&#x70B9;: &#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; html, &#x6E32;&#x67D3;&#x4E86;&#x9875;&#x9762;&#x7ED3;&#x6784;. SEO&#x7684;&#x6548;&#x679C;&#x975E;&#x5E38;&#x597D;, &#x9996;&#x5C4F;&#x65F6;&#x95F4;&#x7279;&#x522B;&#x5FEB;.</p>
+<blockquote>
+<p>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x8F93;&#x5165;&#x4E00;&#x4E2A; url &#x5F00;&#x59CB; &lt;-&gt; &#x9875;&#x9762;&#x4EFB;&#x610F;&#x5143;&#x7D20;&#x52A0;&#x8F7D;&#x51FA;&#x6765;/&#x6E32;&#x67D3;&#x51FA;&#x6765; =&gt; &#x9996;&#x5C4F;&#x65F6;&#x95F4;</p>
+</blockquote>
+<p>&#x7F3A;&#x70B9;: &#x524D;&#x7AEF;&#x4EE3;&#x7801;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x4EE3;&#x7801;&#x8FC7;&#x5EA6;&#x878D;&#x5408;&#x5728;&#x4E00;&#x8D77;, &#x5F00;&#x53D1;&#x534F;&#x540C;&#x975E;&#x5E38;&#x7684;&#x4E71;, &#x670D;&#x52A1;&#x5668;&#x538B;&#x529B;&#x5927;, &#x56E0;&#x4E3A;&#x628A;&#x6784;&#x5EFA; html &#x7684;&#x5DE5;&#x4F5C;&#x653E;&#x5728;&#x670D;&#x52A1;&#x7AEF;.</p>
+<h3 id="ajax">Ajax</h3>
+<p>&#x5F02;&#x6B65;&#x8BF7;&#x6C42;, &#x6D4F;&#x89C8;&#x5668;&#x7AEF;&#x5F02;&#x6B65;&#x8BF7;&#x6C42;&#x83B7;&#x53D6;&#x6240;&#x9700;&#x6570;&#x636E;.</p>
+<h3 id="&#x5355;&#x9875;&#x5E94;&#x7528;">&#x5355;&#x9875;&#x5E94;&#x7528;</h3>
+<p>&#x9875; -&gt; html &#x6587;&#x4EF6;</p>
+<p>&#x5355;&#x9875; -&gt; &#x5355;&#x4E2A; html &#x6587;&#x4EF6; (&#x4EE5;&#x524D; user/index.html. foods/index.html)</p>
+<p>&#x7279;&#x70B9;:</p>
+<ol>
+<li><p>&#x9875;&#x9762;&#x4E2D;&#x7684;&#x4EA4;&#x4E92;&#x662F;&#x4E0D;&#x5237;&#x65B0;&#x9875;&#x9762;&#x7684;.</p>
+</li>
+<li><p>&#x591A;&#x4E2A;&#x9875;&#x9762;&#x95F4;&#x7684;&#x4EA4;&#x4E92;, &#x4E0D;&#x9700;&#x8981;&#x5237;&#x65B0;&#x9875;&#x9762;; &#x52A0;&#x8F7D;&#x8FC7;&#x7684;&#x516C;&#x5171;&#x8D44;&#x6E90;, &#x65E0;&#x9700;&#x518D;&#x91CD;&#x590D;&#x52A0;&#x8F7D;.</p>
+</li>
+</ol>
+<p>&#x652F;&#x6491;&#x8D77;&#x5355;&#x9875;&#x5E94;&#x7528;&#x8FD9;&#x79CD;&#x7279;&#x6027;&#x7684;&#x662F;&#x4EC0;&#x4E48;?</p>
+<p><strong>&#x524D;&#x7AEF;&#x8DEF;&#x7531;</strong></p>
+<p>vue -&gt; hash, history</p>
+<p>react -&gt; hash, history</p>
+<ol>
+<li><p>&#x9875;&#x9762;&#x95F4;&#x7684;&#x4EA4;&#x4E92;&#x4E0D;&#x5237;&#x65B0;&#x9875;&#x9762;</p>
+</li>
+<li><p>&#x4E0D;&#x540C; url&#x4F1A;&#x6E32;&#x67D3;&#x4E0D;&#x540C;&#x7684;&#x5185;&#x5BB9;</p>
+</li>
+</ol>
+<h3 id="hash">Hash</h3>
+<h4 id="&#x7279;&#x6027;">&#x7279;&#x6027;</h4>
+<ol>
+<li><p>url&#x4E2D;&#x5E26;&#x6709;&#x4E00;&#x4E2A; # &#x7B26;&#x53F7;, &#x4F46;&#x662F; # &#x53EA;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x7AEF;/&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x72B6;&#x6001;, &#x4E0D;&#x4F1A;&#x4F20;&#x9012;&#x7ED9;&#x670D;&#x52A1;&#x7AEF;.</p>
+<blockquote>
+<p>www.baidu.com/#/user -&gt; http -&gt; www.baidu.com/</p>
+<p>www.baidu.com/#/list/test -&gt; http -&gt; www.baidu.com/ </p>
+</blockquote>
+</li>
+<li><p>hash &#x503C;&#x7684;&#x66F4;&#x6539;, &#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;&#x9875;&#x9762;&#x7684;&#x5237;&#x65B0;.</p>
+<blockquote>
+<p>location.hash = &apos;#aaa&apos;;</p>
+<p>location.hash = &apos;#bbb&apos;;</p>
+<p>&#x4ECE; #aaa &#x5230; #bbb, &#x9875;&#x9762;&#x662F;&#x4E0D;&#x4F1A;&#x5237;&#x65B0;&#x7684;</p>
+</blockquote>
+</li>
+<li><p>hash &#x503C;&#x7684;&#x66F4;&#x6539;, &#x4F1A;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x8BBF;&#x95EE;&#x5386;&#x53F2;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x6761;&#x8BB0;&#x5F55;. &#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x624D;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x8FD4;&#x56DE;&#x3001;&#x524D;&#x8FDB;&#x6309;&#x94AE;&#x6765;&#x63A7;&#x5236; hash &#x7684;&#x5207;&#x6362;</p>
+</li>
+<li><p>hash &#x503C;&#x7684;&#x66F4;&#x6539;, &#x4F1A;&#x89E6;&#x53D1; hashchange &#x4E8B;&#x4EF6;</p>
+<blockquote>
+<pre><code class="lang-js"><span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&apos;hashchange&apos;</span>, () =&gt; {});
+</code></pre>
+</blockquote>
+</li>
+</ol>
+<h4 id="&#x5982;&#x4F55;&#x66F4;&#x6539;-hash">&#x5982;&#x4F55;&#x66F4;&#x6539; hash</h4>
+<ol>
+<li><p>location.hash</p>
+</li>
+<li><p>html &#x6807;&#x7B7E;&#x7684;&#x65B9;&#x5F0F;</p>
+<blockquote>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#user&quot;</span>&gt;</span>&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x5230; user<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+</blockquote>
+</li>
+</ol>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- index.html --&gt;</span>
+<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-class">.container</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
+            <span class="hljs-attribute">display</span>: flex;
+            <span class="hljs-attribute">justify-content</span>: space-around;
+            <span class="hljs-attribute">align-items</span>: center;
+
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
+            <span class="hljs-attribute">font-weight</span>: bold;
+
+            <span class="hljs-attribute">background</span>: black;
+            <span class="hljs-attribute">color</span>: white;
+        }
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:link</span>,
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span>,
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:active</span>,
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:visited</span> {
+            <span class="hljs-attribute">text-decoration</span>: none;
+            <span class="hljs-attribute">color</span>: white;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#gray&quot;</span>&gt;</span>&#x7070;&#x8272;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#green&quot;</span>&gt;</span>&#x7EFF;&#x8272;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>&#x767D;&#x8272;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;window.history.go(-1)&quot;</span>&gt;</span>&#x8FD4;&#x56DE;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;./index.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-comment">/* index.js */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseRouter</span> </span>{
+    <span class="hljs-keyword">constructor</span>() {
+        <span class="hljs-keyword">this</span>.routes = {};
+        <span class="hljs-comment">/* &#x6539;&#x53D8; this &#x6307;&#x5411; */</span>
+        <span class="hljs-keyword">const</span> refresh = <span class="hljs-keyword">this</span>.refresh.bind(<span class="hljs-keyword">this</span>);
+        <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&apos;load&apos;</span>, refresh);
+        <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&apos;hashchange&apos;</span>, refresh);
+    }
+    route(path, callback) {
+        <span class="hljs-keyword">if</span> (!callback) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;callback is required!&apos;</span>);
+        }
+        <span class="hljs-keyword">this</span>.routes[path] = callback;
+    }
+    refresh() {
+        <span class="hljs-keyword">const</span> path = <span class="hljs-string">`/<span class="hljs-subst">${location.hash.slice(1) || &apos;&apos;}</span>`</span>;
+        <span class="hljs-keyword">this</span>.routes[path]();
+    }
+}
+
+<span class="hljs-keyword">const</span> body = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;body&apos;</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">changeBgColor</span>(<span class="hljs-params">color</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        body.style.backgroundColor = color;
+    }
+}
+<span class="hljs-keyword">const</span> Router = <span class="hljs-keyword">new</span> BaseRouter();
+Router.route(<span class="hljs-string">&apos;/&apos;</span>, changeBgColor(<span class="hljs-string">&apos;white&apos;</span>));
+Router.route(<span class="hljs-string">&apos;/green&apos;</span>, changeBgColor(<span class="hljs-string">&apos;green&apos;</span>));
+Router.route(<span class="hljs-string">&apos;/gray&apos;</span>, changeBgColor(<span class="hljs-string">&apos;gray&apos;</span>));
+</code></pre>
+<h3 id="history">History</h3>
+<p>hash &#x6709;&#x4E2A; # &#x7B26;&#x53F7;, &#x4E0D;&#x7F8E;&#x89C2;, &#x670D;&#x52A1;&#x7AEF;&#x65E0;&#x6CD5;&#x63A5;&#x6536;&#x5230; hash &#x8DEF;&#x5F84;&#x548C;&#x53C2;&#x6570;</p>
+<p>html5 history</p>
+<pre><code class="lang-js"><span class="hljs-built_in">window</span>.history.back(); <span class="hljs-comment">// &#x540E;&#x9000;</span>
+<span class="hljs-built_in">window</span>.history.forward(); <span class="hljs-comment">// &#x524D;&#x8FDB;</span>
+<span class="hljs-built_in">window</span>.history.go(<span class="hljs-number">-3</span>); <span class="hljs-comment">// &#x63A5;&#x6536; number &#x53C2;&#x6570;, &#x540E;&#x9000;&#x4E09;&#x4E2A;&#x9875;&#x9762;</span>
+<span class="hljs-built_in">window</span>.history.pushState(<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, path);
+<span class="hljs-built_in">window</span>.history.replaceState(<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, path);
+</code></pre>
+<h4 id="pushstatereplacestate-&#x7684;&#x53C2;&#x6570;">pushState/replaceState &#x7684;&#x53C2;&#x6570;</h4>
+<ol>
+<li><p>state, &#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;, &#x662F;&#x4E00;&#x4E2A;&#x4E0E;&#x6307;&#x5B9A;&#x7F51;&#x5740;&#x76F8;&#x5173;&#x7684;&#x5BF9;&#x8C61;, &#x5F53; popstate &#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x7684;&#x65F6;&#x5019;, &#x8BE5;&#x5BF9;&#x8C61;&#x4F1A;&#x4F20;&#x5165;&#x56DE;&#x8C03;&#x51FD;&#x6570;</p>
+</li>
+<li><p>title, &#x65B0;&#x9875;&#x9762;&#x7684;&#x6807;&#x9898;, &#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;&#x4E0D;&#x4E00;, null</p>
+</li>
+<li><p>url, &#x9875;&#x9762;&#x7684;&#x65B0;&#x5730;&#x5740;</p>
+</li>
+</ol>
+<p>pushState, &#x9875;&#x9762;&#x7684;&#x6D4F;&#x89C8;&#x8BB0;&#x5F55;&#x91CC;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5386;&#x53F2;&#x8BB0;&#x5F55;</p>
+<p>replaceState, &#x66FF;&#x6362;&#x5F53;&#x524D;&#x5386;&#x53F2;&#x8BB0;&#x5F55;</p>
+<h4 id="history-&#x7684;&#x7279;&#x6027;">History &#x7684;&#x7279;&#x6027;</h4>
+<ol>
+<li><p>&#x6CA1;&#x6709; #</p>
+</li>
+<li><p>pushState/replaceState &#x5E76;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;popstate&#x4E8B;&#x4EF6;, &#x8FD9;&#x65F6;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x624B;&#x52A8;&#x89E6;&#x53D1;&#x9875;&#x9762;&#x7684;&#x91CD;&#x65B0;&#x6E32;&#x67D3;.</p>
+</li>
+<li><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; popstate&#x6765;&#x76D1;&#x542C; url &#x7684;&#x53D8;&#x5316;.</p>
+</li>
+<li><p>popstate &#x5230;&#x5E95;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x624D;&#x80FD;&#x89E6;&#x53D1;.</p>
+<p>4.1 &#x70B9;&#x51FB;&#x6D4F;&#x89C8;&#x5668;&#x540E;&#x9000;&#x6309;&#x94AE;</p>
+<p>4.2 &#x70B9;&#x51FB;&#x6D4F;&#x89C8;&#x5668;&#x524D;&#x8FDB;&#x6309;&#x94AE;</p>
+<p>4.3 js &#x8C03;&#x7528; forward &#x65B9;&#x6CD5;</p>
+<p>4.4 js &#x8C03;&#x7528; back &#x65B9;&#x6CD5;</p>
+<p>4.5 js &#x8C03;&#x7528; go &#x65B9;&#x6CD5;</p>
+</li>
+</ol>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- index.html --&gt;</span>
+<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-class">.container</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
+            <span class="hljs-attribute">display</span>: flex;
+            <span class="hljs-attribute">justify-content</span>: space-around;
+            <span class="hljs-attribute">align-items</span>: center;
+
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
+            <span class="hljs-attribute">font-weight</span>: bold;
+
+            <span class="hljs-attribute">background</span>: black;
+            <span class="hljs-attribute">color</span>: white;
+        }
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:link</span>,
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span>,
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:active</span>,
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:visited</span> {
+            <span class="hljs-attribute">text-decoration</span>: none;
+            <span class="hljs-attribute">color</span>: white;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/gray&quot;</span>&gt;</span>&#x7070;&#x8272;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/green&quot;</span>&gt;</span>&#x7EFF;&#x8272;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>&#x767D;&#x8272;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;window.history.go(-1)&quot;</span>&gt;</span>&#x8FD4;&#x56DE;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;./index-history.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-comment">/* index-history.js */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseRouter</span> </span>{
+    <span class="hljs-keyword">constructor</span>() {
+        <span class="hljs-keyword">this</span>.routes = {};
+        <span class="hljs-keyword">this</span>.go(location.pathname);
+        <span class="hljs-keyword">this</span>._bindPopState();
+    }
+
+    route(path, callback) {
+        <span class="hljs-keyword">if</span> (!callback) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;callback is required!&apos;</span>);
+        }
+        <span class="hljs-keyword">this</span>.routes[path] = callback;
+    }
+
+    go(path) {
+        <span class="hljs-comment">// &#x8DF3;&#x8F6C;&#x5E76;&#x6267;&#x884C;&#x5BF9;&#x5E94;&#x7684; callback</span>
+        <span class="hljs-built_in">window</span>.history.pushState({
+            path
+        }, <span class="hljs-literal">null</span>, path);
+        <span class="hljs-keyword">const</span> cb = <span class="hljs-keyword">this</span>.routes[path];
+        cb &amp;&amp; cb();
+    }
+
+    _bindPopState() {
+        <span class="hljs-comment">// &#x6F14;&#x793A;&#x4E00;&#x4E2A; popstate&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x540E;, &#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;</span>
+        <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&apos;popstate&apos;</span>, e =&gt; {
+            <span class="hljs-keyword">const</span> path = e.state &amp;&amp; e.state.path;
+            <span class="hljs-keyword">const</span> cb = <span class="hljs-keyword">this</span>.routes[path];
+            cb &amp;&amp; cb();
+        });
+    }
+}
+
+<span class="hljs-keyword">const</span> Router = <span class="hljs-keyword">new</span> BaseRouter();
+
+<span class="hljs-keyword">const</span> body = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;body&apos;</span>);
+<span class="hljs-keyword">const</span> container = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;.container&apos;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">changeBgColor</span>(<span class="hljs-params">color</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        body.style.backgroundColor = color;
+    }
+}
+
+Router.route(<span class="hljs-string">&apos;/&apos;</span>, changeBgColor(<span class="hljs-string">&apos;white&apos;</span>));
+Router.route(<span class="hljs-string">&apos;/green&apos;</span>, changeBgColor(<span class="hljs-string">&apos;green&apos;</span>));
+Router.route(<span class="hljs-string">&apos;/gray&apos;</span>, changeBgColor(<span class="hljs-string">&apos;gray&apos;</span>));
+
+container.addEventListener(<span class="hljs-string">&apos;click&apos;</span>, e =&gt; {
+    <span class="hljs-keyword">if</span> (e.target.tagName === <span class="hljs-string">&apos;A&apos;</span>) {
+        e.preventDefault();
+        Router.go(e.target.getAttribute(<span class="hljs-string">&apos;href&apos;</span>));
+    }
+});
+</code></pre>
+<h3 id="hash-&#x548C;-history">Hash &#x548C; History</h3>
+<ol>
+<li><p>hash &#x6709; #, history &#x6CA1;&#x6709;</p>
+</li>
+<li><p>hash &#x7684; # &#x90E8;&#x5206;&#x5185;&#x5BB9;&#x4E0D;&#x4F1A;&#x7ED9;&#x670D;&#x52A1;&#x7AEF;, history &#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x90FD;&#x4F1A;&#x7ED9;&#x670D;&#x52A1;&#x7AEF;</p>
+</li>
+<li><p>hash &#x901A;&#x8FC7; hashchange &#x76D1;&#x542C;&#x53D8;&#x5316;, history &#x901A;&#x8FC7; popstate &#x76D1;&#x542C;&#x53D8;&#x5316;</p>
+</li>
+</ol>
+<h2 id="vuejs-router-&#x4F7F;&#x7528;&#x8BE6;&#x89E3;">vue.js router &#x4F7F;&#x7528;&#x8BE6;&#x89E3;</h2>
+<p>vue-cli &#x65B0;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A; vue &#x9879;&#x76EE;, ts</p>
+<h3 id="&#x5BFC;&#x822A;&#x5B88;&#x536B;&#x6267;&#x884C;&#x987A;&#x5E8F;">&#x5BFC;&#x822A;&#x5B88;&#x536B;&#x6267;&#x884C;&#x987A;&#x5E8F;</h3>
+<ol>
+<li><p>&#x300C;&#x7EC4;&#x4EF6;&#x300D;&#x524D;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684; beforeRouteLeave</p>
+</li>
+<li><p>&#x300C;&#x5168;&#x5C40;&#x300D;&#x7684; router.beforeEach</p>
+<p>(3) &#x300C;&#x7EC4;&#x4EF6;&#x300D;&#x5982;&#x679C;&#x662F;&#x8DEF;&#x7531;&#x53C2;&#x6570;&#x53D8;&#x5316;, &#x89E6;&#x53D1; beofreRouteUpdate</p>
+</li>
+<li><p>&#x300C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x300D;&#x91CC;&#xFF0C; &#x4E0B;&#x4E00;&#x4E2A;&#x7684; beforeEnter</p>
+</li>
+<li><p>&#x300C;&#x7EC4;&#x4EF6;&#x300D;&#x5185;&#x90E8;&#x58F0;&#x660E;&#x7684; beforeRouteEnter</p>
+</li>
+<li><p>&#x300C;&#x5168;&#x5C40;&#x300D;&#x7684; router.afterEach</p>
+</li>
+</ol>
+<p>vue-router &#x91CC;&#x9762;, &#x600E;&#x4E48;&#x8BB0;&#x4F4F;&#x524D;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x6EDA;&#x52A8;&#x6761;&#x7684;&#x4F4D;&#x7F6E;.</p>
+<blockquote>
+<p>&#x6EDA;&#x52A8;&#x5230;&#x4E86; {top: 100}</p>
+<p>list -&gt; detail -&gt; list</p>
+</blockquote>
+<p>scrollBehavior &#x751F;&#x6548;&#x7684;&#x6761;&#x4EF6;</p>
+<ol>
+<li><p>&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301; history api</p>
+</li>
+<li><p>&#x9875;&#x9762;&#x95F4;&#x7684;&#x4EA4;&#x4E92;&#x662F;&#x901A;&#x8FC7; go, forward, back &#x6216;&#x8005;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x524D;&#x8FDB;&#x3001;&#x8FD4;&#x56DE;&#x6309;&#x94AE;</p>
+</li>
+</ol>
+<pre><code class="lang-js"><span class="hljs-comment">/*
+1. &#x624B;&#x52A8;&#x70B9;&#x51FB;&#x6D4F;&#x89C8;&#x5668;&#x8FD4;&#x56DE;&#x6216;&#x8005;&#x524D;&#x8FDB;&#x6309;&#x94AE;, &#x8BB0;&#x4F4F;&#x6EDA;&#x52A8;&#x6761;&#x7684;&#x4F4D;&#x7F6E;, &#x57FA;&#x4E8E; history, go, back, forward
+2. &#x901A;&#x8FC7; router-link &#x8FD4;&#x56DE;, &#x5E76;&#x4E0D;&#x4F1A;&#x8BB0;&#x4F4F;&#x6EDA;&#x52A8;&#x6761;&#x7684;&#x4F4D;&#x7F6E;
+*/</span>
+<span class="hljs-keyword">const</span> router = <span class="hljs-keyword">new</span> VueRouter({
+    mode: <span class="hljs-string">&apos;history&apos;</span>,
+    base: process.env.BASE_URL,
+    routes,
+    scrollBehavior: (to, <span class="hljs-keyword">from</span>, savedPosition) =&gt; {
+        <span class="hljs-built_in">console</span>.log(savedPosition); <span class="hljs-comment">// &#x4FDD;&#x5B58;&#x7684;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;</span>
+        <span class="hljs-keyword">return</span> savedPosition;
+    }
+});
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="10vue-cli详解.html" class="navigation navigation-prev " aria-label="Previous page: vue-cli详解">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="12状态管理及路由同构.html" class="navigation navigation-next " aria-label="Next page: 状态管理及路由同构">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"前端路由及异步组件","level":"1.2.9","depth":2,"next":{"title":"状态管理及路由同构","level":"1.2.10","depth":2,"path":"front/12状态管理及路由同构.md","ref":"./front/12状态管理及路由同构.md","articles":[]},"previous":{"title":"vue-cli详解","level":"1.2.8","depth":2,"path":"front/10vue-cli详解.md","ref":"./front/10vue-cli详解.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button"],"pluginsConfig":{"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"front/11前端路由及异步组件.md","mtime":"2022-05-26T12:23:46.109Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-31T08:53:45.469Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

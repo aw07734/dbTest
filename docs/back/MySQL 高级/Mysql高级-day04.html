@@ -1,0 +1,2460 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MySQL 高级04 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../03JDBC/JDBC.html" />
+    
+    
+    <link rel="prev" href="Mysql高级-day03.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../front/02模块化,浏览器内置对象,事件.html">
+            
+                <a href="../../front/02模块化,浏览器内置对象,事件.html">
+            
+                    
+                    模块化,浏览器内置对象,事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../front/03作用域,闭包,this指针.html">
+            
+                <a href="../../front/03作用域,闭包,this指针.html">
+            
+                    
+                    作用域,闭包,this指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../front/04面向对象编程,原型及原型链,继承.html">
+            
+                <a href="../../front/04面向对象编程,原型及原型链,继承.html">
+            
+                    
+                    面向对象编程,原型及原型链,继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../front/05ES6规范详解.html">
+            
+                <a href="../../front/05ES6规范详解.html">
+            
+                    
+                    ES6规范详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../front/06前端工程化.html">
+            
+                <a href="../../front/06前端工程化.html">
+            
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../front/07vue基础.html">
+            
+                <a href="../../front/07vue基础.html">
+            
+                    
+                    vue基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../front/09vue高级.html">
+            
+                <a href="../../front/09vue高级.html">
+            
+                    
+                    vue高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../front/10vue-cli详解.html">
+            
+                <a href="../../front/10vue-cli详解.html">
+            
+                    
+                    vue-cli详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../front/11前端路由及异步组件.html">
+            
+                <a href="../../front/11前端路由及异步组件.html">
+            
+                    
+                    前端路由及异步组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../../front/12状态管理及路由同构.html">
+            
+                <a href="../../front/12状态管理及路由同构.html">
+            
+                    
+                    状态管理及路由同构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../../front/13vue实战.html">
+            
+                <a href="../../front/13vue实战.html">
+            
+                    
+                    vue实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../../front/14vue组件库设计.html">
+            
+                <a href="../../front/14vue组件库设计.html">
+            
+                    
+                    vue组件库设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../../front/15vue&vuex源码解析.html">
+            
+                <a href="../../front/15vue&vuex源码解析.html">
+            
+                    
+                    vue&vuex源码解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../../front/16小程序基础.html">
+            
+                <a href="../../front/16小程序基础.html">
+            
+                    
+                    小程序基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../../front/20react基础.html">
+            
+                <a href="../../front/20react基础.html">
+            
+                    
+                    react基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../../front/21react高级.html">
+            
+                <a href="../../front/21react高级.html">
+            
+                    
+                    react高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../../front/23react状态管理redux,mobx.html">
+            
+                <a href="../../front/23react状态管理redux,mobx.html">
+            
+                    
+                    react状态管理redux,mobx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../../front/24react路由及服务端渲染同构.html">
+            
+                <a href="../../front/24react路由及服务端渲染同构.html">
+            
+                    
+                    react路由及服务端渲染同构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../../front/25react实战.html">
+            
+                <a href="../../front/25react实战.html">
+            
+                    
+                    react实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" data-path="../../front/26react组件库设计.html">
+            
+                <a href="../../front/26react组件库设计.html">
+            
+                    
+                    react组件库设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" data-path="../../front/27react源码解析.html">
+            
+                <a href="../../front/27react源码解析.html">
+            
+                    
+                    react源码解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" data-path="../../front/28nodejs基础.html">
+            
+                <a href="../../front/28nodejs基础.html">
+            
+                    
+                    nodejs基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23" data-path="../../front/29nodejs框架及实战.html">
+            
+                <a href="../../front/29nodejs框架及实战.html">
+            
+                    
+                    nodejs框架及实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24" data-path="../../front/30nodejs原理详解.html">
+            
+                <a href="../../front/30nodejs原理详解.html">
+            
+                    
+                    nodejs原理详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25" data-path="../../front/31nodejs HTTP.html">
+            
+                <a href="../../front/31nodejs HTTP.html">
+            
+                    
+                    nodejs HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.26" data-path="../../front/32nodejs实战cli&爬虫.html">
+            
+                <a href="../../front/32nodejs实战cli&爬虫.html">
+            
+                    
+                    nodejs实战cli&爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27" data-path="../../front/33现代Hybrid开发与原理解析.html">
+            
+                <a href="../../front/33现代Hybrid开发与原理解析.html">
+            
+                    
+                    现代Hybrid开发与原理解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.28" data-path="../../front/34react native入门.html">
+            
+                <a href="../../front/34react native入门.html">
+            
+                    
+                    react native入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.29" data-path="../../front/35electron入门与原理介绍.html">
+            
+                <a href="../../front/35electron入门与原理介绍.html">
+            
+                    
+                    electron入门与原理介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.30" data-path="../../front/36RN 项目实战.html">
+            
+                <a href="../../front/36RN 项目实战.html">
+            
+                    
+                    RN 项目实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.31" data-path="../../front/37Flutter入门.html">
+            
+                <a href="../../front/37Flutter入门.html">
+            
+                    
+                    Flutter入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.32" data-path="../../front/39AST必知必会.html">
+            
+                <a href="../../front/39AST必知必会.html">
+            
+                    
+                    AST必知必会
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.33" data-path="../../front/40Flutter实战.html">
+            
+                <a href="../../front/40Flutter实战.html">
+            
+                    
+                    Flutter实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.34" data-path="../../front/41排序算法.html">
+            
+                <a href="../../front/41排序算法.html">
+            
+                    
+                    排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.35" data-path="../../front/42复杂算法详解.html">
+            
+                <a href="../../front/42复杂算法详解.html">
+            
+                    
+                    复杂算法详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.36" data-path="../../front/43树和图类算法.html">
+            
+                <a href="../../front/43树和图类算法.html">
+            
+                    
+                    树和图类算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.37" data-path="../../front/44常见JS设计模式解析.html">
+            
+                <a href="../../front/44常见JS设计模式解析.html">
+            
+                    
+                    常见JS设计模式解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.38" data-path="../../front/45设计模式实战.html">
+            
+                <a href="../../front/45设计模式实战.html">
+            
+                    
+                    设计模式实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.39" data-path="../../front/46JS常见开发优化总结.html">
+            
+                <a href="../../front/46JS常见开发优化总结.html">
+            
+                    
+                    JS常见开发优化总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.40" data-path="../../front/47大厂常见问题解决方案.html">
+            
+                <a href="../../front/47大厂常见问题解决方案.html">
+            
+                    
+                    大厂常见问题解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.41" data-path="../../front/48浏览器原理.html">
+            
+                <a href="../../front/48浏览器原理.html">
+            
+                    
+                    浏览器原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.42" data-path="../../front/49,50webpack前端打包工具.html">
+            
+                <a href="../../front/49,50webpack前端打包工具.html">
+            
+                    
+                    webpack前端打包工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    后端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../bxd_Java基础/01/bxd_Java基础01.html">
+            
+                <a href="../bxd_Java基础/01/bxd_Java基础01.html">
+            
+                    
+                    bxd_Java 基础 01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../bxd_Java基础/02/bxd_Java基础02.html">
+            
+                <a href="../bxd_Java基础/02/bxd_Java基础02.html">
+            
+                    
+                    bxd_Java 基础 02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../01基础加强/基础加强.html">
+            
+                <a href="../01基础加强/基础加强.html">
+            
+                    
+                    基础加强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <span>
+            
+                    
+                    MySQL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../02MySQL/MySQL.html">
+            
+                <a href="../02MySQL/MySQL.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../07MySQL加强/MySQL基础加强.html">
+            
+                <a href="../07MySQL加强/MySQL基础加强.html">
+            
+                    
+                    MySQL 加强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../MySQL性能优化/MySQL性能优化.html">
+            
+                <a href="../MySQL性能优化/MySQL性能优化.html">
+            
+                    
+                    MySQL 性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="Mysql高级-day01.html">
+            
+                <a href="Mysql高级-day01.html">
+            
+                    
+                    MySQL 高级01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="Mysql高级-day02.html">
+            
+                <a href="Mysql高级-day02.html">
+            
+                    
+                    MySQL 高级02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="Mysql高级-day03.html">
+            
+                <a href="Mysql高级-day03.html">
+            
+                    
+                    MySQL 高级03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4.7" data-path="Mysql高级-day04.html">
+            
+                <a href="Mysql高级-day04.html">
+            
+                    
+                    MySQL 高级04
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../03JDBC/JDBC.html">
+            
+                <a href="../03JDBC/JDBC.html">
+            
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../04JavaWeb/JavaWeb.html">
+            
+                <a href="../04JavaWeb/JavaWeb.html">
+            
+                    
+                    JavaWeb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../05Struts2/Struts2.html">
+            
+                <a href="../05Struts2/Struts2.html">
+            
+                    
+                    Struct2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../08Hibernate/Hibernate.html">
+            
+                <a href="../08Hibernate/Hibernate.html">
+            
+                    
+                    Hibernate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../09Spring/Spring.html">
+            
+                <a href="../09Spring/Spring.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../11JavaScript-Ajax-jQuery/JavaScript-Ajax-jQuery.html">
+            
+                <a href="../11JavaScript-Ajax-jQuery/JavaScript-Ajax-jQuery.html">
+            
+                    
+                    JavaScript-Ajax-jQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../12UML_Maven/UML_Maven.html">
+            
+                <a href="../12UML_Maven/UML_Maven.html">
+            
+                    
+                    UML_Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../13WMS/WMS.html">
+            
+                <a href="../13WMS/WMS.html">
+            
+                    
+                    WMS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../14JS加强/JS加强.html">
+            
+                <a href="../14JS加强/JS加强.html">
+            
+                    
+                    JS 加强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../15EasyUI/EasyUI.html">
+            
+                <a href="../15EasyUI/EasyUI.html">
+            
+                    
+                    EasyUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../16SpringMVC/SpringMVC.html">
+            
+                <a href="../16SpringMVC/SpringMVC.html">
+            
+                    
+                    SpringMVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../17MyBatis/MyBatis.html">
+            
+                <a href="../17MyBatis/MyBatis.html">
+            
+                    
+                    MyBatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../19CRM/CRM.html">
+            
+                <a href="../19CRM/CRM.html">
+            
+                    
+                    CRM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../20Lucene/Lucene.html">
+            
+                <a href="../20Lucene/Lucene.html">
+            
+                    
+                    Lucene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="../redis/redis.html">
+            
+                <a href="../redis/redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="../Docker/Docker基础篇之快速上手.html">
+            
+                <a href="../Docker/Docker基础篇之快速上手.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="../nginx/Nginx.html">
+            
+                <a href="../nginx/Nginx.html">
+            
+                    
+                    Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="../other/Gradle.html">
+            
+                <a href="../other/Gradle.html">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="../other/Shiro.html">
+            
+                <a href="../other/Shiro.html">
+            
+                    
+                    Shiro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="../other/SpringSecurity.html">
+            
+                <a href="../other/SpringSecurity.html">
+            
+                    
+                    SpringSecurity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >MySQL 高级04</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mysql&#x9AD8;&#x7EA7;-day04">Mysql&#x9AD8;&#x7EA7;-day04</h1>
+<h3 id="1-mysql&#x4E2D;&#x5E38;&#x7528;&#x5DE5;&#x5177;">1. MySql&#x4E2D;&#x5E38;&#x7528;&#x5DE5;&#x5177;</h3>
+<h4 id="11-mysql">1.1 mysql</h4>
+<p>&#x8BE5;mysql&#x4E0D;&#x662F;&#x6307;mysql&#x670D;&#x52A1;&#xFF0C;&#x800C;&#x662F;&#x6307;mysql&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x5DE5;&#x5177;&#x3002;</p>
+<p>&#x8BED;&#x6CD5; &#xFF1A;</p>
+<pre><code>mysql [options] [database]
+</code></pre><h5 id="111-&#x8FDE;&#x63A5;&#x9009;&#x9879;">1.1.1 &#x8FDE;&#x63A5;&#x9009;&#x9879;</h5>
+<pre><code>&#x53C2;&#x6570; &#xFF1A; 
+    -u, --user=name            &#x6307;&#x5B9A;&#x7528;&#x6237;&#x540D;
+    -p, --password[=name]    &#x6307;&#x5B9A;&#x5BC6;&#x7801;
+    -h, --host=name            &#x6307;&#x5B9A;&#x670D;&#x52A1;&#x5668;IP&#x6216;&#x57DF;&#x540D;
+    -P, --port=#            &#x6307;&#x5B9A;&#x8FDE;&#x63A5;&#x7AEF;&#x53E3;
+
+&#x793A;&#x4F8B; &#xFF1A;
+    mysql -h 127.0.0.1 -P 3306 -u root -p
+
+    mysql -h127.0.0.1 -P3306 -uroot -p2143
+</code></pre><h5 id="112-&#x6267;&#x884C;&#x9009;&#x9879;">1.1.2 &#x6267;&#x884C;&#x9009;&#x9879;</h5>
+<pre><code>-e, --execute=name        &#x6267;&#x884C;SQL&#x8BED;&#x53E5;&#x5E76;&#x9000;&#x51FA;
+</code></pre><p>&#x6B64;&#x9009;&#x9879;&#x53EF;&#x4EE5;&#x5728;Mysql&#x5BA2;&#x6237;&#x7AEF;&#x6267;&#x884C;SQL&#x8BED;&#x53E5;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x8FDE;&#x63A5;&#x5230;MySQL&#x6570;&#x636E;&#x5E93;&#x518D;&#x6267;&#x884C;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E00;&#x4E9B;&#x6279;&#x5904;&#x7406;&#x811A;&#x672C;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x5C24;&#x5176;&#x65B9;&#x4FBF;&#x3002;</p>
+<pre><code>&#x793A;&#x4F8B;&#xFF1A;
+    mysql -uroot -p2143 db01 -e &quot;select * from tb_book&quot;;
+</code></pre><p><img src="assets/1555325632715.png" alt="1555325632715"> </p>
+<h4 id="12-mysqladmin">1.2 mysqladmin</h4>
+<p>mysqladmin &#x662F;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x7BA1;&#x7406;&#x64CD;&#x4F5C;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x7A0B;&#x5E8F;&#x3002;&#x53EF;&#x4EE5;&#x7528;&#x5B83;&#x6765;&#x68C0;&#x67E5;&#x670D;&#x52A1;&#x5668;&#x7684;&#x914D;&#x7F6E;&#x548C;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x3001;&#x521B;&#x5EFA;&#x5E76;&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#x7B49;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; &#xFF1A; mysqladmin --help  &#x6307;&#x4EE4;&#x67E5;&#x770B;&#x5E2E;&#x52A9;&#x6587;&#x6863;</p>
+<p><img src="assets/1555326108697.png" alt="1555326108697"> </p>
+<pre><code>&#x793A;&#x4F8B; &#xFF1A;
+    mysqladmin -uroot -p2143 create &apos;test01&apos;;  
+    mysqladmin -uroot -p2143 drop &apos;test01&apos;;
+    mysqladmin -uroot -p2143 version;
+</code></pre><h4 id="13-mysqlbinlog">1.3 mysqlbinlog</h4>
+<p>&#x7531;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x751F;&#x6210;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x4EE5;&#x4E8C;&#x8FDB;&#x5236;&#x683C;&#x5F0F;&#x4FDD;&#x5B58;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x60F3;&#x8981;&#x68C0;&#x67E5;&#x8FD9;&#x4E9B;&#x6587;&#x672C;&#x7684;&#x6587;&#x672C;&#x683C;&#x5F0F;&#xFF0C;&#x5C31;&#x4F1A;&#x4F7F;&#x7528;&#x5230;mysqlbinlog &#x65E5;&#x5FD7;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x3002;</p>
+<p>&#x8BED;&#x6CD5; &#xFF1A;</p>
+<pre><code>mysqlbinlog [options]  log-files1 log-files2 ...
+
+&#x9009;&#x9879;&#xFF1A;
+
+    -d, --database=name : &#x6307;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x540D;&#x79F0;&#xFF0C;&#x53EA;&#x5217;&#x51FA;&#x6307;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x5E93;&#x76F8;&#x5173;&#x64CD;&#x4F5C;&#x3002;
+
+    -o, --offset=# : &#x5FFD;&#x7565;&#x6389;&#x65E5;&#x5FD7;&#x4E2D;&#x7684;&#x524D;n&#x884C;&#x547D;&#x4EE4;&#x3002;
+
+    -r,--result-file=name : &#x5C06;&#x8F93;&#x51FA;&#x7684;&#x6587;&#x672C;&#x683C;&#x5F0F;&#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#x5230;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x3002;
+
+    -s, --short-form : &#x663E;&#x793A;&#x7B80;&#x5355;&#x683C;&#x5F0F;&#xFF0C; &#x7701;&#x7565;&#x6389;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#x3002;
+
+    --start-datatime=date1  --stop-datetime=date2 : &#x6307;&#x5B9A;&#x65E5;&#x671F;&#x95F4;&#x9694;&#x5185;&#x7684;&#x6240;&#x6709;&#x65E5;&#x5FD7;&#x3002;
+
+    --start-position=pos1 --stop-position=pos2 : &#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x95F4;&#x9694;&#x5185;&#x7684;&#x6240;&#x6709;&#x65E5;&#x5FD7;&#x3002;
+</code></pre><h4 id="14-mysqldump">1.4 mysqldump</h4>
+<p>mysqldump &#x5BA2;&#x6237;&#x7AEF;&#x5DE5;&#x5177;&#x7528;&#x6765;&#x5907;&#x4EFD;&#x6570;&#x636E;&#x5E93;&#x6216;&#x5728;&#x4E0D;&#x540C;&#x6570;&#x636E;&#x5E93;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x8FC1;&#x79FB;&#x3002;&#x5907;&#x4EFD;&#x5185;&#x5BB9;&#x5305;&#x542B;&#x521B;&#x5EFA;&#x8868;&#xFF0C;&#x53CA;&#x63D2;&#x5165;&#x8868;&#x7684;SQL&#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x8BED;&#x6CD5; &#xFF1A;</p>
+<pre><code>mysqldump [options] db_name [tables]
+
+mysqldump [options] --database/-B db1 [db2 db3...]
+
+mysqldump [options] --all-databases/-A
+</code></pre><h5 id="141-&#x8FDE;&#x63A5;&#x9009;&#x9879;">1.4.1 &#x8FDE;&#x63A5;&#x9009;&#x9879;</h5>
+<pre><code>&#x53C2;&#x6570; &#xFF1A; 
+    -u, --user=name            &#x6307;&#x5B9A;&#x7528;&#x6237;&#x540D;
+    -p, --password[=name]    &#x6307;&#x5B9A;&#x5BC6;&#x7801;
+    -h, --host=name            &#x6307;&#x5B9A;&#x670D;&#x52A1;&#x5668;IP&#x6216;&#x57DF;&#x540D;
+    -P, --port=#            &#x6307;&#x5B9A;&#x8FDE;&#x63A5;&#x7AEF;&#x53E3;
+</code></pre><h5 id="142-&#x8F93;&#x51FA;&#x5185;&#x5BB9;&#x9009;&#x9879;">1.4.2 &#x8F93;&#x51FA;&#x5185;&#x5BB9;&#x9009;&#x9879;</h5>
+<pre><code>&#x53C2;&#x6570;&#xFF1A;
+    --add-drop-database        &#x5728;&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x521B;&#x5EFA;&#x8BED;&#x53E5;&#x524D;&#x52A0;&#x4E0A; Drop database &#x8BED;&#x53E5;
+    --add-drop-table        &#x5728;&#x6BCF;&#x4E2A;&#x8868;&#x521B;&#x5EFA;&#x8BED;&#x53E5;&#x524D;&#x52A0;&#x4E0A; Drop table &#x8BED;&#x53E5; , &#x9ED8;&#x8BA4;&#x5F00;&#x542F; ; &#x4E0D;&#x5F00;&#x542F; (--skip-add-drop-table)
+
+    -n, --no-create-db        &#x4E0D;&#x5305;&#x542B;&#x6570;&#x636E;&#x5E93;&#x7684;&#x521B;&#x5EFA;&#x8BED;&#x53E5;
+    -t, --no-create-info    &#x4E0D;&#x5305;&#x542B;&#x6570;&#x636E;&#x8868;&#x7684;&#x521B;&#x5EFA;&#x8BED;&#x53E5;
+    -d --no-data            &#x4E0D;&#x5305;&#x542B;&#x6570;&#x636E;
+
+     -T, --tab=name            &#x81EA;&#x52A8;&#x751F;&#x6210;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#xFF1A;&#x4E00;&#x4E2A;.sql&#x6587;&#x4EF6;&#xFF0C;&#x521B;&#x5EFA;&#x8868;&#x7ED3;&#x6784;&#x7684;&#x8BED;&#x53E5;&#xFF1B;
+                             &#x4E00;&#x4E2A;.txt&#x6587;&#x4EF6;&#xFF0C;&#x6570;&#x636E;&#x6587;&#x4EF6;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;select into outfile
+</code></pre><pre><code>&#x793A;&#x4F8B; &#xFF1A; 
+    mysqldump -uroot -p2143 db01 tb_book --add-drop-database --add-drop-table &gt; a
+
+    mysqldump -uroot -p2143 -T /tmp test city
+</code></pre><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1555501806693.png" alt="1555501806693"> </p>
+<h4 id="15-mysqlimportsource">1.5 mysqlimport/source</h4>
+<p>mysqlimport &#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x6570;&#x636E;&#x5BFC;&#x5165;&#x5DE5;&#x5177;&#xFF0C;&#x7528;&#x6765;&#x5BFC;&#x5165;mysqldump &#x52A0; -T &#x53C2;&#x6570;&#x540E;&#x5BFC;&#x51FA;&#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre><code>mysqlimport [options]  db_name  textfile1  [textfile2...]
+</code></pre><p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>mysqlimport -uroot -p2143 test /tmp/city.txt
+</code></pre><p>&#x5982;&#x679C;&#x9700;&#x8981;&#x5BFC;&#x5165;sql&#x6587;&#x4EF6;,&#x53EF;&#x4EE5;&#x4F7F;&#x7528;mysql&#x4E2D;&#x7684;source &#x6307;&#x4EE4; : </p>
+<pre><code>source /root/tb_book.sql
+</code></pre><h4 id="16-mysqlshow">1.6 mysqlshow</h4>
+<p>mysqlshow &#x5BA2;&#x6237;&#x7AEF;&#x5BF9;&#x8C61;&#x67E5;&#x627E;&#x5DE5;&#x5177;&#xFF0C;&#x7528;&#x6765;&#x5F88;&#x5FEB;&#x5730;&#x67E5;&#x627E;&#x5B58;&#x5728;&#x54EA;&#x4E9B;&#x6570;&#x636E;&#x5E93;&#x3001;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x8868;&#x3001;&#x8868;&#x4E2D;&#x7684;&#x5217;&#x6216;&#x8005;&#x7D22;&#x5F15;&#x3002;</p>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre><code>mysqlshow [options] [db_name [table_name [col_name]]]
+</code></pre><p>&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code>--count        &#x663E;&#x793A;&#x6570;&#x636E;&#x5E93;&#x53CA;&#x8868;&#x7684;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#xFF08;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x8868; &#x5747;&#x53EF;&#x4EE5;&#x4E0D;&#x6307;&#x5B9A;&#xFF09;
+
+-i            &#x663E;&#x793A;&#x6307;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x6216;&#x8005;&#x6307;&#x5B9A;&#x8868;&#x7684;&#x72B6;&#x6001;&#x4FE1;&#x606F;
+</code></pre><p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>#&#x67E5;&#x8BE2;&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8868;&#x7684;&#x6570;&#x91CF;&#x53CA;&#x8868;&#x4E2D;&#x8BB0;&#x5F55;&#x7684;&#x6570;&#x91CF;
+mysqlshow -uroot -p2143 --count
+
+#&#x67E5;&#x8BE2;test&#x5E93;&#x4E2D;&#x6BCF;&#x4E2A;&#x8868;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x4E66;&#xFF0C;&#x53CA;&#x884C;&#x6570;
+mysqlshow -uroot -p2143 test --count
+
+#&#x67E5;&#x8BE2;test&#x5E93;&#x4E2D;book&#x8868;&#x7684;&#x8BE6;&#x7EC6;&#x60C5;&#x51B5;
+mysqlshow -uroot -p2143 test book --count
+</code></pre><h3 id="2-mysql-&#x65E5;&#x5FD7;">2. Mysql &#x65E5;&#x5FD7;</h3>
+<p>&#x5728;&#x4EFB;&#x4F55;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x90FD;&#x4F1A;&#x6709;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x65E5;&#x5FD7;&#xFF0C;&#x8BB0;&#x5F55;&#x7740;&#x6570;&#x636E;&#x5E93;&#x5DE5;&#x4F5C;&#x7684;&#x65B9;&#x65B9;&#x9762;&#x9762;&#xFF0C;&#x4EE5;&#x5E2E;&#x52A9;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x5458;&#x8FFD;&#x8E2A;&#x6570;&#x636E;&#x5E93;&#x66FE;&#x7ECF;&#x53D1;&#x751F;&#x8FC7;&#x7684;&#x5404;&#x79CD;&#x4E8B;&#x4EF6;&#x3002;MySQL &#x4E5F;&#x4E0D;&#x4F8B;&#x5916;&#xFF0C;&#x5728; MySQL &#x4E2D;&#xFF0C;&#x6709; 4 &#x79CD;&#x4E0D;&#x540C;&#x7684;&#x65E5;&#x5FD7;&#xFF0C;&#x5206;&#x522B;&#x662F;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;&#x3001;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#xFF08;BINLOG &#x65E5;&#x5FD7;&#xFF09;&#x3001;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x548C;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#xFF0C;&#x8FD9;&#x4E9B;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x7740;&#x6570;&#x636E;&#x5E93;&#x5728;&#x4E0D;&#x540C;&#x65B9;&#x9762;&#x7684;&#x8E2A;&#x8FF9;&#x3002;</p>
+<h4 id="21-&#x9519;&#x8BEF;&#x65E5;&#x5FD7;">2.1 &#x9519;&#x8BEF;&#x65E5;&#x5FD7;</h4>
+<p>&#x9519;&#x8BEF;&#x65E5;&#x5FD7;&#x662F; MySQL &#x4E2D;&#x6700;&#x91CD;&#x8981;&#x7684;&#x65E5;&#x5FD7;&#x4E4B;&#x4E00;&#xFF0C;&#x5B83;&#x8BB0;&#x5F55;&#x4E86;&#x5F53; mysqld &#x542F;&#x52A8;&#x548C;&#x505C;&#x6B62;&#x65F6;&#xFF0C;&#x4EE5;&#x53CA;&#x670D;&#x52A1;&#x5668;&#x5728;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x53D1;&#x751F;&#x4EFB;&#x4F55;&#x4E25;&#x91CD;&#x9519;&#x8BEF;&#x65F6;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;&#x5F53;&#x6570;&#x636E;&#x5E93;&#x51FA;&#x73B0;&#x4EFB;&#x4F55;&#x6545;&#x969C;&#x5BFC;&#x81F4;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x9996;&#x5148;&#x67E5;&#x770B;&#x6B64;&#x65E5;&#x5FD7;&#x3002;</p>
+<p>&#x8BE5;&#x65E5;&#x5FD7;&#x662F;&#x9ED8;&#x8BA4;&#x5F00;&#x542F;&#x7684; &#xFF0C; &#x9ED8;&#x8BA4;&#x5B58;&#x653E;&#x76EE;&#x5F55;&#x4E3A; mysql &#x7684;&#x6570;&#x636E;&#x76EE;&#x5F55;&#xFF08;var/lib/mysql&#xFF09;, &#x9ED8;&#x8BA4;&#x7684;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x540D;&#x4E3A;  hostname.err&#xFF08;hostname&#x662F;&#x4E3B;&#x673A;&#x540D;&#xFF09;&#x3002;</p>
+<p>&#x67E5;&#x770B;&#x65E5;&#x5FD7;&#x4F4D;&#x7F6E;&#x6307;&#x4EE4; &#xFF1A; </p>
+<pre><code class="lang-sql"><span class="hljs-keyword">show</span> <span class="hljs-keyword">variables</span> <span class="hljs-keyword">like</span> <span class="hljs-string">&apos;log_error%&apos;</span>;
+</code></pre>
+<p><img src="assets/1553993244446.png" alt="1553993244446"> </p>
+<p>&#x67E5;&#x770B;&#x65E5;&#x5FD7;&#x5185;&#x5BB9; &#xFF1A; </p>
+<pre><code class="lang-shell">tail -f /var/lib/mysql/xaxh-server.err
+</code></pre>
+<p><img src="assets/1553993537874.png" alt="1553993537874"> </p>
+<h4 id="22-&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;">2.2 &#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;</h4>
+<h5 id="221&#x6982;&#x8FF0;">2.2.1&#x6982;&#x8FF0;</h5>
+<p>&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#xFF08;BINLOG&#xFF09;&#x8BB0;&#x5F55;&#x4E86;&#x6240;&#x6709;&#x7684; DDL&#xFF08;&#x6570;&#x636E;&#x5B9A;&#x4E49;&#x8BED;&#x8A00;&#xFF09;&#x8BED;&#x53E5;&#x548C; DML&#xFF08;&#x6570;&#x636E;&#x64CD;&#x7EB5;&#x8BED;&#x8A00;&#xFF09;&#x8BED;&#x53E5;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x5305;&#x62EC;&#x6570;&#x636E;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x3002;&#x6B64;&#x65E5;&#x5FD7;&#x5BF9;&#x4E8E;&#x707E;&#x96BE;&#x65F6;&#x7684;&#x6570;&#x636E;&#x6062;&#x590D;&#x8D77;&#x7740;&#x6781;&#x5176;&#x91CD;&#x8981;&#x7684;&#x4F5C;&#x7528;&#xFF0C;MySQL&#x7684;&#x4E3B;&#x4ECE;&#x590D;&#x5236;&#xFF0C; &#x5C31;&#x662F;&#x901A;&#x8FC7;&#x8BE5;binlog&#x5B9E;&#x73B0;&#x7684;&#x3002;</p>
+<p>&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x662F;&#x6CA1;&#x6709;&#x5F00;&#x542F;&#x7684;&#xFF0C;&#x9700;&#x8981;&#x5230;MySQL&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x5F00;&#x542F;&#xFF0C;&#x5E76;&#x914D;&#x7F6E;MySQL&#x65E5;&#x5FD7;&#x7684;&#x683C;&#x5F0F;&#x3002; </p>
+<p>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E; : /usr/my.cnf</p>
+<p>&#x65E5;&#x5FD7;&#x5B58;&#x653E;&#x4F4D;&#x7F6E; : &#x914D;&#x7F6E;&#x65F6;&#xFF0C;&#x7ED9;&#x5B9A;&#x4E86;&#x6587;&#x4EF6;&#x540D;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#xFF0C;&#x65E5;&#x5FD7;&#x9ED8;&#x8BA4;&#x5199;&#x5165;Mysql&#x7684;&#x6570;&#x636E;&#x76EE;&#x5F55;&#x3002;</p>
+<pre><code>#&#x914D;&#x7F6E;&#x5F00;&#x542F;binlog&#x65E5;&#x5FD7;&#xFF0C; &#x65E5;&#x5FD7;&#x7684;&#x6587;&#x4EF6;&#x524D;&#x7F00;&#x4E3A; mysqlbin -----&gt; &#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x5982; : mysqlbin.000001,mysqlbin.000002
+log_bin=mysqlbin
+
+#&#x914D;&#x7F6E;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x7684;&#x683C;&#x5F0F;
+binlog_format=STATEMENT
+</code></pre><h5 id="222-&#x65E5;&#x5FD7;&#x683C;&#x5F0F;">2.2.2 &#x65E5;&#x5FD7;&#x683C;&#x5F0F;</h5>
+<p><strong>STATEMENT</strong></p>
+<p>&#x8BE5;&#x65E5;&#x5FD7;&#x683C;&#x5F0F;&#x5728;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x4E2D;&#x8BB0;&#x5F55;&#x7684;&#x90FD;&#x662F;SQL&#x8BED;&#x53E5;&#xFF08;statement&#xFF09;&#xFF0C;&#x6BCF;&#x4E00;&#x6761;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x7684;SQL&#x90FD;&#x4F1A;&#x8BB0;&#x5F55;&#x5728;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;Mysql&#x63D0;&#x4F9B;&#x7684;mysqlbinlog&#x5DE5;&#x5177;&#xFF0C;&#x53EF;&#x4EE5;&#x6E05;&#x6670;&#x7684;&#x67E5;&#x770B;&#x5230;&#x6BCF;&#x6761;&#x8BED;&#x53E5;&#x7684;&#x6587;&#x672C;&#x3002;&#x4E3B;&#x4ECE;&#x590D;&#x5236;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4ECE;&#x5E93;&#xFF08;slave&#xFF09;&#x4F1A;&#x5C06;&#x65E5;&#x5FD7;&#x89E3;&#x6790;&#x4E3A;&#x539F;&#x6587;&#x672C;&#xFF0C;&#x5E76;&#x5728;&#x4ECE;&#x5E93;&#x91CD;&#x65B0;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x3002;</p>
+<p><strong>ROW</strong></p>
+<p>&#x8BE5;&#x65E5;&#x5FD7;&#x683C;&#x5F0F;&#x5728;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x4E2D;&#x8BB0;&#x5F55;&#x7684;&#x662F;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x6570;&#x636E;&#x53D8;&#x66F4;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x8BB0;&#x5F55;SQL&#x8BED;&#x53E5;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x6267;&#x884C;SQL&#x8BED;&#x53E5; &#xFF1A; update tb_book set status=&apos;1&apos; , &#x5982;&#x679C;&#x662F;STATEMENT &#x65E5;&#x5FD7;&#x683C;&#x5F0F;&#xFF0C;&#x5728;&#x65E5;&#x5FD7;&#x4E2D;&#x4F1A;&#x8BB0;&#x5F55;&#x4E00;&#x884C;SQL&#x6587;&#x4EF6;&#xFF1B; &#x5982;&#x679C;&#x662F;ROW&#xFF0C;&#x7531;&#x4E8E;&#x662F;&#x5BF9;&#x5168;&#x8868;&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6BCF;&#x4E00;&#x884C;&#x8BB0;&#x5F55;&#x90FD;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x66F4;&#xFF0C;ROW &#x683C;&#x5F0F;&#x7684;&#x65E5;&#x5FD7;&#x4E2D;&#x4F1A;&#x8BB0;&#x5F55;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x6570;&#x636E;&#x53D8;&#x66F4;&#x3002;</p>
+<p><strong>MIXED</strong></p>
+<p>&#x8FD9;&#x662F;&#x76EE;&#x524D;MySQL&#x9ED8;&#x8BA4;&#x7684;&#x65E5;&#x5FD7;&#x683C;&#x5F0F;&#xFF0C;&#x5373;&#x6DF7;&#x5408;&#x4E86;STATEMENT &#x548C; ROW&#x4E24;&#x79CD;&#x683C;&#x5F0F;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x91C7;&#x7528;STATEMENT&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#x4E0B;&#x91C7;&#x7528;ROW&#x6765;&#x8FDB;&#x884C;&#x8BB0;&#x5F55;&#x3002;MIXED &#x683C;&#x5F0F;&#x80FD;&#x5C3D;&#x91CF;&#x5229;&#x7528;&#x4E24;&#x79CD;&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x70B9;&#xFF0C;&#x800C;&#x907F;&#x5F00;&#x4ED6;&#x4EEC;&#x7684;&#x7F3A;&#x70B9;&#x3002;</p>
+<h5 id="223-&#x65E5;&#x5FD7;&#x8BFB;&#x53D6;">2.2.3 &#x65E5;&#x5FD7;&#x8BFB;&#x53D6;</h5>
+<p>&#x7531;&#x4E8E;&#x65E5;&#x5FD7;&#x4EE5;&#x4E8C;&#x8FDB;&#x5236;&#x65B9;&#x5F0F;&#x5B58;&#x50A8;&#xFF0C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x8BFB;&#x53D6;&#xFF0C;&#x9700;&#x8981;&#x7528;mysqlbinlog&#x5DE5;&#x5177;&#x6765;&#x67E5;&#x770B;&#xFF0C;&#x8BED;&#x6CD5;&#x5982;&#x4E0B; &#xFF1A;</p>
+<pre><code>mysqlbinlog log-file&#xFF1B;
+</code></pre><p><strong>&#x67E5;&#x770B;STATEMENT&#x683C;&#x5F0F;&#x65E5;&#x5FD7;</strong> </p>
+<p>&#x6267;&#x884C;&#x63D2;&#x5165;&#x8BED;&#x53E5; &#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> tb_book <span class="hljs-keyword">values</span>(<span class="hljs-literal">null</span>,<span class="hljs-string">&apos;Lucene&apos;</span>,<span class="hljs-string">&apos;2088-05-01&apos;</span>,<span class="hljs-string">&apos;0&apos;</span>);
+</code></pre>
+<p> &#x67E5;&#x770B;&#x65E5;&#x5FD7;&#x6587;&#x4EF6; &#xFF1A;</p>
+<p><img src="assets/1554079717375.png" alt="1554079717375"> </p>
+<p>mysqlbin.index : &#x8BE5;&#x6587;&#x4EF6;&#x662F;&#x65E5;&#x5FD7;&#x7D22;&#x5F15;&#x6587;&#x4EF6; &#xFF0C; &#x8BB0;&#x5F55;&#x65E5;&#x5FD7;&#x7684;&#x6587;&#x4EF6;&#x540D;&#xFF1B;</p>
+<p>mysqlbing.000001 &#xFF1A;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;</p>
+<p>&#x67E5;&#x770B;&#x65E5;&#x5FD7;&#x5185;&#x5BB9; &#xFF1A;</p>
+<pre><code>mysqlbinlog mysqlbing.000001&#xFF1B;
+</code></pre><p><img src="assets/1554080016778.png" alt="1554080016778"> </p>
+<p><strong>&#x67E5;&#x770B;ROW&#x683C;&#x5F0F;&#x65E5;&#x5FD7;</strong></p>
+<p>&#x914D;&#x7F6E; :</p>
+<pre><code>#&#x914D;&#x7F6E;&#x5F00;&#x542F;binlog&#x65E5;&#x5FD7;&#xFF0C; &#x65E5;&#x5FD7;&#x7684;&#x6587;&#x4EF6;&#x524D;&#x7F00;&#x4E3A; mysqlbin -----&gt; &#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x5982; : mysqlbin.000001,mysqlbin.000002
+log_bin=mysqlbin
+
+#&#x914D;&#x7F6E;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x7684;&#x683C;&#x5F0F;
+binlog_format=ROW
+</code></pre><p>&#x63D2;&#x5165;&#x6570;&#x636E; :</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> tb_book <span class="hljs-keyword">values</span>(<span class="hljs-literal">null</span>,<span class="hljs-string">&apos;SpringCloud&#x5B9E;&#x6218;&apos;</span>,<span class="hljs-string">&apos;2088-05-05&apos;</span>,<span class="hljs-string">&apos;0&apos;</span>);
+</code></pre>
+<p>&#x5982;&#x679C;&#x65E5;&#x5FD7;&#x683C;&#x5F0F;&#x662F; ROW , &#x76F4;&#x63A5;&#x67E5;&#x770B;&#x6570;&#x636E; , &#x662F;&#x67E5;&#x770B;&#x4E0D;&#x61C2;&#x7684; ; &#x53EF;&#x4EE5;&#x5728;mysqlbinlog &#x540E;&#x9762;&#x52A0;&#x4E0A;&#x53C2;&#x6570; -vv  </p>
+<pre><code class="lang-SQL">mysqlbinlog -vv mysqlbin.000002
+</code></pre>
+<p><img src="assets/1554095452022.png" alt="1554095452022"> </p>
+<h5 id="224-&#x65E5;&#x5FD7;&#x5220;&#x9664;">2.2.4 &#x65E5;&#x5FD7;&#x5220;&#x9664;</h5>
+<p>&#x5BF9;&#x4E8E;&#x6BD4;&#x8F83;&#x7E41;&#x5FD9;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x7531;&#x4E8E;&#x6BCF;&#x5929;&#x751F;&#x6210;&#x65E5;&#x5FD7;&#x91CF;&#x5927; &#xFF0C;&#x8FD9;&#x4E9B;&#x65E5;&#x5FD7;&#x5982;&#x679C;&#x957F;&#x65F6;&#x95F4;&#x4E0D;&#x6E05;&#x695A;&#xFF0C;&#x5C06;&#x4F1A;&#x5360;&#x7528;&#x5927;&#x91CF;&#x7684;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x8BB2;&#x89E3;&#x51E0;&#x79CD;&#x5220;&#x9664;&#x65E5;&#x5FD7;&#x7684;&#x5E38;&#x89C1;&#x65B9;&#x6CD5; &#xFF1A;</p>
+<p><strong>&#x65B9;&#x5F0F;&#x4E00;</strong> </p>
+<p>&#x901A;&#x8FC7; Reset Master &#x6307;&#x4EE4;&#x5220;&#x9664;&#x5168;&#x90E8; binlog &#x65E5;&#x5FD7;&#xFF0C;&#x5220;&#x9664;&#x4E4B;&#x540E;&#xFF0C;&#x65E5;&#x5FD7;&#x7F16;&#x53F7;&#xFF0C;&#x5C06;&#x4ECE; xxxx.000001&#x91CD;&#x65B0;&#x5F00;&#x59CB; &#x3002;</p>
+<p>&#x67E5;&#x8BE2;&#x4E4B;&#x524D; &#xFF0C;&#x5148;&#x67E5;&#x8BE2;&#x4E0B;&#x65E5;&#x5FD7;&#x6587;&#x4EF6; &#xFF1A; </p>
+<p><img src="assets/1554118609489.png" alt="1554118609489">   </p>
+<p>&#x6267;&#x884C;&#x5220;&#x9664;&#x65E5;&#x5FD7;&#x6307;&#x4EE4;&#xFF1A; </p>
+<pre><code>Reset Master
+</code></pre><p>&#x6267;&#x884C;&#x4E4B;&#x540E;&#xFF0C; &#x67E5;&#x770B;&#x65E5;&#x5FD7;&#x6587;&#x4EF6; &#xFF1A;</p>
+<p><img src="assets/1554118675264.png" alt="1554118675264"> </p>
+<p><strong>&#x65B9;&#x5F0F;&#x4E8C;</strong></p>
+<p>&#x6267;&#x884C;&#x6307;&#x4EE4; <code>purge  master logs to &apos;mysqlbin.******&apos;</code> &#xFF0C;&#x8BE5;&#x547D;&#x4EE4;&#x5C06;&#x5220;&#x9664;  <code>******</code> &#x7F16;&#x53F7;&#x4E4B;&#x524D;&#x7684;&#x6240;&#x6709;&#x65E5;&#x5FD7;&#x3002; </p>
+<p><strong>&#x65B9;&#x5F0F;&#x4E09;</strong></p>
+<p>&#x6267;&#x884C;&#x6307;&#x4EE4; <code>purge master logs before &apos;yyyy-mm-dd hh24:mi:ss&apos;</code> &#xFF0C;&#x8BE5;&#x547D;&#x4EE4;&#x5C06;&#x5220;&#x9664;&#x65E5;&#x5FD7;&#x4E3A; &quot;yyyy-mm-dd hh24:mi:ss&quot; &#x4E4B;&#x524D;&#x4EA7;&#x751F;&#x7684;&#x6240;&#x6709;&#x65E5;&#x5FD7; &#x3002;</p>
+<p><strong>&#x65B9;&#x5F0F;&#x56DB;</strong></p>
+<p>&#x8BBE;&#x7F6E;&#x53C2;&#x6570; --expire_logs_days=# &#xFF0C;&#x6B64;&#x53C2;&#x6570;&#x7684;&#x542B;&#x4E49;&#x662F;&#x8BBE;&#x7F6E;&#x65E5;&#x5FD7;&#x7684;&#x8FC7;&#x671F;&#x5929;&#x6570;&#xFF0C; &#x8FC7;&#x4E86;&#x6307;&#x5B9A;&#x7684;&#x5929;&#x6570;&#x540E;&#x65E5;&#x5FD7;&#x5C06;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x5220;&#x9664;&#xFF0C;&#x8FD9;&#x6837;&#x5C06;&#x6709;&#x5229;&#x4E8E;&#x51CF;&#x5C11;DBA &#x7BA1;&#x7406;&#x65E5;&#x5FD7;&#x7684;&#x5DE5;&#x4F5C;&#x91CF;&#x3002;</p>
+<p>&#x914D;&#x7F6E;&#x5982;&#x4E0B; &#xFF1A; </p>
+<p><img src="assets/1554125506938.png" alt="1554125506938"> </p>
+<h4 id="23-&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;">2.3 &#x67E5;&#x8BE2;&#x65E5;&#x5FD7;</h4>
+<p>&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x4E2D;&#x8BB0;&#x5F55;&#x4E86;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x8BED;&#x53E5;&#xFF0C;&#x800C;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x4E0D;&#x5305;&#x542B;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x7684;SQL&#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C; &#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x662F;&#x672A;&#x5F00;&#x542F;&#x7684;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#x5F00;&#x542F;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E; &#xFF1A;</p>
+<pre><code>#&#x8BE5;&#x9009;&#x9879;&#x7528;&#x6765;&#x5F00;&#x542F;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7; &#xFF0C; &#x53EF;&#x9009;&#x503C; &#xFF1A; 0 &#x6216;&#x8005; 1 &#xFF1B; 0 &#x4EE3;&#x8868;&#x5173;&#x95ED;&#xFF0C; 1 &#x4EE3;&#x8868;&#x5F00;&#x542F; 
+general_log=1
+
+#&#x8BBE;&#x7F6E;&#x65E5;&#x5FD7;&#x7684;&#x6587;&#x4EF6;&#x540D; &#xFF0C; &#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#xFF0C; &#x9ED8;&#x8BA4;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x4E3A; host_name.log 
+general_log_file=file_name
+</code></pre><p>&#x5728; mysql &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6; /usr/my.cnf &#x4E2D;&#x914D;&#x7F6E;&#x5982;&#x4E0B;&#x5185;&#x5BB9; &#xFF1A; </p>
+<p><img src="assets/1554128184632.png" alt="1554128184632"> </p>
+<p>&#x914D;&#x7F6E;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#xFF0C;&#x5728;&#x6570;&#x636E;&#x5E93;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C; &#xFF1A;</p>
+<pre><code>select * from tb_book;
+select * from tb_book where id = 1;
+update tb_book set name = &apos;lucene&#x5165;&#x95E8;&#x6307;&#x5357;&apos; where id = 5;
+select * from tb_book where id &lt; 8;
+</code></pre><p>&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#xFF0C; &#x518D;&#x6B21;&#x6765;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x6587;&#x4EF6; &#xFF1A; </p>
+<p><img src="assets/1554128089851.png" alt="1554128089851"> </p>
+<h4 id="24-&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;">2.4 &#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;</h4>
+<p>&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x4E86;&#x6240;&#x6709;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x8D85;&#x8FC7;&#x53C2;&#x6570; long_query_time &#x8BBE;&#x7F6E;&#x503C;&#x5E76;&#x4E14;&#x626B;&#x63CF;&#x8BB0;&#x5F55;&#x6570;&#x4E0D;&#x5C0F;&#x4E8E; min_examined_row_limit &#x7684;&#x6240;&#x6709;&#x7684;SQL&#x8BED;&#x53E5;&#x7684;&#x65E5;&#x5FD7;&#x3002;long_query_time &#x9ED8;&#x8BA4;&#x4E3A; 10 &#x79D2;&#xFF0C;&#x6700;&#x5C0F;&#x4E3A; 0&#xFF0C; &#x7CBE;&#x5EA6;&#x53EF;&#x4EE5;&#x5230;&#x5FAE;&#x79D2;&#x3002;</p>
+<h5 id="241-&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;&#x548C;&#x683C;&#x5F0F;">2.4.1 &#x6587;&#x4EF6;&#x4F4D;&#x7F6E;&#x548C;&#x683C;&#x5F0F;</h5>
+<p>&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x9ED8;&#x8BA4;&#x662F;&#x5173;&#x95ED;&#x7684; &#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x6765;&#x63A7;&#x5236;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7; &#xFF1A;</p>
+<pre><code># &#x8BE5;&#x53C2;&#x6570;&#x7528;&#x6765;&#x63A7;&#x5236;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x662F;&#x5426;&#x5F00;&#x542F;&#xFF0C; &#x53EF;&#x53D6;&#x503C;&#xFF1A; 1 &#x548C; 0 &#xFF0C; 1 &#x4EE3;&#x8868;&#x5F00;&#x542F;&#xFF0C; 0 &#x4EE3;&#x8868;&#x5173;&#x95ED;
+slow_query_log=1 
+
+# &#x8BE5;&#x53C2;&#x6570;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x7684;&#x6587;&#x4EF6;&#x540D;
+slow_query_log_file=slow_query.log
+
+# &#x8BE5;&#x9009;&#x9879;&#x7528;&#x6765;&#x914D;&#x7F6E;&#x67E5;&#x8BE2;&#x7684;&#x65F6;&#x95F4;&#x9650;&#x5236;&#xFF0C; &#x8D85;&#x8FC7;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x5C06;&#x8BA4;&#x4E3A;&#x503C;&#x6162;&#x67E5;&#x8BE2;&#xFF0C; &#x5C06;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#xFF0C; &#x9ED8;&#x8BA4;10s
+long_query_time=10
+</code></pre><h5 id="242-&#x65E5;&#x5FD7;&#x7684;&#x8BFB;&#x53D6;">2.4.2 &#x65E5;&#x5FD7;&#x7684;&#x8BFB;&#x53D6;</h5>
+<p>&#x548C;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;&#x3001;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x4E00;&#x6837;&#xFF0C;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x7684;&#x683C;&#x5F0F;&#x4E5F;&#x662F;&#x7EAF;&#x6587;&#x672C;&#xFF0C;&#x53EF;&#x4EE5;&#x88AB;&#x76F4;&#x63A5;&#x8BFB;&#x53D6;&#x3002;</p>
+<p>1&#xFF09; &#x67E5;&#x8BE2;long_query_time &#x7684;&#x503C;&#x3002;</p>
+<p><img src="assets/1554130333472.png" alt="1554130333472"> </p>
+<p>2&#xFF09; &#x6267;&#x884C;&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">select</span> <span class="hljs-keyword">id</span>, title,price,<span class="hljs-keyword">num</span> ,<span class="hljs-keyword">status</span> <span class="hljs-keyword">from</span> tb_item <span class="hljs-keyword">where</span> <span class="hljs-keyword">id</span> = <span class="hljs-number">1</span>;
+</code></pre>
+<p><img src="assets/1554130448709.png" alt="1554130448709"></p>
+<p>&#x7531;&#x4E8E;&#x8BE5;&#x8BED;&#x53E5;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x5F88;&#x77ED;&#xFF0C;&#x4E3A;0s &#xFF0C; &#x6240;&#x4EE5;&#x4E0D;&#x4F1A;&#x8BB0;&#x5F55;&#x5728;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x4E2D;&#x3002;</p>
+<pre><code>select * from tb_item where title like &apos;%&#x963F;&#x5C14;&#x5361;&#x7279; (OT-927) &#x70AD;&#x9ED1; &#x8054;&#x901A;3G&#x624B;&#x673A; &#x53CC;&#x5361;&#x53CC;&#x5F85;165454%&apos; ;
+</code></pre><p><img src="assets/1554130532577.png" alt="1554130532577"> </p>
+<p>&#x8BE5;SQL&#x8BED;&#x53E5; &#xFF0C; &#x6267;&#x884C;&#x65F6;&#x957F;&#x4E3A; 26.77s &#xFF0C;&#x8D85;&#x8FC7;10s &#xFF0C; &#x6240;&#x4EE5;&#x4F1A;&#x8BB0;&#x5F55;&#x5728;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<p>3&#xFF09; &#x67E5;&#x770B;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;</p>
+<p>&#x76F4;&#x63A5;&#x901A;&#x8FC7;cat &#x6307;&#x4EE4;&#x67E5;&#x8BE2;&#x8BE5;&#x65E5;&#x5FD7;&#x6587;&#x4EF6; &#xFF1A; </p>
+<p><img src="assets/1554130669360.png" alt="1554130669360"> </p>
+<p>&#x5982;&#x679C;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x5185;&#x5BB9;&#x5F88;&#x591A;&#xFF0C; &#x76F4;&#x63A5;&#x67E5;&#x770B;&#x6587;&#x4EF6;&#xFF0C;&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;&#xFF0C; &#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x501F;&#x52A9;&#x4E8E;mysql&#x81EA;&#x5E26;&#x7684; mysqldumpslow &#x5DE5;&#x5177;&#xFF0C; &#x6765;&#x5BF9;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x8FDB;&#x884C;&#x5206;&#x7C7B;&#x6C47;&#x603B;&#x3002; </p>
+<p><img src="assets/1554130856485.png" alt="1554130856485"> </p>
+<h3 id="3-mysql&#x590D;&#x5236;">3. Mysql&#x590D;&#x5236;</h3>
+<h4 id="31-&#x590D;&#x5236;&#x6982;&#x8FF0;">3.1 &#x590D;&#x5236;&#x6982;&#x8FF0;</h4>
+<p>&#x590D;&#x5236;&#x662F;&#x6307;&#x5C06;&#x4E3B;&#x6570;&#x636E;&#x5E93;&#x7684;DDL &#x548C; DML &#x64CD;&#x4F5C;&#x901A;&#x8FC7;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x4F20;&#x5230;&#x4ECE;&#x5E93;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x4ECE;&#x5E93;&#x4E0A;&#x5BF9;&#x8FD9;&#x4E9B;&#x65E5;&#x5FD7;&#x91CD;&#x65B0;&#x6267;&#x884C;&#xFF08;&#x4E5F;&#x53EB;&#x91CD;&#x505A;&#xFF09;&#xFF0C;&#x4ECE;&#x800C;&#x4F7F;&#x5F97;&#x4ECE;&#x5E93;&#x548C;&#x4E3B;&#x5E93;&#x7684;&#x6570;&#x636E;&#x4FDD;&#x6301;&#x540C;&#x6B65;&#x3002;</p>
+<p>MySQL&#x652F;&#x6301;&#x4E00;&#x53F0;&#x4E3B;&#x5E93;&#x540C;&#x65F6;&#x5411;&#x591A;&#x53F0;&#x4ECE;&#x5E93;&#x8FDB;&#x884C;&#x590D;&#x5236;&#xFF0C; &#x4ECE;&#x5E93;&#x540C;&#x65F6;&#x4E5F;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x5176;&#x4ED6;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4E3B;&#x5E93;&#xFF0C;&#x5B9E;&#x73B0;&#x94FE;&#x72B6;&#x590D;&#x5236;&#x3002;</p>
+<h4 id="32-&#x590D;&#x5236;&#x539F;&#x7406;">3.2 &#x590D;&#x5236;&#x539F;&#x7406;</h4>
+<p>MySQL &#x7684;&#x4E3B;&#x4ECE;&#x590D;&#x5236;&#x539F;&#x7406;&#x5982;&#x4E0B;&#x3002;</p>
+<p><img src="assets/1.jpg" alt="1554423698190"> </p>
+<p>&#x4ECE;&#x4E0A;&#x5C42;&#x6765;&#x770B;&#xFF0C;&#x590D;&#x5236;&#x5206;&#x6210;&#x4E09;&#x6B65;&#xFF1A;</p>
+<ul>
+<li>Master &#x4E3B;&#x5E93;&#x5728;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x65F6;&#xFF0C;&#x4F1A;&#x628A;&#x6570;&#x636E;&#x53D8;&#x66F4;&#x4F5C;&#x4E3A;&#x65F6;&#x95F4; Events &#x8BB0;&#x5F55;&#x5728;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x6587;&#x4EF6; Binlog &#x4E2D;&#x3002;</li>
+<li><p>&#x4E3B;&#x5E93;&#x63A8;&#x9001;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x6587;&#x4EF6; Binlog &#x4E2D;&#x7684;&#x65E5;&#x5FD7;&#x4E8B;&#x4EF6;&#x5230;&#x4ECE;&#x5E93;&#x7684;&#x4E2D;&#x7EE7;&#x65E5;&#x5FD7; Relay Log &#x3002;</p>
+</li>
+<li><p>slave&#x91CD;&#x505A;&#x4E2D;&#x7EE7;&#x65E5;&#x5FD7;&#x4E2D;&#x7684;&#x4E8B;&#x4EF6;&#xFF0C;&#x5C06;&#x6539;&#x53D8;&#x53CD;&#x6620;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+</li>
+</ul>
+<h4 id="33-&#x590D;&#x5236;&#x4F18;&#x52BF;">3.3 &#x590D;&#x5236;&#x4F18;&#x52BF;</h4>
+<p>MySQL &#x590D;&#x5236;&#x7684;&#x6709;&#x70B9;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x4E09;&#x4E2A;&#x65B9;&#x9762;&#xFF1A;</p>
+<ul>
+<li><p>&#x4E3B;&#x5E93;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x5207;&#x6362;&#x5230;&#x4ECE;&#x5E93;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x3002;</p>
+</li>
+<li><p>&#x53EF;&#x4EE5;&#x5728;&#x4ECE;&#x5E93;&#x4E0A;&#x6267;&#x884C;&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#xFF0C;&#x4ECE;&#x4E3B;&#x5E93;&#x4E2D;&#x66F4;&#x65B0;&#xFF0C;&#x5B9E;&#x73B0;&#x8BFB;&#x5199;&#x5206;&#x79BB;&#xFF0C;&#x964D;&#x4F4E;&#x4E3B;&#x5E93;&#x7684;&#x8BBF;&#x95EE;&#x538B;&#x529B;&#x3002;</p>
+</li>
+<li><p>&#x53EF;&#x4EE5;&#x5728;&#x4ECE;&#x5E93;&#x4E2D;&#x6267;&#x884C;&#x5907;&#x4EFD;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x5907;&#x4EFD;&#x671F;&#x95F4;&#x5F71;&#x54CD;&#x4E3B;&#x5E93;&#x7684;&#x670D;&#x52A1;&#x3002;</p>
+</li>
+</ul>
+<h4 id="34-&#x642D;&#x5EFA;&#x6B65;&#x9AA4;">3.4 &#x642D;&#x5EFA;&#x6B65;&#x9AA4;</h4>
+<h5 id="341-master">3.4.1 master</h5>
+<p>1&#xFF09; &#x5728;master &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF08;/usr/my.cnf&#xFF09;&#x4E2D;&#xFF0C;&#x914D;&#x7F6E;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-properties">#mysql &#x670D;&#x52A1;ID,&#x4FDD;&#x8BC1;&#x6574;&#x4E2A;&#x96C6;&#x7FA4;&#x73AF;&#x5883;&#x4E2D;&#x552F;&#x4E00;
+server-id=1
+
+#mysql binlog &#x65E5;&#x5FD7;&#x7684;&#x5B58;&#x50A8;&#x8DEF;&#x5F84;&#x548C;&#x6587;&#x4EF6;&#x540D;
+log-bin=/var/lib/mysql/mysqlbin
+
+#&#x9519;&#x8BEF;&#x65E5;&#x5FD7;,&#x9ED8;&#x8BA4;&#x5DF2;&#x7ECF;&#x5F00;&#x542F;
+#log-err
+
+#mysql&#x7684;&#x5B89;&#x88C5;&#x76EE;&#x5F55;
+#basedir
+
+#mysql&#x7684;&#x4E34;&#x65F6;&#x76EE;&#x5F55;
+#tmpdir
+
+#mysql&#x7684;&#x6570;&#x636E;&#x5B58;&#x653E;&#x76EE;&#x5F55;
+#datadir
+
+#&#x662F;&#x5426;&#x53EA;&#x8BFB;,1 &#x4EE3;&#x8868;&#x53EA;&#x8BFB;, 0 &#x4EE3;&#x8868;&#x8BFB;&#x5199;
+read-only=0
+
+#&#x5FFD;&#x7565;&#x7684;&#x6570;&#x636E;, &#x6307;&#x4E0D;&#x9700;&#x8981;&#x540C;&#x6B65;&#x7684;&#x6570;&#x636E;&#x5E93;
+binlog-ignore-db=mysql
+
+#&#x6307;&#x5B9A;&#x540C;&#x6B65;&#x7684;&#x6570;&#x636E;&#x5E93;
+#binlog-do-db=db01
+</code></pre>
+<p>2&#xFF09; &#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x91CD;&#x542F;Mysql&#xFF1A;</p>
+<pre><code class="lang-sql">service mysql restart &#xFF1B;
+</code></pre>
+<p>3&#xFF09; &#x521B;&#x5EFA;&#x540C;&#x6B65;&#x6570;&#x636E;&#x7684;&#x8D26;&#x6237;&#xFF0C;&#x5E76;&#x4E14;&#x8FDB;&#x884C;&#x6388;&#x6743;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">grant</span> <span class="hljs-keyword">replication</span> <span class="hljs-keyword">slave</span> <span class="hljs-keyword">on</span> *.* <span class="hljs-keyword">to</span> <span class="hljs-string">&apos;itcast&apos;</span>@<span class="hljs-string">&apos;192.168.192.131&apos;</span> <span class="hljs-keyword">identified</span> <span class="hljs-keyword">by</span> <span class="hljs-string">&apos;itcast&apos;</span>;    
+
+<span class="hljs-keyword">flush</span> <span class="hljs-keyword">privileges</span>;
+</code></pre>
+<p>4&#xFF09; &#x67E5;&#x770B;master&#x72B6;&#x6001;&#xFF1A;</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">show</span> <span class="hljs-keyword">master</span> <span class="hljs-keyword">status</span>;
+</code></pre>
+<p><img src="assets/1554477759735.png" alt="1554477759735"> </p>
+<p>&#x5B57;&#x6BB5;&#x542B;&#x4E49;&#xFF1A;</p>
+<pre><code>File : &#x4ECE;&#x54EA;&#x4E2A;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x5F00;&#x59CB;&#x63A8;&#x9001;&#x65E5;&#x5FD7;&#x6587;&#x4EF6; 
+Position &#xFF1A; &#x4ECE;&#x54EA;&#x4E2A;&#x4F4D;&#x7F6E;&#x5F00;&#x59CB;&#x63A8;&#x9001;&#x65E5;&#x5FD7;
+Binlog_Ignore_DB : &#x6307;&#x5B9A;&#x4E0D;&#x9700;&#x8981;&#x540C;&#x6B65;&#x7684;&#x6570;&#x636E;&#x5E93;
+</code></pre><h5 id="342-slave">3.4.2 slave</h5>
+<p>1&#xFF09; &#x5728; slave &#x7AEF;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x914D;&#x7F6E;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-properties">#mysql&#x670D;&#x52A1;&#x7AEF;ID,&#x552F;&#x4E00;
+server-id=2
+
+#&#x6307;&#x5B9A;binlog&#x65E5;&#x5FD7;
+log-bin=/var/lib/mysql/mysqlbin
+</code></pre>
+<p>2&#xFF09;  &#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x91CD;&#x542F;Mysql&#xFF1A;</p>
+<pre><code>service mysql restart&#xFF1B;
+</code></pre><p>3&#xFF09; &#x6267;&#x884C;&#x5982;&#x4E0B;&#x6307;&#x4EE4; &#xFF1A;</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">change</span> <span class="hljs-keyword">master</span> <span class="hljs-keyword">to</span> master_host= <span class="hljs-string">&apos;192.168.192.130&apos;</span>, master_user=<span class="hljs-string">&apos;itcast&apos;</span>, master_password=<span class="hljs-string">&apos;itcast&apos;</span>, master_log_file=<span class="hljs-string">&apos;mysqlbin.000001&apos;</span>, master_log_pos=<span class="hljs-number">413</span>;
+</code></pre>
+<p>&#x6307;&#x5B9A;&#x5F53;&#x524D;&#x4ECE;&#x5E93;&#x5BF9;&#x5E94;&#x7684;&#x4E3B;&#x5E93;&#x7684;IP&#x5730;&#x5740;&#xFF0C;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x5BC6;&#x7801;&#xFF0C;&#x4ECE;&#x54EA;&#x4E2A;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x5F00;&#x59CB;&#x7684;&#x90A3;&#x4E2A;&#x4F4D;&#x7F6E;&#x5F00;&#x59CB;&#x540C;&#x6B65;&#x63A8;&#x9001;&#x65E5;&#x5FD7;&#x3002;</p>
+<p>4&#xFF09; &#x5F00;&#x542F;&#x540C;&#x6B65;&#x64CD;&#x4F5C;</p>
+<pre><code>start slave;
+
+show slave status;
+</code></pre><p><img src="assets/1554479387365.png" alt="1554479387365"> </p>
+<p>5&#xFF09; &#x505C;&#x6B62;&#x540C;&#x6B65;&#x64CD;&#x4F5C;</p>
+<pre><code>stop slave;
+</code></pre><h5 id="343-&#x9A8C;&#x8BC1;&#x540C;&#x6B65;&#x64CD;&#x4F5C;">3.4.3 &#x9A8C;&#x8BC1;&#x540C;&#x6B65;&#x64CD;&#x4F5C;</h5>
+<p>1&#xFF09; &#x5728;&#x4E3B;&#x5E93;&#x4E2D;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x521B;&#x5EFA;&#x8868;&#xFF0C;&#x5E76;&#x63D2;&#x5165;&#x6570;&#x636E; &#xFF1A;</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">create</span> <span class="hljs-keyword">database</span> db01;
+
+user db01;
+
+<span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> <span class="hljs-keyword">user</span>(
+    <span class="hljs-keyword">id</span> <span class="hljs-built_in">int</span>(<span class="hljs-number">11</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span> auto_increment,
+    <span class="hljs-keyword">name</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">50</span>) <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span>,
+    sex <span class="hljs-built_in">varchar</span>(<span class="hljs-number">1</span>),
+    primary <span class="hljs-keyword">key</span> (<span class="hljs-keyword">id</span>)
+)<span class="hljs-keyword">engine</span>=<span class="hljs-keyword">innodb</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">charset</span>=utf8;
+
+<span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> <span class="hljs-keyword">user</span>(<span class="hljs-keyword">id</span>,<span class="hljs-keyword">name</span>,sex) <span class="hljs-keyword">values</span>(<span class="hljs-literal">null</span>,<span class="hljs-string">&apos;Tom&apos;</span>,<span class="hljs-string">&apos;1&apos;</span>);
+<span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> <span class="hljs-keyword">user</span>(<span class="hljs-keyword">id</span>,<span class="hljs-keyword">name</span>,sex) <span class="hljs-keyword">values</span>(<span class="hljs-literal">null</span>,<span class="hljs-string">&apos;Trigger&apos;</span>,<span class="hljs-string">&apos;0&apos;</span>);
+<span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> <span class="hljs-keyword">user</span>(<span class="hljs-keyword">id</span>,<span class="hljs-keyword">name</span>,sex) <span class="hljs-keyword">values</span>(<span class="hljs-literal">null</span>,<span class="hljs-string">&apos;Dawn&apos;</span>,<span class="hljs-string">&apos;1&apos;</span>);
+</code></pre>
+<p>2&#xFF09; &#x5728;&#x4ECE;&#x5E93;&#x4E2D;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#xFF0C;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1; &#xFF1A;</p>
+<p>&#x5728;&#x4ECE;&#x5E93;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5230;&#x521A;&#x624D;&#x521B;&#x5EFA;&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF1A;</p>
+<p><img src="assets/1554544658640.png" alt="1554544658640"> </p>
+<p>&#x5728;&#x8BE5;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x67E5;&#x8BE2;user&#x8868;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF1A;</p>
+<p><img src="assets/1554544679538.png" alt="1554544679538"> </p>
+<h3 id="4-&#x7EFC;&#x5408;&#x6848;&#x4F8B;">4. &#x7EFC;&#x5408;&#x6848;&#x4F8B;</h3>
+<h4 id="41-&#x9700;&#x6C42;&#x5206;&#x6790;">4.1 &#x9700;&#x6C42;&#x5206;&#x6790;</h4>
+<p>&#x5728;&#x4E1A;&#x52A1;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x9700;&#x8981;&#x8BB0;&#x5F55;&#x5F53;&#x524D;&#x4E1A;&#x52A1;&#x7CFB;&#x7EDF;&#x7684;&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;&#xFF0C;&#x8BE5;&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;&#x5305;&#x542B;&#xFF1A;&#x64CD;&#x4F5C;&#x4EBA;&#xFF0C;&#x64CD;&#x4F5C;&#x65F6;&#x95F4;&#xFF0C;&#x8BBF;&#x95EE;&#x7C7B;&#xFF0C;&#x8BBF;&#x95EE;&#x65B9;&#x6CD5;&#xFF0C;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF0C;&#x8BF7;&#x6C42;&#x7ED3;&#x679C;&#xFF0C;&#x8BF7;&#x6C42;&#x7ED3;&#x679C;&#x7C7B;&#x578B;&#xFF0C;&#x8BF7;&#x6C42;&#x65F6;&#x957F; &#x7B49;&#x4FE1;&#x606F;&#x3002;&#x8BB0;&#x5F55;&#x8BE6;&#x7EC6;&#x7684;&#x7CFB;&#x7EDF;&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;&#xFF0C;&#x4E3B;&#x8981;&#x4FBF;&#x4E8E;&#x5BF9;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x7528;&#x6237;&#x8BF7;&#x6C42;&#x8FDB;&#x884C;&#x8FFD;&#x8E2A;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x7CFB;&#x7EDF; &#x7684;&#x7BA1;&#x7406;&#x540E;&#x53F0;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5230;&#x7528;&#x6237;&#x7684;&#x8BBF;&#x95EE;&#x8BB0;&#x5F55;&#x3002;</p>
+<p>&#x8BB0;&#x5F55;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Spring &#x6846;&#x67B6;&#x7684;AOP&#x6765;&#x5B9E;&#x73B0;&#x3002;&#x5177;&#x4F53;&#x7684;&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x6D41;&#x7A0B;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="assets/1555075760661.png" alt="1555075760661"> </p>
+<h4 id="42-&#x642D;&#x5EFA;&#x6848;&#x4F8B;&#x73AF;&#x5883;">4.2 &#x642D;&#x5EFA;&#x6848;&#x4F8B;&#x73AF;&#x5883;</h4>
+<h5 id="421-&#x6570;&#x636E;&#x5E93;&#x8868;">4.2.1 &#x6570;&#x636E;&#x5E93;&#x8868;</h5>
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> mysql_demo <span class="hljs-keyword">DEFAULT</span> <span class="hljs-built_in">CHARACTER</span> <span class="hljs-keyword">SET</span> utf8mb4;
+
+<span class="hljs-keyword">USE</span> mysql_demo;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-string">`brand`</span> (
+  <span class="hljs-string">`id`</span> <span class="hljs-built_in">bigint</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> AUTO_INCREMENT,
+  <span class="hljs-string">`name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">255</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x54C1;&#x724C;&#x540D;&#x79F0;&apos;</span>,
+  <span class="hljs-string">`first_char`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">1</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x54C1;&#x724C;&#x9996;&#x5B57;&#x6BCD;&apos;</span>,
+  PRIMARY <span class="hljs-keyword">KEY</span> (<span class="hljs-string">`id`</span>)
+) <span class="hljs-keyword">ENGINE</span>=<span class="hljs-keyword">InnoDB</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">CHARSET</span>=utf8;
+
+
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-string">`item`</span> (
+  <span class="hljs-string">`id`</span> <span class="hljs-built_in">int</span>(<span class="hljs-number">11</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> AUTO_INCREMENT <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x5546;&#x54C1;id&apos;</span>,
+  <span class="hljs-string">`title`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">100</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x5546;&#x54C1;&#x6807;&#x9898;&apos;</span>,
+  <span class="hljs-string">`price`</span> <span class="hljs-keyword">double</span>(<span class="hljs-number">10</span>,<span class="hljs-number">2</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x5546;&#x54C1;&#x4EF7;&#x683C;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#xFF1A;&#x5143;&apos;</span>,
+  <span class="hljs-string">`num`</span> <span class="hljs-built_in">int</span>(<span class="hljs-number">10</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x5E93;&#x5B58;&#x6570;&#x91CF;&apos;</span>,
+  <span class="hljs-string">`categoryid`</span> <span class="hljs-built_in">bigint</span>(<span class="hljs-number">10</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x6240;&#x5C5E;&#x7C7B;&#x76EE;&#xFF0C;&#x53F6;&#x5B50;&#x7C7B;&#x76EE;&apos;</span>,
+  <span class="hljs-string">`status`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">1</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x5546;&#x54C1;&#x72B6;&#x6001;&#xFF0C;1-&#x6B63;&#x5E38;&#xFF0C;2-&#x4E0B;&#x67B6;&#xFF0C;3-&#x5220;&#x9664;&apos;</span>,
+  <span class="hljs-string">`sellerid`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">50</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x5546;&#x5BB6;ID&apos;</span>,
+  <span class="hljs-string">`createtime`</span> datetime <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&apos;</span>,
+  <span class="hljs-string">`updatetime`</span> datetime <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x66F4;&#x65B0;&#x65F6;&#x95F4;&apos;</span>,
+  PRIMARY <span class="hljs-keyword">KEY</span> (<span class="hljs-string">`id`</span>)
+) <span class="hljs-keyword">ENGINE</span>=<span class="hljs-keyword">InnoDB</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">CHARSET</span>=utf8 <span class="hljs-keyword">COMMENT</span>=<span class="hljs-string">&apos;&#x5546;&#x54C1;&#x8868;&apos;</span>;
+
+
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-string">`user`</span> (
+  <span class="hljs-string">`id`</span> <span class="hljs-built_in">int</span>(<span class="hljs-number">11</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> AUTO_INCREMENT,
+  <span class="hljs-string">`username`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">45</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+  <span class="hljs-string">`password`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">96</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+  <span class="hljs-string">`name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">45</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+  <span class="hljs-string">`birthday`</span> datetime <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span>,
+  <span class="hljs-string">`sex`</span> <span class="hljs-built_in">char</span>(<span class="hljs-number">1</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span>,
+  <span class="hljs-string">`email`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">45</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span>,
+  <span class="hljs-string">`phone`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">45</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span>,
+  <span class="hljs-string">`qq`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">32</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span>,
+  PRIMARY <span class="hljs-keyword">KEY</span> (<span class="hljs-string">`id`</span>)
+) <span class="hljs-keyword">ENGINE</span>=<span class="hljs-keyword">InnoDB</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">CHARSET</span>=utf8;
+
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-string">`operation_log`</span> (
+  <span class="hljs-string">`id`</span> <span class="hljs-built_in">bigint</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> AUTO_INCREMENT <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;ID&apos;</span>,
+  <span class="hljs-string">`operate_class`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">200</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x64CD;&#x4F5C;&#x7C7B;&apos;</span>,
+  <span class="hljs-string">`operate_method`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">200</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&apos;</span>,
+  <span class="hljs-string">`return_class`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">200</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&apos;</span>,
+  <span class="hljs-string">`operate_user`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x64CD;&#x4F5C;&#x7528;&#x6237;&apos;</span>,
+  <span class="hljs-string">`operate_time`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x64CD;&#x4F5C;&#x65F6;&#x95F4;&apos;</span>,
+  <span class="hljs-string">`param_and_value`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">500</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x540D;&#x53CA;&#x53C2;&#x6570;&#x503C;&apos;</span>,
+  <span class="hljs-string">`cost_time`</span> <span class="hljs-built_in">bigint</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x6267;&#x884C;&#x65B9;&#x6CD5;&#x8017;&#x65F6;, &#x5355;&#x4F4D; ms&apos;</span>,
+  <span class="hljs-string">`return_value`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">200</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">COMMENT</span> <span class="hljs-string">&apos;&#x8FD4;&#x56DE;&#x503C;&apos;</span>,
+  PRIMARY <span class="hljs-keyword">KEY</span> (<span class="hljs-string">`id`</span>)
+) <span class="hljs-keyword">ENGINE</span>=<span class="hljs-keyword">InnoDB</span>  <span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">CHARSET</span>=utf8mb4;
+</code></pre>
+<h5 id="422-pomxml">4.2.2 pom.xml</h5>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">properties</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="hljs-tag">&lt;/<span class="hljs-name">project.build.sourceEncoding</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">maven.compiler.source</span>&gt;</span>1.7<span class="hljs-tag">&lt;/<span class="hljs-name">maven.compiler.source</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">maven.compiler.target</span>&gt;</span>1.7<span class="hljs-tag">&lt;/<span class="hljs-name">maven.compiler.target</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="hljs-tag">&lt;/<span class="hljs-name">project.build.sourceEncoding</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">maven.compiler.source</span>&gt;</span>1.8<span class="hljs-tag">&lt;/<span class="hljs-name">maven.compiler.source</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">maven.compiler.target</span>&gt;</span>1.8<span class="hljs-tag">&lt;/<span class="hljs-name">maven.compiler.target</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">spring.version</span>&gt;</span>5.0.2.RELEASE<span class="hljs-tag">&lt;/<span class="hljs-name">spring.version</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">slf4j.version</span>&gt;</span>1.6.6<span class="hljs-tag">&lt;/<span class="hljs-name">slf4j.version</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">log4j.version</span>&gt;</span>1.2.12<span class="hljs-tag">&lt;/<span class="hljs-name">log4j.version</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">mybatis.version</span>&gt;</span>3.4.5<span class="hljs-tag">&lt;/<span class="hljs-name">mybatis.version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">properties</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span> <span class="hljs-comment">&lt;!-- spring --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.aspectj<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>aspectjweaver<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.6.8<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.projectlombok<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>lombok<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.16.16<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-context<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${spring.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-context-support<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${spring.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-orm<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${spring.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-test<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${spring.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-webmvc<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${spring.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-tx<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${spring.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>junit<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>junit<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>4.12<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>javax.servlet<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>javax.servlet-api<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>3.1.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>provided<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>javax.servlet.jsp<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>jsp-api<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>provided<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>log4j<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>log4j<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${log4j.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.mybatis<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>mybatis<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${mybatis.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.mybatis<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>mybatis-spring<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.3.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>c3p0<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>c3p0<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>0.9.1.2<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>mysql<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>mysql-connector-java<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>5.1.5<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.fasterxml.jackson.core<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>jackson-core<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.9.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.fasterxml.jackson.core<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>jackson-databind<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.9.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.fasterxml.jackson.core<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>jackson-annotations<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.9.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span>
+
+
+
+
+ <span class="hljs-tag">&lt;<span class="hljs-name">build</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">plugins</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">plugin</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.apache.tomcat.maven<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>tomcat7-maven-plugin<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.2<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">configuration</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">port</span>&gt;</span>8080<span class="hljs-tag">&lt;/<span class="hljs-name">port</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">path</span>&gt;</span>/<span class="hljs-tag">&lt;/<span class="hljs-name">path</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">uriEncoding</span>&gt;</span>utf-8<span class="hljs-tag">&lt;/<span class="hljs-name">uriEncoding</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">configuration</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">plugin</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">plugins</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">build</span>&gt;</span>
+</code></pre>
+<h5 id="423-webxml">4.2.3 web.xml</h5>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">web-app</span> <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://java.sun.com/xml/ns/javaee&quot;</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">&quot;http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd&quot;</span>
+       <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;2.5&quot;</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- &#x89E3;&#x51B3;post&#x4E71;&#x7801; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">filter</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="hljs-tag">&lt;/<span class="hljs-name">filter-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">filter-class</span>&gt;</span>org.springframework.web.filter.CharacterEncodingFilter<span class="hljs-tag">&lt;/<span class="hljs-name">filter-class</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">init-param</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">param-name</span>&gt;</span>encoding<span class="hljs-tag">&lt;/<span class="hljs-name">param-name</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">param-value</span>&gt;</span>utf-8<span class="hljs-tag">&lt;/<span class="hljs-name">param-value</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">init-param</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">init-param</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">param-name</span>&gt;</span>forceEncoding<span class="hljs-tag">&lt;/<span class="hljs-name">param-name</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">param-value</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">param-value</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">init-param</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">filter</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">filter-mapping</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="hljs-tag">&lt;/<span class="hljs-name">filter-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">url-pattern</span>&gt;</span>/*<span class="hljs-tag">&lt;/<span class="hljs-name">url-pattern</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">filter-mapping</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">context-param</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">param-name</span>&gt;</span>contextConfigLocation<span class="hljs-tag">&lt;/<span class="hljs-name">param-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">param-value</span>&gt;</span>classpath:applicationContext.xml<span class="hljs-tag">&lt;/<span class="hljs-name">param-value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">context-param</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">listener</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">listener-class</span>&gt;</span>org.springframework.web.context.ContextLoaderListener<span class="hljs-tag">&lt;/<span class="hljs-name">listener-class</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">listener</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">servlet</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">servlet-name</span>&gt;</span>springmvc<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">servlet-class</span>&gt;</span>org.springframework.web.servlet.DispatcherServlet<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-class</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- &#x6307;&#x5B9A;&#x52A0;&#x8F7D;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6; &#xFF0C;&#x901A;&#x8FC7;&#x53C2;&#x6570;contextConfigLocation&#x52A0;&#x8F7D;--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">init-param</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">param-name</span>&gt;</span>contextConfigLocation<span class="hljs-tag">&lt;/<span class="hljs-name">param-name</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">param-value</span>&gt;</span>classpath:springmvc.xml<span class="hljs-tag">&lt;/<span class="hljs-name">param-value</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">init-param</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">servlet</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">servlet-mapping</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">servlet-name</span>&gt;</span>springmvc<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">url-pattern</span>&gt;</span>*.do<span class="hljs-tag">&lt;/<span class="hljs-name">url-pattern</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">servlet-mapping</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">welcome-file-list</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">welcome-file</span>&gt;</span>log-datalist.html<span class="hljs-tag">&lt;/<span class="hljs-name">welcome-file</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">welcome-file-list</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">web-app</span>&gt;</span>
+</code></pre>
+<h5 id="424-dbproperties">4.2.4 db.properties</h5>
+<pre><code class="lang-properties">jdbc.driver=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://192.168.142.128:3306/mysql_demo
+jdbc.username=root
+jdbc.password=itcast
+</code></pre>
+<h5 id="425-applicationcontextxml">4.2.5 applicationContext.xml</h5>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans&quot;</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+       <span class="hljs-attr">xmlns:aop</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/aop&quot;</span>
+       <span class="hljs-attr">xmlns:tx</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/tx&quot;</span>
+       <span class="hljs-attr">xmlns:context</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/context&quot;</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+                            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd&quot;</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- &#x52A0;&#x8F7D;&#x914D;&#x7F6E;&#x6587;&#x4EF6; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">context:property-placeholder</span> <span class="hljs-attr">location</span>=<span class="hljs-string">&quot;classpath:db.properties&quot;</span>/&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- &#x914D;&#x7F6E; spring &#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x65F6;&#x8981;&#x626B;&#x63CF;&#x7684;&#x5305; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">context:component-scan</span> <span class="hljs-attr">base-package</span>=<span class="hljs-string">&quot;cn.itcast&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">context:exclude-filter</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;annotation&quot;</span> <span class="hljs-attr">expression</span>=<span class="hljs-string">&quot;org.springframework.stereotype.Controller&quot;</span>&gt;</span>    
+        <span class="hljs-tag">&lt;/<span class="hljs-name">context:exclude-filter</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">context:component-scan</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- &#x914D;&#x7F6E; MyBatis &#x7684; Session &#x5DE5;&#x5382; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;sqlSessionFactory&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;dataSource&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;dataSource&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;typeAliasesPackage&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;cn.itcast.pojo&quot;</span>/&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- &#x914D;&#x7F6E;&#x6570;&#x636E;&#x6E90; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;dataSource&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;driverClass&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${jdbc.driver}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;jdbcUrl&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${jdbc.url}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;user&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${jdbc.username}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${jdbc.password}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- &#x914D;&#x7F6E; Mapper &#x626B;&#x63CF;&#x5668; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;basePackage&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;cn.itcast.mapper&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- &#x914D;&#x7F6E;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;&#x5668; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;transactionManager&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;dataSource&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;dataSource&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- &#x914D;&#x7F6E;&#x4E8B;&#x52A1;&#x7684;&#x6CE8;&#x89E3;&#x9A71;&#x52A8; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tx:annotation-driven</span> <span class="hljs-attr">transaction-manager</span>=<span class="hljs-string">&quot;transactionManager&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tx:annotation-driven</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<h5 id="426-springmvcxml">4.2.6 springmvc.xml</h5>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans&quot;</span>
+       <span class="hljs-attr">xmlns:mvc</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/mvc&quot;</span>
+       <span class="hljs-attr">xmlns:context</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/context&quot;</span>
+       <span class="hljs-attr">xmlns:aop</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/aop&quot;</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/mvc
+            http://www.springframework.org/schema/mvc/spring-mvc.xsd
+            http://www.springframework.org/schema/aop
+            http://www.springframework.org/schema/aop/spring-aop.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">context:component-scan</span> <span class="hljs-attr">base-package</span>=<span class="hljs-string">&quot;cn.itcast.controller&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">context:component-scan</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">mvc:annotation-driven</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">mvc:annotation-driven</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">aop:aspectj-autoproxy</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<h5 id="427-&#x5BFC;&#x5165;&#x57FA;&#x7840;&#x5DE5;&#x7A0B;">4.2.7 &#x5BFC;&#x5165;&#x57FA;&#x7840;&#x5DE5;&#x7A0B;</h5>
+<p><img src="assets/1555076434270.png" alt="1555076434270"> </p>
+<h4 id="43-&#x901A;&#x8FC7;aop&#x8BB0;&#x5F55;&#x64CD;&#x4F5C;&#x65E5;&#x5FD7;">4.3 &#x901A;&#x8FC7;AOP&#x8BB0;&#x5F55;&#x64CD;&#x4F5C;&#x65E5;&#x5FD7;</h4>
+<h5 id="431-&#x81EA;&#x5B9A;&#x4E49;&#x6CE8;&#x89E3;">4.3.1 &#x81EA;&#x5B9A;&#x4E49;&#x6CE8;&#x89E3;</h5>
+<p>&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;&#x6CE8;&#x89E3;&#xFF0C;&#x6765;&#x6807;&#x793A;&#x65B9;&#x6CD5;&#x9700;&#x4E0D;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x65B9;&#x6CD5;&#x5728;&#x8BBF;&#x95EE;&#x65F6;&#x9700;&#x8981;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;&#xFF0C;&#x5219;&#x5728;&#x8BE5;&#x65B9;&#x6CD5;&#x4E0A;&#x6807;&#x793A;&#x8BE5;&#x6CE8;&#x89E3;&#x65E2;&#x53EF;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Inherited</span>
+<span class="hljs-meta">@Documented</span>
+<span class="hljs-meta">@Target</span>(ElementType.METHOD)
+<span class="hljs-meta">@Retention</span>(RetentionPolicy.RUNTIME)
+<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> OperateLog {
+}
+</code></pre>
+<h5 id="432-&#x5B9A;&#x4E49;&#x901A;&#x77E5;&#x7C7B;">4.3.2 &#x5B9A;&#x4E49;&#x901A;&#x77E5;&#x7C7B;</h5>
+<pre><code class="lang-java"><span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@Aspect</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OperateAdvice</span> </span>{
+
+   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger log = Logger.getLogger(OperateAdvice.class);
+
+   <span class="hljs-meta">@Autowired</span>
+   <span class="hljs-keyword">private</span> OperationLogService operationLogService;
+
+
+   <span class="hljs-meta">@Around</span>(<span class="hljs-string">&quot;execution(* cn.itcast.controller.*.*(..)) &amp;&amp; @annotation(operateLog)&quot;</span>)
+   <span class="hljs-function"><span class="hljs-keyword">public</span> Object <span class="hljs-title">insertLogAround</span><span class="hljs-params">(ProceedingJoinPoint pjp , OperateLog operateLog)</span> <span class="hljs-keyword">throws</span> Throwable</span>{
+      System.out.println(<span class="hljs-string">&quot; ************************ &#x8BB0;&#x5F55;&#x65E5;&#x5FD7; [start]  ****************************** &quot;</span>);
+
+      OperationLog op = <span class="hljs-keyword">new</span> OperationLog();
+
+      DateFormat sdf = <span class="hljs-keyword">new</span> SimpleDateFormat(<span class="hljs-string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span>);
+
+      op.setOperateTime(sdf.format(<span class="hljs-keyword">new</span> Date()));
+      op.setOperateUser(DataUtils.getRandStr(<span class="hljs-number">8</span>));
+
+      op.setOperateClass(pjp.getTarget().getClass().getName());
+      op.setOperateMethod(pjp.getSignature().getName());
+
+      <span class="hljs-comment">//&#x83B7;&#x53D6;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x65F6;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;</span>
+      Object[] args = pjp.getArgs();
+      op.setParamAndValue(Arrays.toString(args));
+
+      <span class="hljs-keyword">long</span> start_time = System.currentTimeMillis();
+
+      <span class="hljs-comment">//&#x653E;&#x884C;</span>
+      Object object = pjp.proceed();
+
+      <span class="hljs-keyword">long</span> end_time = System.currentTimeMillis();
+      op.setCostTime(end_time - start_time);
+
+      <span class="hljs-keyword">if</span>(object != <span class="hljs-keyword">null</span>){
+         op.setReturnClass(object.getClass().getName());
+         op.setReturnValue(object.toString());
+      }<span class="hljs-keyword">else</span>{
+         op.setReturnClass(<span class="hljs-string">&quot;java.lang.Object&quot;</span>);
+         op.setParamAndValue(<span class="hljs-string">&quot;void&quot;</span>);
+      }
+
+      log.error(JsonUtils.obj2JsonString(op));
+
+      operationLogService.insert(op);
+
+      System.out.println(<span class="hljs-string">&quot; ************************** &#x8BB0;&#x5F55;&#x65E5;&#x5FD7; [end]  *************************** &quot;</span>);
+
+      <span class="hljs-keyword">return</span> object;
+   }
+
+}
+</code></pre>
+<h5 id="433-&#x65B9;&#x6CD5;&#x4E0A;&#x52A0;&#x6CE8;&#x89E3;">4.3.3 &#x65B9;&#x6CD5;&#x4E0A;&#x52A0;&#x6CE8;&#x89E3;</h5>
+<p>&#x5728;&#x9700;&#x8981;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;&#x7684;&#x65B9;&#x6CD5;&#x4E0A;&#x52A0;&#x4E0A;&#x6CE8;&#x89E3;@OperateLog&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@OperateLog</span>
+<span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/insert&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> Result <span class="hljs-title">insert</span><span class="hljs-params">(@RequestBody Brand brand)</span></span>{
+    <span class="hljs-keyword">try</span> {
+        brandService.insert(brand);
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Result(<span class="hljs-keyword">true</span>,<span class="hljs-string">&quot;&#x64CD;&#x4F5C;&#x6210;&#x529F;&quot;</span>);
+    } <span class="hljs-keyword">catch</span> (Exception e) {
+        e.printStackTrace();
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Result(<span class="hljs-keyword">false</span>,<span class="hljs-string">&quot;&#x64CD;&#x4F5C;&#x5931;&#x8D25;&quot;</span>);
+    }
+}
+</code></pre>
+<h4 id="44-&#x65E5;&#x5FD7;&#x67E5;&#x8BE2;&#x540E;&#x7AEF;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;">4.4 &#x65E5;&#x5FD7;&#x67E5;&#x8BE2;&#x540E;&#x7AEF;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</h4>
+<h5 id="441-mapper&#x63A5;&#x53E3;">4.4.1 Mapper&#x63A5;&#x53E3;</h5>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">OperationLogMapper</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">insert</span><span class="hljs-params">(OperationLog operationLog)</span></span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> List&lt;OperationLog&gt; <span class="hljs-title">selectListByCondition</span><span class="hljs-params">(Map dataMap)</span></span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Long <span class="hljs-title">countByCondition</span><span class="hljs-params">(Map dataMap)</span></span>;
+
+}
+</code></pre>
+<h5 id="442-mapperxml-&#x6620;&#x5C04;&#x914D;&#x7F6E;&#x6587;&#x4EF6;">4.4.2 Mapper.xml &#x6620;&#x5C04;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h5>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span> <span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-meta">&lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">mapper</span> <span class="hljs-attr">namespace</span>=<span class="hljs-string">&quot;cn.itcast.mapper.OperationLogMapper&quot;</span> &gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">insert</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;insert&quot;</span> <span class="hljs-attr">parameterType</span>=<span class="hljs-string">&quot;operationLog&quot;</span>&gt;</span>
+        INSERT INTO operation_log(id,return_value,return_class,operate_user,operate_time,param_and_value,
+        operate_class,operate_method,cost_time)
+      VALUES(NULL,#{returnValue},#{returnClass},#{operateUser},#{operateTime},#{paramAndValue},
+        #{operateClass},#{operateMethod},#{costTime})
+    <span class="hljs-tag">&lt;/<span class="hljs-name">insert</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;selectListByCondition&quot;</span> <span class="hljs-attr">parameterType</span>=<span class="hljs-string">&quot;map&quot;</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">&quot;operationLog&quot;</span>&gt;</span>
+      select
+        id ,
+        operate_class as operateClass ,
+        operate_method as operateMethod,
+        return_class as returnClass,
+        operate_user as operateUser,
+        operate_time as operateTime,
+        param_and_value as paramAndValue,
+        cost_time as costTime,
+        return_value as returnValue
+      from operation_log
+      <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">&quot;oplog_where&quot;</span>/&gt;</span>
+      limit #{start},#{size}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;countByCondition&quot;</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">&quot;long&quot;</span> <span class="hljs-attr">parameterType</span>=<span class="hljs-string">&quot;map&quot;</span>&gt;</span>
+        select count(*) from operation_log
+        <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">&quot;oplog_where&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">sql</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;oplog_where&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">where</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">&quot;operateClass != null and operateClass != &apos;&apos; &quot;</span>&gt;</span>
+                and operate_class = #{operateClass}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">&quot;operateMethod != null and operateMethod != &apos;&apos; &quot;</span>&gt;</span>
+                and operate_method = #{operateMethod}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">&quot;returnClass != null and returnClass != &apos;&apos; &quot;</span>&gt;</span>
+                and return_class = #{returnClass}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">&quot;costTime != null&quot;</span>&gt;</span>
+                and cost_time =  #{costTime}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">if</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">where</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">sql</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">mapper</span>&gt;</span>
+</code></pre>
+<h5 id="443-service">4.4.3 Service</h5>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-meta">@Transactional</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OperationLogService</span> </span>{
+
+    <span class="hljs-comment">//private static Logger logger = Logger.getLogger(OperationLogService.class);</span>
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> OperationLogMapper operationLogMapper;
+
+    <span class="hljs-comment">//&#x63D2;&#x5165;&#x6570;&#x636E;</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">insert</span><span class="hljs-params">(OperationLog operationLog)</span></span>{
+        operationLogMapper.insert(operationLog);
+    }
+
+    <span class="hljs-comment">//&#x6839;&#x636E;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> PageResult <span class="hljs-title">selectListByCondition</span><span class="hljs-params">(Map dataMap, Integer pageNum , Integer pageSize)</span></span>{
+
+       <span class="hljs-keyword">if</span>(paramMap ==<span class="hljs-keyword">null</span>){
+            paramMap = <span class="hljs-keyword">new</span> HashMap();
+        }
+        paramMap.put(<span class="hljs-string">&quot;start&quot;</span> , (pageNum-<span class="hljs-number">1</span>)*rows);
+        paramMap.put(<span class="hljs-string">&quot;rows&quot;</span>,rows);
+
+        Object costTime = paramMap.get(<span class="hljs-string">&quot;costTime&quot;</span>);
+        <span class="hljs-keyword">if</span>(costTime != <span class="hljs-keyword">null</span>){
+            <span class="hljs-keyword">if</span>(<span class="hljs-string">&quot;&quot;</span>.equals(costTime.toString())){
+                paramMap.put(<span class="hljs-string">&quot;costTime&quot;</span>,<span class="hljs-keyword">null</span>);
+            }<span class="hljs-keyword">else</span>{
+                paramMap.put(<span class="hljs-string">&quot;costTime&quot;</span>,<span class="hljs-keyword">new</span> Long(paramMap.get(<span class="hljs-string">&quot;costTime&quot;</span>).toString()));
+            }
+        }
+
+        System.out.println(dataMap);
+
+
+        <span class="hljs-keyword">long</span> countStart = System.currentTimeMillis();
+        Long count = operationLogMapper.countByCondition(dataMap);
+        <span class="hljs-keyword">long</span> countEnd = System.currentTimeMillis();
+        System.out.println(<span class="hljs-string">&quot;Count Cost Time : &quot;</span> + (countEnd-countStart)+<span class="hljs-string">&quot; ms&quot;</span>);
+
+
+        List&lt;OperationLog&gt; list = operationLogMapper.selectListByCondition(dataMap);
+        <span class="hljs-keyword">long</span> queryEnd = System.currentTimeMillis();
+        System.out.println(<span class="hljs-string">&quot;Query Cost Time : &quot;</span> + (queryEnd-countEnd)+<span class="hljs-string">&quot; ms&quot;</span>);
+
+
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> PageResult(count,list);
+
+    }
+
+}
+</code></pre>
+<h5 id="444-controller">4.4.4 Controller</h5>
+<pre><code class="lang-java"><span class="hljs-meta">@RestController</span>
+<span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/operationLog&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OperationLogController</span> </span>{
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> OperationLogService operationLogService;
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/findList&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> PageResult <span class="hljs-title">findList</span><span class="hljs-params">(@RequestBody Map dataMap, Integer pageNum , Integer pageSize)</span></span>{
+        PageResult page = operationLogService.selectListByCondition(dataMap, pageNum, pageSize);
+        <span class="hljs-keyword">return</span> page;
+    }
+
+}
+</code></pre>
+<h4 id="45-&#x65E5;&#x5FD7;&#x67E5;&#x8BE2;&#x524D;&#x7AEF;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;">4.5 &#x65E5;&#x5FD7;&#x67E5;&#x8BE2;&#x524D;&#x7AEF;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</h4>
+<p>&#x524D;&#x7AEF;&#x4EE3;&#x7801;&#x4F7F;&#x7528; BootStrap + AdminLTE &#x8FDB;&#x884C;&#x5E03;&#x5C40;&#xFF0C; &#x4F7F;&#x7528;Vuejs &#x8FDB;&#x884C;&#x89C6;&#x56FE;&#x5C42;&#x5C55;&#x793A;&#x3002;</p>
+<h5 id="451-js">4.5.1 js</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+   <span class="hljs-keyword">var</span> vm = <span class="hljs-keyword">new</span> Vue({
+       el: <span class="hljs-string">&apos;#app&apos;</span>,
+       data: {
+           dataList:[],
+           searchEntity:{
+               operateClass:<span class="hljs-string">&apos;&apos;</span>,
+               operateMethod:<span class="hljs-string">&apos;&apos;</span>,
+               returnClass:<span class="hljs-string">&apos;&apos;</span>,
+               costTime:<span class="hljs-string">&apos;&apos;</span>
+           },
+
+           page: <span class="hljs-number">1</span>,  <span class="hljs-comment">//&#x663E;&#x793A;&#x7684;&#x662F;&#x54EA;&#x4E00;&#x9875;</span>
+           pageSize: <span class="hljs-number">10</span>, <span class="hljs-comment">//&#x6BCF;&#x4E00;&#x9875;&#x663E;&#x793A;&#x7684;&#x6570;&#x636E;&#x6761;&#x6570;</span>
+           total: <span class="hljs-number">150</span>, <span class="hljs-comment">//&#x8BB0;&#x5F55;&#x603B;&#x6570;</span>
+           maxPage:<span class="hljs-number">8</span>  <span class="hljs-comment">//&#x6700;&#x5927;&#x9875;&#x6570;</span>
+       },
+       methods: {
+           pageHandler: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">page</span>) </span>{
+               <span class="hljs-keyword">this</span>.page = page;
+               <span class="hljs-keyword">this</span>.search();
+           },
+
+           search: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+               <span class="hljs-keyword">var</span> _this = <span class="hljs-keyword">this</span>;
+               <span class="hljs-keyword">this</span>.showLoading();
+               axios.post(<span class="hljs-string">&apos;/operationLog/findList.do?pageNum=&apos;</span> + _this.page + <span class="hljs-string">&quot;&amp;pageSize=&quot;</span> + _this.pageSize, _this.searchEntity).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">response</span>) </span>{
+                   <span class="hljs-keyword">if</span> (response) {
+                       _this.dataList = response.data.dataList;
+                       _this.total = response.data.total;
+                       _this.hideLoading();
+                   }
+               })
+           },
+
+           showLoading: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+               $(<span class="hljs-string">&apos;#loadingModal&apos;</span>).modal({backdrop: <span class="hljs-string">&apos;static&apos;</span>, keyboard: <span class="hljs-literal">false</span>});
+           },
+
+           hideLoading: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+               $(<span class="hljs-string">&apos;#loadingModal&apos;</span>).modal(<span class="hljs-string">&apos;hide&apos;</span>);
+           },
+       },
+
+       created:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+           <span class="hljs-keyword">this</span>.pageHandler(<span class="hljs-number">1</span>);
+       }
+   });
+
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h5 id="452-&#x5217;&#x8868;&#x6570;&#x636E;&#x5C55;&#x793A;">4.5.2 &#x5217;&#x8868;&#x6570;&#x636E;&#x5C55;&#x793A;</h5>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;item in dataList&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ids&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-center&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn bg-olive btn-xs&quot;</span>&gt;</span>&#x8BE6;&#x60C5;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn bg-olive btn-xs&quot;</span>&gt;</span>&#x5220;&#x9664;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+</code></pre>
+<p>4.5.3 &#x5206;&#x9875;&#x63D2;&#x4EF6;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;wrap&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;wrap&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">zpagenav</span> <span class="hljs-attr">v-bind:page</span>=<span class="hljs-string">&quot;page&quot;</span> <span class="hljs-attr">v-bind:page-size</span>=<span class="hljs-string">&quot;pageSize&quot;</span> <span class="hljs-attr">v-bind:total</span>=<span class="hljs-string">&quot;total&quot;</span>
+              <span class="hljs-attr">v-bind:max-page</span>=<span class="hljs-string">&quot;maxPage&quot;</span>  <span class="hljs-attr">v-on:pagehandler</span>=<span class="hljs-string">&quot;pageHandler&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">zpagenav</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h4 id="46-&#x8054;&#x8C03;&#x6D4B;&#x8BD5;">4.6 &#x8054;&#x8C03;&#x6D4B;&#x8BD5;</h4>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;postman&#x6765;&#x8BBF;&#x95EE;&#x4E1A;&#x52A1;&#x7CFB;&#x7EDF;&#xFF0C;&#x518D;&#x67E5;&#x770B;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#xFF0C;&#x9A8C;&#x8BC1;&#x80FD;&#x4E0D;&#x80FD;&#x5C06;&#x7528;&#x6237;&#x7684;&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x4E0B;&#x6765;&#x3002;</p>
+<p><img src="assets/1555077276426.png" alt="1555077276426"> </p>
+<h4 id="47-&#x5206;&#x6790;&#x6027;&#x80FD;&#x95EE;&#x9898;">4.7 &#x5206;&#x6790;&#x6027;&#x80FD;&#x95EE;&#x9898;</h4>
+<p>&#x7CFB;&#x7EDF;&#x4E2D;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;&#x7684;&#x6570;&#x636E;&#x91CF;&#xFF0C;&#x968F;&#x7740;&#x65F6;&#x95F4;&#x7684;&#x63A8;&#x79FB;&#xFF0C;&#x8FD9;&#x5F20;&#x8868;&#x7684;&#x6570;&#x636E;&#x91CF;&#x4F1A;&#x8D8A;&#x6765;&#x8D8A;&#x5927;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6839;&#x636E;&#x4E1A;&#x52A1;&#x9700;&#x6C42;&#xFF0C;&#x6765;&#x5BF9;&#x65E5;&#x5FD7;&#x67E5;&#x8BE2;&#x6A21;&#x5757;&#x7684;&#x6027;&#x80FD;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#x3002;</p>
+<p>1&#xFF09; &#x5206;&#x9875;&#x67E5;&#x8BE2;&#x4F18;&#x5316;</p>
+<p>&#x7531;&#x4E8E;&#x5728;&#x8FDB;&#x884C;&#x65E5;&#x5FD7;&#x67E5;&#x8BE2;&#x65F6;&#xFF0C;&#x662F;&#x8FDB;&#x884C;&#x5206;&#x9875;&#x67E5;&#x8BE2;&#xFF0C;&#x90A3;&#x4E5F;&#x5C31;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x5728;&#x67E5;&#x770B;&#x65F6;&#xFF0C;&#x81F3;&#x5C11;&#x9700;&#x8981;&#x67E5;&#x8BE2;&#x4E24;&#x6B21;&#xFF1A;</p>
+<p>A. &#x67E5;&#x8BE2;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x7684;&#x603B;&#x8BB0;&#x5F55;&#x6570;&#x3002;--&gt; count &#x64CD;&#x4F5C;</p>
+<p>B. &#x67E5;&#x8BE2;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x7684;&#x5217;&#x8868;&#x6570;&#x636E;&#x3002;--&gt; &#x5206;&#x9875;&#x67E5;&#x8BE2; limit &#x64CD;&#x4F5C;</p>
+<p>&#x901A;&#x5E38;&#x6765;&#x8BF4;&#xFF0C;count() &#x90FD;&#x9700;&#x8981;&#x626B;&#x63CF;&#x5927;&#x91CF;&#x7684;&#x884C;&#xFF08;&#x610F;&#x5473;&#x7740;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x5927;&#x91CF;&#x7684;&#x6570;&#x636E;&#xFF09;&#x624D;&#x80FD;&#x83B7;&#x5F97;&#x7CBE;&#x786E;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x56E0;&#x6B64;&#x662F;&#x5F88;&#x96BE;&#x5BF9;&#x8BE5;SQL&#x8FDB;&#x884C;&#x4F18;&#x5316;&#x64CD;&#x4F5C;&#x7684;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#x5BF9;count&#x8FDB;&#x884C;&#x4F18;&#x5316;&#xFF0C;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x601D;&#x8DEF;&#xFF0C;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x6C47;&#x603B;&#x8868;&#xFF0C;&#x6216;&#x8005;redis&#x7F13;&#x5B58;&#x6765;&#x4E13;&#x95E8;&#x8BB0;&#x5F55;&#x8BE5;&#x8868;&#x5BF9;&#x5E94;&#x7684;&#x8BB0;&#x5F55;&#x6570;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5F88;&#x8F7B;&#x677E;&#x7684;&#x5B9E;&#x73B0;&#x6C47;&#x603B;&#x6570;&#x636E;&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x800C;&#x4E14;&#x6548;&#x7387;&#x5F88;&#x9AD8;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x79CD;&#x7EDF;&#x8BA1;&#x5E76;&#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;&#x767E;&#x5206;&#x4E4B;&#x767E;&#x7684;&#x51C6;&#x786E; &#x3002;&#x5BF9;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x201C;&#x5FEB;&#x901F;&#x3001;&#x7CBE;&#x786E;&#x3001;&#x5B9E;&#x73B0;&#x7B80;&#x5355;&#x201D;&#xFF0C;&#x4E09;&#x8005;&#x6C38;&#x8FDC;&#x53EA;&#x80FD;&#x6EE1;&#x8DB3;&#x5176;&#x4E8C;&#xFF0C;&#x5FC5;&#x987B;&#x820D;&#x6389;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x3002;</p>
+<p>2&#xFF09; &#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x4F18;&#x5316;</p>
+<p>&#x9488;&#x5BF9;&#x4E8E;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;,&#x9700;&#x8981;&#x5BF9;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;,&#x53CA;&#x6392;&#x5E8F;&#x5B57;&#x6BB5;&#x5EFA;&#x7ACB;&#x7D22;&#x5F15;&#x3002;</p>
+<p>3&#xFF09; &#x8BFB;&#x5199;&#x5206;&#x79BB;</p>
+<p>&#x901A;&#x8FC7;&#x4E3B;&#x4ECE;&#x590D;&#x5236;&#x96C6;&#x7FA4;&#xFF0C;&#x6765;&#x5B8C;&#x6210;&#x8BFB;&#x5199;&#x5206;&#x79BB;&#xFF0C;&#x4F7F;&#x5199;&#x64CD;&#x4F5C;&#x8D70;&#x4E3B;&#x8282;&#x70B9;&#xFF0C; &#x800C;&#x8BFB;&#x64CD;&#x4F5C;&#xFF0C;&#x8D70;&#x4ECE;&#x8282;&#x70B9;&#x3002;</p>
+<p>4&#xFF09; MySQL&#x670D;&#x52A1;&#x5668;&#x4F18;&#x5316;</p>
+<p>5&#xFF09; &#x5E94;&#x7528;&#x4F18;&#x5316;</p>
+<h4 id="48-&#x6027;&#x80FD;&#x4F18;&#x5316;---&#x5206;&#x9875;">4.8 &#x6027;&#x80FD;&#x4F18;&#x5316; - &#x5206;&#x9875;</h4>
+<h5 id="481-&#x4F18;&#x5316;count">4.8.1 &#x4F18;&#x5316;count</h5>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x5F20;&#x8868;&#x7528;&#x6765;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;&#x8868;&#x7684;&#x603B;&#x6570;&#x636E;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> log_counter(
+    logcount <span class="hljs-built_in">bigint</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span>
+)<span class="hljs-keyword">engine</span> = <span class="hljs-keyword">innodb</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">CHARSET</span> = utf8;
+</code></pre>
+<p>&#x5728;&#x6BCF;&#x6B21;&#x63D2;&#x5165;&#x6570;&#x636E;&#x4E4B;&#x540E;&#xFF0C;&#x66F4;&#x65B0;&#x8BE5;&#x8868; &#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">update</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;updateLogCounter&quot;</span> &gt;</span>
+    update log_counter set logcount = logcount + 1
+<span class="hljs-tag">&lt;/<span class="hljs-name">update</span>&gt;</span>
+</code></pre>
+<p>&#x5728;&#x8FDB;&#x884C;&#x5206;&#x9875;&#x67E5;&#x8BE2;&#x65F6;, &#x83B7;&#x53D6;&#x603B;&#x8BB0;&#x5F55;&#x6570;&#xFF0C;&#x4ECE;&#x8BE5;&#x8868;&#x4E2D;&#x67E5;&#x8BE2;&#x65E2;&#x53EF;&#x3002;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;countLogFromCounter&quot;</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">&quot;long&quot;</span>&gt;</span>
+    select logcount from log_counter limit 1
+<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+</code></pre>
+<h5 id="482-&#x4F18;&#x5316;-limit">4.8.2 &#x4F18;&#x5316; limit</h5>
+<p>&#x5728;&#x8FDB;&#x884C;&#x5206;&#x9875;&#x65F6;&#xFF0C;&#x4E00;&#x822C;&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x8986;&#x76D6;&#x7D22;&#x5F15;&#xFF0C;&#x80FD;&#x591F;&#x6BD4;&#x8F83;&#x597D;&#x7684;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x3002;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x5E38;&#x89C1;&#xFF0C;&#x800C;&#x53C8;&#x975E;&#x5E38;&#x5934;&#x75BC;&#x7684;&#x5206;&#x9875;&#x573A;&#x666F;&#x5C31;&#x662F; &quot;limit 1000000,10&quot; &#xFF0C;&#x6B64;&#x65F6;MySQL&#x9700;&#x8981;&#x641C;&#x7D22;&#x51FA;&#x524D;1000010 &#x6761;&#x8BB0;&#x5F55;&#x540E;&#xFF0C;&#x4EC5;&#x4EC5;&#x9700;&#x8981;&#x8FD4;&#x56DE;&#x7B2C; 1000001 &#x5230; 1000010 &#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x524D;1000000 &#x8BB0;&#x5F55;&#x4F1A;&#x88AB;&#x629B;&#x5F03;&#xFF0C;&#x67E5;&#x8BE2;&#x4EE3;&#x4EF7;&#x975E;&#x5E38;&#x5927;&#x3002; </p>
+<p><img src="assets/1555081714638.png" alt="1555081714638"> </p>
+<p>&#x5F53;&#x70B9;&#x51FB;&#x6BD4;&#x8F83;&#x9760;&#x540E;&#x7684;&#x9875;&#x7801;&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x51FA;&#x73B0;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x67E5;&#x8BE2;&#x6548;&#x7387;&#x975E;&#x5E38;&#x6162;&#x3002;</p>
+<p>&#x4F18;&#x5316;SQL&#xFF1A;</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> operation_log <span class="hljs-keyword">limit</span> <span class="hljs-number">3000000</span> , <span class="hljs-number">10</span>;
+</code></pre>
+<p>&#x5C06;&#x4E0A;&#x8FF0;SQL&#x4F18;&#x5316;&#x4E3A; : </p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> operation_log t , (<span class="hljs-keyword">select</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">from</span> operation_log <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">limit</span> <span class="hljs-number">3000000</span>,<span class="hljs-number">10</span>) b <span class="hljs-keyword">where</span> t.<span class="hljs-keyword">id</span> = b.<span class="hljs-keyword">id</span> ;
+</code></pre>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;selectListByCondition&quot;</span> <span class="hljs-attr">parameterType</span>=<span class="hljs-string">&quot;map&quot;</span> <span class="hljs-attr">resultType</span>=<span class="hljs-string">&quot;operationLog&quot;</span>&gt;</span>
+  select
+    id ,
+    operate_class as operateClass ,
+    operate_method as operateMethod,
+    return_class as returnClass,
+    operate_user as operateUser,
+    operate_time as operateTime,
+    param_and_value as paramAndValue,
+    cost_time as costTime,
+    return_value as returnValue
+  from operation_log t,
+
+  (select id from operation_log 
+  <span class="hljs-tag">&lt;<span class="hljs-name">where</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">include</span> <span class="hljs-attr">refid</span>=<span class="hljs-string">&quot;oplog_where&quot;</span>/&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">where</span>&gt;</span>
+  order by id limit #{start},#{rows}) b  where t.id = b.id  
+<span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+</code></pre>
+<h4 id="49-&#x6027;&#x80FD;&#x4F18;&#x5316;---&#x7D22;&#x5F15;">4.9 &#x6027;&#x80FD;&#x4F18;&#x5316; - &#x7D22;&#x5F15;</h4>
+<p><img src="assets/1555152703824.png" alt="1555152703824"></p>
+<p>&#x5F53;&#x6839;&#x636E;&#x64CD;&#x4F5C;&#x4EBA;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;&#x65F6;&#xFF0C; &#x67E5;&#x8BE2;&#x7684;&#x6548;&#x7387;&#x5F88;&#x4F4E;&#xFF0C;&#x8017;&#x65F6;&#x6BD4;&#x8F83;&#x957F;&#x3002;&#x539F;&#x56E0;&#x5C31;&#x662F;&#x56E0;&#x4E3A;&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x8868;&#x7ED3;&#x6784;&#x65F6;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x9488;&#x5BF9;&#x4E8E; &#x64CD;&#x4F5C;&#x4EBA; &#x5B57;&#x6BB5;&#x5EFA;&#x7ACB;&#x7D22;&#x5F15;&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">INDEX</span> idx_user_method_return_cost <span class="hljs-keyword">ON</span> operation_log(operate_user,operate_method,return_class,cost_time);
+</code></pre>
+<p>&#x540C;&#x4E0A; &#xFF0C; &#x4E3A;&#x4E86;&#x67E5;&#x8BE2;&#x6548;&#x7387;&#x9AD8;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x9700;&#x8981;&#x5BF9; &#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#x3001;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#x3001;&#x64CD;&#x4F5C;&#x8017;&#x65F6; &#x7B49;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x521B;&#x5EFA;&#x7D22;&#x5F15;&#xFF0C;&#x4EE5;&#x63D0;&#x9AD8;&#x67E5;&#x8BE2;&#x6548;&#x7387;&#x3002;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">INDEX</span> idx_optlog_method_return_cost <span class="hljs-keyword">ON</span> operation_log(operate_method,return_class,cost_time);
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">INDEX</span> idx_optlog_return_cost <span class="hljs-keyword">ON</span> operation_log(return_class,cost_time);
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">INDEX</span> idx_optlog_cost <span class="hljs-keyword">ON</span> operation_log(cost_time);
+</code></pre>
+<h4 id="410-&#x6027;&#x80FD;&#x4F18;&#x5316;---&#x6392;&#x5E8F;">4.10 &#x6027;&#x80FD;&#x4F18;&#x5316; - &#x6392;&#x5E8F;</h4>
+<p>&#x5728;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4E1A;&#x52A1;&#x9700;&#x6C42;&#x4E2D;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x5BF9;&#x7ED3;&#x679C;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x4E86;&#x6392;&#x5E8F;&#x5904;&#x7406; , &#x8FD9;&#x4E2A;&#x65F6;&#x5019;,&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x5BF9;&#x6392;&#x5E8F;&#x7684;&#x5B57;&#x6BB5;&#x5EFA;&#x7ACB;&#x9002;&#x5F53;&#x7684;&#x7D22;&#x5F15;, &#x6765;&#x63D0;&#x9AD8;&#x6392;&#x5E8F;&#x7684;&#x6548;&#x7387; &#x3002;</p>
+<h4 id="411-&#x6027;&#x80FD;&#x4F18;&#x5316;---&#x8BFB;&#x5199;&#x5206;&#x79BB;">4.11 &#x6027;&#x80FD;&#x4F18;&#x5316; - &#x8BFB;&#x5199;&#x5206;&#x79BB;</h4>
+<h5 id="4111-&#x6982;&#x8FF0;">4.11.1 &#x6982;&#x8FF0;</h5>
+<p>&#x5728;Mysql&#x4E3B;&#x4ECE;&#x590D;&#x5236;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8BFB;&#x5199;&#x5206;&#x79BB;&#x6765;&#x964D;&#x4F4E;&#x5355;&#x53F0;Mysql&#x8282;&#x70B9;&#x7684;&#x538B;&#x529B;&#xFF0C;&#x4ECE;&#x800C;&#x6765;&#x63D0;&#x9AD8;&#x8BBF;&#x95EE;&#x6548;&#x7387;&#xFF0C;&#x8BFB;&#x5199;&#x5206;&#x79BB;&#x7684;&#x67B6;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="assets/1555235426739.png" alt="1555235426739"> </p>
+<p>&#x5BF9;&#x4E8E;&#x8BFB;&#x5199;&#x5206;&#x79BB;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Spring AOP &#x6765;&#x8FDB;&#x884C;&#x52A8;&#x6001;&#x7684;&#x5207;&#x6362;&#x6570;&#x636E;&#x6E90;&#xFF0C;&#x8FDB;&#x884C;&#x64CD;&#x4F5C; &#xFF1A;</p>
+<h5 id="4112-&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;">4.11.2 &#x5B9E;&#x73B0;&#x65B9;&#x5F0F;</h5>
+<p>db.properties</p>
+<pre><code class="lang-properties">jdbc.write.driver=com.mysql.jdbc.Driver
+jdbc.write.url=jdbc:mysql://192.168.142.128:3306/mysql_demo
+jdbc.write.username=root
+jdbc.write.password=itcast
+
+jdbc.read.driver=com.mysql.jdbc.Driver
+jdbc.read.url=jdbc:mysql://192.168.142.129:3306/mysql_demo
+jdbc.read.username=root
+jdbc.read.password=itcast
+</code></pre>
+<p>applicationContext-datasource.xml</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans&quot;</span>
+       <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+       <span class="hljs-attr">xmlns:aop</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/aop&quot;</span>
+       <span class="hljs-attr">xmlns:tx</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/tx&quot;</span>
+       <span class="hljs-attr">xmlns:context</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/context&quot;</span>
+       <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd&quot;</span>&gt;</span>
+
+
+    <span class="hljs-comment">&lt;!-- &#x914D;&#x7F6E;&#x6570;&#x636E;&#x6E90; - Read --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;readDataSource&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;</span> <span class="hljs-attr">destroy-method</span>=<span class="hljs-string">&quot;close&quot;</span>  <span class="hljs-attr">lazy-init</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;driverClass&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${jdbc.read.driver}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;jdbcUrl&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${jdbc.read.url}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;user&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${jdbc.read.username}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${jdbc.read.password}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+
+    <span class="hljs-comment">&lt;!-- &#x914D;&#x7F6E;&#x6570;&#x636E;&#x6E90; - Write --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;writeDataSource&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;</span>  <span class="hljs-attr">destroy-method</span>=<span class="hljs-string">&quot;close&quot;</span>  <span class="hljs-attr">lazy-init</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;driverClass&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${jdbc.write.driver}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;jdbcUrl&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${jdbc.write.url}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;user&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${jdbc.write.username}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${jdbc.write.password}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+
+    <span class="hljs-comment">&lt;!-- &#x914D;&#x7F6E;&#x52A8;&#x6001;&#x5206;&#x914D;&#x7684;&#x8BFB;&#x5199; &#x6570;&#x636E;&#x6E90; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;dataSource&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cn.itcast.aop.datasource.ChooseDataSource&quot;</span> <span class="hljs-attr">lazy-init</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;targetDataSources&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">map</span> <span class="hljs-attr">key-type</span>=<span class="hljs-string">&quot;java.lang.String&quot;</span> <span class="hljs-attr">value-type</span>=<span class="hljs-string">&quot;javax.sql.DataSource&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">entry</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;write&quot;</span> <span class="hljs-attr">value-ref</span>=<span class="hljs-string">&quot;writeDataSource&quot;</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">entry</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;read&quot;</span> <span class="hljs-attr">value-ref</span>=<span class="hljs-string">&quot;readDataSource&quot;</span>/&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">map</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;defaultTargetDataSource&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;writeDataSource&quot;</span>/&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;methodType&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">map</span> <span class="hljs-attr">key-type</span>=<span class="hljs-string">&quot;java.lang.String&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">entry</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;read&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;,get,select,count,list,query,find&quot;</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">entry</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;write&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;,add,create,update,delete,remove,insert&quot;</span>/&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">map</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<p>ChooseDataSource</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChooseDataSource</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AbstractRoutingDataSource</span> </span>{
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Map&lt;String, List&lt;String&gt;&gt; METHOD_TYPE_MAP = <span class="hljs-keyword">new</span> HashMap&lt;String, List&lt;String&gt;&gt;();
+
+    <span class="hljs-comment">/**
+     * &#x5B9E;&#x73B0;&#x7236;&#x7C7B;&#x4E2D;&#x7684;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#xFF0C;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x6E90;&#x540D;&#x79F0;
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> Object <span class="hljs-title">determineCurrentLookupKey</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> DataSourceHandler.getDataSource();
+    }
+
+    <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x65B9;&#x6CD5;&#x540D;&#x524D;&#x7F00;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x636E;&#x6E90;</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setMethodType</span><span class="hljs-params">(Map&lt;String, String&gt; map)</span> </span>{
+        <span class="hljs-keyword">for</span> (String key : map.keySet()) {
+            List&lt;String&gt; v = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;();
+            String[] types = map.get(key).split(<span class="hljs-string">&quot;,&quot;</span>);
+            <span class="hljs-keyword">for</span> (String type : types) {
+                <span class="hljs-keyword">if</span> (!StringUtils.isEmpty(type)) {
+                    v.add(type);
+                }
+            }
+            METHOD_TYPE_MAP.put(key, v);
+        }
+        System.out.println(<span class="hljs-string">&quot;METHOD_TYPE_MAP : &quot;</span>+METHOD_TYPE_MAP);
+    }
+}
+</code></pre>
+<p>DataSourceHandler</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DataSourceHandler</span> </span>{
+
+    <span class="hljs-comment">// &#x6570;&#x636E;&#x6E90;&#x540D;&#x79F0;</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> ThreadLocal&lt;String&gt; holder = <span class="hljs-keyword">new</span> ThreadLocal&lt;String&gt;();
+
+    <span class="hljs-comment">/**
+     * &#x5728;&#x9879;&#x76EE;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x5C06;&#x914D;&#x7F6E;&#x7684;&#x8BFB;&#x3001;&#x5199;&#x6570;&#x636E;&#x6E90;&#x52A0;&#x5230;holder&#x4E2D;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">putDataSource</span><span class="hljs-params">(String datasource)</span> </span>{
+        holder.set(datasource);
+    }
+
+    <span class="hljs-comment">/**
+     * &#x4ECE;holer&#x4E2D;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x6E90;&#x5B57;&#x7B26;&#x4E32;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">getDataSource</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> holder.get();
+    }
+}
+</code></pre>
+<p>DataSourceAspect</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Aspect</span>
+<span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@Order</span>(-<span class="hljs-number">9999</span>)
+<span class="hljs-meta">@EnableAspectJAutoProxy</span>(proxyTargetClass = <span class="hljs-keyword">true</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DataSourceAspect</span> </span>{
+
+    <span class="hljs-keyword">protected</span> Logger logger = LoggerFactory.getLogger(<span class="hljs-keyword">this</span>.getClass());
+
+    <span class="hljs-comment">/**
+     * &#x914D;&#x7F6E;&#x524D;&#x7F6E;&#x901A;&#x77E5;,&#x4F7F;&#x7528;&#x5728;&#x65B9;&#x6CD5;aspect()&#x4E0A;&#x6CE8;&#x518C;&#x7684;&#x5207;&#x5165;&#x70B9;
+     */</span>
+    <span class="hljs-meta">@Before</span>(<span class="hljs-string">&quot;execution(* cn.itcast.service.*.*(..))&quot;</span>)
+    <span class="hljs-meta">@Order</span>(-<span class="hljs-number">9999</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">before</span><span class="hljs-params">(JoinPoint point)</span> </span>{
+
+        String className = point.getTarget().getClass().getName();
+        String method = point.getSignature().getName();
+        logger.info(className + <span class="hljs-string">&quot;.&quot;</span> + method + <span class="hljs-string">&quot;(&quot;</span> + Arrays.asList(point.getArgs())+ <span class="hljs-string">&quot;)&quot;</span>);
+
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">for</span> (String key : ChooseDataSource.METHOD_TYPE_MAP.keySet()) {
+                <span class="hljs-keyword">for</span> (String type : ChooseDataSource.METHOD_TYPE_MAP.get(key)) {
+                    <span class="hljs-keyword">if</span> (method.startsWith(type)) {
+                        System.out.println(<span class="hljs-string">&quot;key : &quot;</span> + key);
+                        DataSourceHandler.putDataSource(key);
+                        <span class="hljs-keyword">break</span>;
+                    }
+                }
+            }
+        } <span class="hljs-keyword">catch</span> (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+}
+</code></pre>
+<p>&#x901A;&#x8FC7; @Order(-9999) &#x6CE8;&#x89E3;&#x6765;&#x63A7;&#x5236;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;&#x5668;, &#x4E0E;&#x8BE5;&#x901A;&#x77E5;&#x7C7B;&#x7684;&#x52A0;&#x8F7D;&#x987A;&#x5E8F; , &#x9700;&#x8981;&#x8BA9;&#x901A;&#x77E5;&#x7C7B; , &#x5148;&#x52A0;&#x8F7D; , &#x6765;&#x5224;&#x5B9A;&#x4F7F;&#x7528;&#x54EA;&#x4E2A;&#x6570;&#x636E;&#x6E90; .</p>
+<h5 id="4113-&#x9A8C;&#x8BC1;">4.11.3 &#x9A8C;&#x8BC1;</h5>
+<p>&#x5728;&#x4E3B;&#x5E93;&#x548C;&#x4ECE;&#x5E93;&#x4E2D;&#xFF0C;&#x6267;&#x884C;&#x5982;&#x4E0B;SQL&#x8BED;&#x53E5;&#xFF0C;&#x6765;&#x67E5;&#x770B;&#x662F;&#x5426;&#x8BFB;&#x7684;&#x65F6;&#x5019;&#xFF0C; &#x4ECE;&#x4ECE;&#x5E93;&#x4E2D;&#x8BFB;&#x53D6; &#xFF1B; &#x5199;&#x5165;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x662F;&#x5426;&#x5199;&#x5165;&#x5230;&#x4E3B;&#x5E93;&#x3002;</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">show</span> <span class="hljs-keyword">status</span> <span class="hljs-keyword">like</span> <span class="hljs-string">&apos;Innodb_rows_%&apos;</span> ;
+</code></pre>
+<p><img src="assets/1555235982584.png" alt="1555235982584"> </p>
+<h5 id="4114-&#x539F;&#x7406;">4.11.4 &#x539F;&#x7406;</h5>
+<p><img src="assets/aop-datasource.png" alt="1555235982584"></p>
+<h4 id="412-&#x6027;&#x80FD;&#x4F18;&#x5316;---&#x5E94;&#x7528;&#x4F18;&#x5316;">4.12 &#x6027;&#x80FD;&#x4F18;&#x5316; - &#x5E94;&#x7528;&#x4F18;&#x5316;</h4>
+<h5 id="4121-&#x7F13;&#x5B58;">4.12.1 &#x7F13;&#x5B58;</h5>
+<p>&#x53EF;&#x4EE5;&#x5728;&#x4E1A;&#x52A1;&#x7CFB;&#x7EDF;&#x4E2D;&#x4F7F;&#x7528;redis&#x6765;&#x505A;&#x7F13;&#x5B58;&#xFF0C;&#x7F13;&#x5B58;&#x4E00;&#x4E9B;&#x57FA;&#x7840;&#x6027;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6765;&#x964D;&#x4F4E;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x7684;&#x538B;&#x529B;&#xFF0C;&#x63D0;&#x9AD8;&#x8BBF;&#x95EE;&#x6548;&#x7387;&#x3002;</p>
+<h5 id="4122-&#x5168;&#x6587;&#x68C0;&#x7D22;">4.12.2 &#x5168;&#x6587;&#x68C0;&#x7D22;</h5>
+<p>&#x5982;&#x679C;&#x4E1A;&#x52A1;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x91CF;&#x6BD4;&#x8F83;&#x5927;&#xFF08;&#x8FBE;&#x5230;&#x5343;&#x4E07;&#x7EA7;&#x522B;&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x518D;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x8FDB;&#x884C;&#x5206;&#x9875;&#x67E5;&#x8BE2;&#xFF0C;&#x901F;&#x5EA6;&#x5C06;&#x53D8;&#x5F97;&#x5F88;&#x6162;&#xFF08;&#x56E0;&#x4E3A;&#x5728;&#x5206;&#x9875;&#x65F6;&#x9996;&#x5148;&#x9700;&#x8981;count&#x6C42;&#x5408;&#x8BA1;&#x6570;&#xFF09;&#xFF0C;&#x4E3A;&#x4E86;&#x63D0;&#x9AD8;&#x8BBF;&#x95EE;&#x6548;&#x7387;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x52A0;&#x5165;Solr &#x6216;&#x8005; ElasticSearch&#x5168;&#x6587;&#x68C0;&#x7D22;&#x670D;&#x52A1;&#xFF0C;&#x6765;&#x63D0;&#x9AD8;&#x8BBF;&#x95EE;&#x6548;&#x7387;&#x3002;</p>
+<h5 id="4133-&#x975E;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;">4.13.3 &#x975E;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;</h5>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x5C06;&#x975E;&#x6838;&#x5FC3;&#xFF08;&#x91CD;&#x8981;&#xFF09;&#x6570;&#x636E;&#xFF0C;&#x5B58;&#x5728; MongoDB &#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x63D2;&#x5165;&#x4EE5;&#x53CA;&#x67E5;&#x8BE2;&#x7684;&#x6548;&#x7387;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Mysql高级-day03.html" class="navigation navigation-prev " aria-label="Previous page: MySQL 高级03">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../03JDBC/JDBC.html" class="navigation navigation-next " aria-label="Next page: JDBC">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MySQL 高级04","level":"1.3.4.7","depth":3,"next":{"title":"JDBC","level":"1.3.5","depth":2,"path":"back/03JDBC/JDBC.md","ref":"./back/03JDBC/JDBC.md","articles":[]},"previous":{"title":"MySQL 高级03","level":"1.3.4.6","depth":3,"path":"back/MySQL 高级/Mysql高级-day03.md","ref":"./back/MySQL 高级/Mysql高级-day03.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button"],"pluginsConfig":{"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"back/MySQL 高级/Mysql高级-day04.md","mtime":"2021-07-06T02:34:37.619Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-31T08:53:45.469Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
