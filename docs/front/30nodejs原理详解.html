@@ -17,7 +17,11 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
                 
             
                 
@@ -1144,9 +1148,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="nodejs-&#x539F;&#x7406;&#x8BE6;&#x89E3;">Node.js &#x539F;&#x7406;&#x8BE6;&#x89E3;</h2>
-<h3 id="&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x6A21;&#x578B;-event-loop">&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x6A21;&#x578B; Event Loop</h3>
-<h4 id="&#x8C03;&#x7528;&#x6808;1">&#x8C03;&#x7528;&#x6808;(1)</h4>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#nodejs-&#x539F;&#x7406;&#x8BE6;&#x89E3;"><b></b>Node.js &#x539F;&#x7406;&#x8BE6;&#x89E3;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x6A21;&#x578B;-event-loop"><b></b>&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x6A21;&#x578B; Event Loop</a></li><li><span class="title-icon "></span><a href="#&#x5B8F;&#x4EFB;&#x52A1;&#x4E0E;&#x5FAE;&#x4EFB;&#x52A1;"><b></b>&#x5B8F;&#x4EFB;&#x52A1;&#x4E0E;&#x5FAE;&#x4EFB;&#x52A1;</a></li><li><span class="title-icon "></span><a href="#buffer"><b></b>Buffer</a></li><li><span class="title-icon "></span><a href="#event"><b></b>Event</a></li><li><span class="title-icon "></span><a href="#stream"><b></b>Stream</a></li><li><span class="title-icon "></span><a href="#node-&#x5168;&#x5C40;&#x5BF9;&#x8C61;"><b></b>Node &#x5168;&#x5C40;&#x5BF9;&#x8C61;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="nodejs-&#x539F;&#x7406;&#x8BE6;&#x89E3;"><a name="nodejs-&#x539F;&#x7406;&#x8BE6;&#x89E3;" class="anchor-navigation-ex-anchor" href="#nodejs-&#x539F;&#x7406;&#x8BE6;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>Node.js &#x539F;&#x7406;&#x8BE6;&#x89E3;</h2>
+<h3 id="&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x6A21;&#x578B;-event-loop"><a name="&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x6A21;&#x578B;-event-loop" class="anchor-navigation-ex-anchor" href="#&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x6A21;&#x578B;-event-loop"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x6A21;&#x578B; Event Loop</h3>
+<h4 id="&#x8C03;&#x7528;&#x6808;1"><a name="&#x8C03;&#x7528;&#x6808;1" class="anchor-navigation-ex-anchor" href="#&#x8C03;&#x7528;&#x6808;1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8C03;&#x7528;&#x6808;(1)</h4>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">multiply</span>(<span class="hljs-params">a, b</span>) </span>{
     <span class="hljs-keyword">return</span> a * b;
 }
@@ -1159,7 +1163,7 @@
 printSqure(<span class="hljs-number">4</span>);
 </code></pre>
 <p><img src="img/call-stack-1.png" alt="call-stack-1"></p>
-<h4 id="&#x8C03;&#x7528;&#x6808;2">&#x8C03;&#x7528;&#x6808;(2)</h4>
+<h4 id="&#x8C03;&#x7528;&#x6808;2"><a name="&#x8C03;&#x7528;&#x6808;2" class="anchor-navigation-ex-anchor" href="#&#x8C03;&#x7528;&#x6808;2"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8C03;&#x7528;&#x6808;(2)</h4>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">multiply</span>(<span class="hljs-params">a, b</span>) </span>{
     <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>();
 }
@@ -1172,14 +1176,14 @@ printSqure(<span class="hljs-number">4</span>);
 printSqure(<span class="hljs-number">4</span>);
 </code></pre>
 <p><img src="img/call-stack-2.png" alt="call-stack-2"></p>
-<h4 id="&#x8C03;&#x7528;&#x6808;3">&#x8C03;&#x7528;&#x6808;(3)</h4>
+<h4 id="&#x8C03;&#x7528;&#x6808;3"><a name="&#x8C03;&#x7528;&#x6808;3" class="anchor-navigation-ex-anchor" href="#&#x8C03;&#x7528;&#x6808;3"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8C03;&#x7528;&#x6808;(3)</h4>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fn</span>(<span class="hljs-params">a</span>) </span>{
     fn(a);
 }
 fn(<span class="hljs-number">1</span>);
 </code></pre>
 <p><img src="img/call-stack-3.png" alt="call-stack-3"></p>
-<h4 id="&#x540C;&#x6B65;&#x8C03;&#x7528;">&#x540C;&#x6B65;&#x8C03;&#x7528;</h4>
+<h4 id="&#x540C;&#x6B65;&#x8C03;&#x7528;"><a name="&#x540C;&#x6B65;&#x8C03;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x540C;&#x6B65;&#x8C03;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x540C;&#x6B65;&#x8C03;&#x7528;</h4>
 <pre><code class="lang-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
 
 fs.readFileSync(<span class="hljs-string">&apos;./a.txt&apos;</span>);
@@ -1189,7 +1193,7 @@ fs.readFileSync(<span class="hljs-string">&apos;./c.txt&apos;</span>);
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;finish&apos;</span>);
 </code></pre>
 <p><img src="img/sync-call.png" alt="sync-call"></p>
-<h4 id="&#x5F02;&#x6B65;&#x8C03;&#x7528;">&#x5F02;&#x6B65;&#x8C03;&#x7528;</h4>
+<h4 id="&#x5F02;&#x6B65;&#x8C03;&#x7528;"><a name="&#x5F02;&#x6B65;&#x8C03;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x5F02;&#x6B65;&#x8C03;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F02;&#x6B65;&#x8C03;&#x7528;</h4>
 <pre><code class="lang-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
 
 fs.readFile(<span class="hljs-string">&apos;./a.txt&apos;</span>);
@@ -1199,7 +1203,7 @@ fs.readFile(<span class="hljs-string">&apos;./c.txt&apos;</span>);
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;finish&apos;</span>);
 </code></pre>
 <p><img src="img/async-call.png" alt="async-call"></p>
-<h4 id="&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x673A;&#x5236;">&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x673A;&#x5236;</h4>
+<h4 id="&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x673A;&#x5236;"><a name="&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x673A;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x673A;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x673A;&#x5236;</h4>
 <pre><code class="lang-js">setTimeout(() =&gt; {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;timeout&apos;</span>);
 }, <span class="hljs-number">5000</span>);
@@ -1207,7 +1211,7 @@ fs.readFile(<span class="hljs-string">&apos;./c.txt&apos;</span>);
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello&apos;</span>);
 </code></pre>
 <p><img src="img/event-loop.png" alt="event-loop"></p>
-<h3 id="&#x5B8F;&#x4EFB;&#x52A1;&#x4E0E;&#x5FAE;&#x4EFB;&#x52A1;">&#x5B8F;&#x4EFB;&#x52A1;&#x4E0E;&#x5FAE;&#x4EFB;&#x52A1;</h3>
+<h3 id="&#x5B8F;&#x4EFB;&#x52A1;&#x4E0E;&#x5FAE;&#x4EFB;&#x52A1;"><a name="&#x5B8F;&#x4EFB;&#x52A1;&#x4E0E;&#x5FAE;&#x4EFB;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x5B8F;&#x4EFB;&#x52A1;&#x4E0E;&#x5FAE;&#x4EFB;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B8F;&#x4EFB;&#x52A1;&#x4E0E;&#x5FAE;&#x4EFB;&#x52A1;</h3>
 <p><strong>&#x5B8F;&#x4EFB;&#x52A1;</strong></p>
 <ul>
 <li>setTimeout</li>
@@ -1226,7 +1230,7 @@ fs.readFile(<span class="hljs-string">&apos;./c.txt&apos;</span>);
 <p>&#x5FAE;&#x4EFB;&#x52A1;&#x961F;&#x5217;&#x7387;&#x5148;&#x6267;&#x884C;, &#x76F4;&#x5230;&#x6E05;&#x7A7A;</p>
 <p>&#x5F53;&#x5FAE;&#x4EFB;&#x52A1;&#x961F;&#x5217;&#x4E3A;&#x7A7A;&#x65F6;, &#x6267;&#x884C;&#x5B8F;&#x4EFB;&#x52A1;&#x961F;&#x5217;</p>
 </blockquote>
-<h4 id="&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x673A;&#x5236;">&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x673A;&#x5236;</h4>
+<h4 id="&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x673A;&#x5236;_1"><a name="&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x673A;&#x5236;_1" class="anchor-navigation-ex-anchor" href="#&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x673A;&#x5236;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x673A;&#x5236;</h4>
 <pre><code class="lang-js">setTimeout(() =&gt; {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;timeout&apos;</span>);
 }, <span class="hljs-number">0</span>);
@@ -1257,8 +1261,8 @@ setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span
 <span class="hljs-built_in">console</span>.log(<span class="hljs-number">8</span>);
 requestAnimationFrame(() =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-number">9</span>));
 </code></pre>
-<h3 id="buffer">Buffer</h3>
-<h4 id="&#x4EC0;&#x4E48;&#x662F;-buffer">&#x4EC0;&#x4E48;&#x662F; Buffer</h4>
+<h3 id="buffer"><a name="buffer" class="anchor-navigation-ex-anchor" href="#buffer"><i class="fa fa-link" aria-hidden="true"></i></a>Buffer</h3>
+<h4 id="&#x4EC0;&#x4E48;&#x662F;-buffer"><a name="&#x4EC0;&#x4E48;&#x662F;-buffer" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;-buffer"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EC0;&#x4E48;&#x662F; Buffer</h4>
 <ul>
 <li>Buffer &#x662F; UInt8Array</li>
 <li>&#x662F;&#x6570;&#x7EC4;, &#x4E14;&#x6BCF;&#x4E2A; item &#x6709;&#x6548;&#x8303;&#x56F4;&#x662F; 0~255</li>
@@ -1272,8 +1276,8 @@ Buffer.from(<span class="hljs-string">&apos;abcd&apos;</span>);
 </code></pre>
 <p>utf8 &#x7F16;&#x7801;</p>
 <p><img src="img/utf-8.png" alt="utf-8"></p>
-<h3 id="event">Event</h3>
-<h4 id="event-eimtter">Event Eimtter</h4>
+<h3 id="event"><a name="event" class="anchor-navigation-ex-anchor" href="#event"><i class="fa fa-link" aria-hidden="true"></i></a>Event</h3>
+<h4 id="event-eimtter"><a name="event-eimtter" class="anchor-navigation-ex-anchor" href="#event-eimtter"><i class="fa fa-link" aria-hidden="true"></i></a>Event Eimtter</h4>
 <ul>
 <li>on &#x65B9;&#x6CD5;, &#x6CE8;&#x518C;&#x4E8B;&#x4EF6;&#x56DE;&#x8C03;</li>
 <li>emit &#x65B9;&#x6CD5;, &#x624B;&#x52A8;&#x89E6;&#x53D1;&#x4E8B;&#x4EF6;</li>
@@ -1290,8 +1294,8 @@ myEventEmitter.on(<span class="hljs-string">&apos;ping&apos;</span>, <span class
 
 myEventEmitter.emit(<span class="hljs-string">&apos;ping&apos;</span>);
 </code></pre>
-<h3 id="stream">Stream</h3>
-<h4 id="&#x4EC0;&#x4E48;&#x662F;-stream">&#x4EC0;&#x4E48;&#x662F; Stream</h4>
+<h3 id="stream"><a name="stream" class="anchor-navigation-ex-anchor" href="#stream"><i class="fa fa-link" aria-hidden="true"></i></a>Stream</h3>
+<h4 id="&#x4EC0;&#x4E48;&#x662F;-stream"><a name="&#x4EC0;&#x4E48;&#x662F;-stream" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;-stream"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EC0;&#x4E48;&#x662F; Stream</h4>
 <ul>
 <li>Node.js &#x4E2D;&#x5F88;&#x591A;&#x5BF9;&#x8C61;&#x90FD;&#x662F; Stream, &#x4F8B;&#x5982; HTTP &#x7684;&#x8BF7;&#x6C42;, &#x8FDB;&#x7A0B;&#x65E5;&#x5FD7;&#x8F93;&#x51FA;, &#x6587;&#x4EF6;&#x7684;&#x8BFB;&#x5199;</li>
 <li>Stream &#x672C;&#x8EAB;&#x662F;&#x4E00;&#x4E2A; EventEmitter</li>
@@ -1299,14 +1303,14 @@ myEventEmitter.emit(<span class="hljs-string">&apos;ping&apos;</span>);
 <li>&#x5F53; Stream &#x4E2D; Buffer &#x6709;&#x6570;&#x636E;&#x53EF;&#x8BFB;&#x65F6;, emit data &#x4E8B;&#x4EF6;, &#x901A;&#x77E5;&#x5916;&#x90E8;&#x8BFB;&#x53D6;&#x6570;&#x636E;</li>
 <li>&#x5F53; Stream &#x53EF;&#x5199;&#x65F6;, &#x901A;&#x8FC7;&#x8C03;&#x7528; write(), end() API &#x6765;&#x5199;&#x5165;&#x6570;&#x636E;&#x5230;&#x5185;&#x90E8; Buffer &#x4E2D;</li>
 </ul>
-<h4 id="stream-&#x7684;&#x7C7B;&#x578B;">Stream &#x7684;&#x7C7B;&#x578B;</h4>
+<h4 id="stream-&#x7684;&#x7C7B;&#x578B;"><a name="stream-&#x7684;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#stream-&#x7684;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>Stream &#x7684;&#x7C7B;&#x578B;</h4>
 <ul>
 <li>&#x53EF;&#x5199; Writable</li>
 <li>&#x53EF;&#x8BFB; Readable</li>
 <li>&#x53CC;&#x5DE5; Duplex</li>
 <li>&#x8F6C;&#x6362; Transform</li>
 </ul>
-<h4 id="stream-&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;">Stream &#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;</h4>
+<h4 id="stream-&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;"><a name="stream-&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;" class="anchor-navigation-ex-anchor" href="#stream-&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>Stream &#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;</h4>
 <ul>
 <li><p>fs.createReadStream(&apos;sample.txt&apos;, {</p>
 <pre><code>start: 90,
@@ -1340,8 +1344,8 @@ proxy.on(<span class="hljs-string">&apos;connect&apos;</span>, (req, clientSocke
     })
 });
 </code></pre>
-<h3 id="node-&#x5168;&#x5C40;&#x5BF9;&#x8C61;">Node &#x5168;&#x5C40;&#x5BF9;&#x8C61;</h3>
-<h4 id="&#x5E38;&#x7528;&#x7684;-nodejs-&#x5168;&#x5C40;&#x5BF9;&#x8C61;">&#x5E38;&#x7528;&#x7684; Node.js &#x5168;&#x5C40;&#x5BF9;&#x8C61;</h4>
+<h3 id="node-&#x5168;&#x5C40;&#x5BF9;&#x8C61;"><a name="node-&#x5168;&#x5C40;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#node-&#x5168;&#x5C40;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>Node &#x5168;&#x5C40;&#x5BF9;&#x8C61;</h3>
+<h4 id="&#x5E38;&#x7528;&#x7684;-nodejs-&#x5168;&#x5C40;&#x5BF9;&#x8C61;"><a name="&#x5E38;&#x7528;&#x7684;-nodejs-&#x5168;&#x5C40;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x7684;-nodejs-&#x5168;&#x5C40;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x7528;&#x7684; Node.js &#x5168;&#x5C40;&#x5BF9;&#x8C61;</h4>
 <ul>
 <li>clearInterval</li>
 <li>setInterval</li>
@@ -1350,7 +1354,7 @@ proxy.on(<span class="hljs-string">&apos;connect&apos;</span>, (req, clientSocke
 <li>console</li>
 <li>process</li>
 </ul>
-<h4 id="&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#x4E0E;&#x6A21;&#x5757;">&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#x4E0E;&#x6A21;&#x5757;</h4>
+<h4 id="&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#x4E0E;&#x6A21;&#x5757;"><a name="&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#x4E0E;&#x6A21;&#x5757;" class="anchor-navigation-ex-anchor" href="#&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#x4E0E;&#x6A21;&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#x4E0E;&#x6A21;&#x5757;</h4>
 <ul>
 <li>__filename</li>
 <li>__dirname</li>
@@ -1360,6 +1364,7 @@ proxy.on(<span class="hljs-string">&apos;connect&apos;</span>, (req, clientSocke
 </ul>
 <p>&#x8FD9; 5 &#x4E2A; API &#x770B;&#x4E0A;&#x53BB;&#x50CF;&#x662F;&#x5168;&#x5C40;&#x5BF9;&#x8C61;, &#x4F46;&#x5176;&#x5B9E;&#x662F;&#x5728;&#x6A21;&#x5757;&#x52A0;&#x8F7D;&#x7684;&#x65F6;&#x5019;&#x8FDB;&#x884C;&#x6CE8;&#x5165;, &#x6240;&#x4EE5;&#x8981;&#x548C;<strong>&#x5168;&#x5C40;&#x5BF9;&#x8C61;</strong>&#x8FDB;&#x884C;&#x533A;&#x5206;.</p>
 
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
                                 </section>
                             
@@ -1402,7 +1407,7 @@ proxy.on(<span class="hljs-string">&apos;connect&apos;</span>, (req, clientSocke
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"nodejs原理详解","level":"1.2.24","depth":2,"next":{"title":"nodejs HTTP","level":"1.2.25","depth":2,"path":"front/31nodejs HTTP.md","ref":"./front/31nodejs HTTP.md","articles":[]},"previous":{"title":"nodejs框架及实战","level":"1.2.23","depth":2,"path":"front/29nodejs框架及实战.md","ref":"./front/29nodejs框架及实战.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button"],"pluginsConfig":{"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"front/30nodejs原理详解.md","mtime":"2022-05-26T12:23:46.113Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-31T08:53:45.469Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"nodejs原理详解","level":"1.2.24","depth":2,"next":{"title":"nodejs HTTP","level":"1.2.25","depth":2,"path":"front/31nodejs HTTP.md","ref":"./front/31nodejs HTTP.md","articles":[]},"previous":{"title":"nodejs框架及实战","level":"1.2.23","depth":2,"path":"front/29nodejs框架及实战.md","ref":"./front/29nodejs框架及实战.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["code","popup","anchor-navigation-ex"],"pluginsConfig":{"search":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevelIcon":false,"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":false,"multipleH2":false,"associatedWithSummary":true,"multipleH3":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"multipleH4":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"front/30nodejs原理详解.md","mtime":"2022-05-26T12:23:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-09-21T07:47:11.084Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1412,7 +1417,7 @@ proxy.on(<span class="hljs-string">&apos;connect&apos;</span>, (req, clientSocke
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
         
     
         

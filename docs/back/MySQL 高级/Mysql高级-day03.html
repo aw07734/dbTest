@@ -17,7 +17,11 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
                 
             
                 
@@ -1144,13 +1148,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="mysql&#x9AD8;&#x7EA7;-day03">Mysql&#x9AD8;&#x7EA7;-day03</h1>
-<h3 id="1-&#x5E94;&#x7528;&#x4F18;&#x5316;">1. &#x5E94;&#x7528;&#x4F18;&#x5316;</h3>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#mysql&#x9AD8;&#x7EA7;-day03"><b></b>Mysql&#x9AD8;&#x7EA7;-day03</a></li><ul><ul><li><span class="title-icon "></span><a href="#1-&#x5E94;&#x7528;&#x4F18;&#x5316;"><b></b>1. &#x5E94;&#x7528;&#x4F18;&#x5316;</a></li><li><span class="title-icon "></span><a href="#2-mysql&#x4E2D;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x4F18;&#x5316;"><b></b>2. Mysql&#x4E2D;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x4F18;&#x5316;</a></li><li><span class="title-icon "></span><a href="#3-mysql&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x53CA;&#x4F18;&#x5316;"><b></b>3. Mysql&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x53CA;&#x4F18;&#x5316;</a></li><li><span class="title-icon "></span><a href="#4-mysql&#x5E76;&#x53D1;&#x53C2;&#x6570;&#x8C03;&#x6574;"><b></b>4. Mysql&#x5E76;&#x53D1;&#x53C2;&#x6570;&#x8C03;&#x6574;</a></li><li><span class="title-icon "></span><a href="#5-mysql&#x9501;&#x95EE;&#x9898;"><b></b>5. Mysql&#x9501;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#6-&#x5E38;&#x7528;sql&#x6280;&#x5DE7;"><b></b>6. &#x5E38;&#x7528;SQL&#x6280;&#x5DE7;</a></li></ul></ul></ul></div><a href="#mysql&#x9AD8;&#x7EA7;-day03" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="mysql&#x9AD8;&#x7EA7;-day03"><a name="mysql&#x9AD8;&#x7EA7;-day03" class="anchor-navigation-ex-anchor" href="#mysql&#x9AD8;&#x7EA7;-day03"><i class="fa fa-link" aria-hidden="true"></i></a>Mysql&#x9AD8;&#x7EA7;-day03</h1>
+<h3 id="1-&#x5E94;&#x7528;&#x4F18;&#x5316;"><a name="1-&#x5E94;&#x7528;&#x4F18;&#x5316;" class="anchor-navigation-ex-anchor" href="#1-&#x5E94;&#x7528;&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5E94;&#x7528;&#x4F18;&#x5316;</h3>
 <p>&#x524D;&#x9762;&#x7AE0;&#x8282;&#xFF0C;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x4E86;&#x5F88;&#x591A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x4F18;&#x5316;&#x63AA;&#x65BD;&#x3002;&#x4F46;&#x662F;&#x5728;&#x5B9E;&#x9645;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x7531;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x672C;&#x8EAB;&#x7684;&#x6027;&#x80FD;&#x5C40;&#x9650;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x8981;&#x5BF9;&#x524D;&#x53F0;&#x7684;&#x5E94;&#x7528;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x4F18;&#x5316;&#xFF0C;&#x6765;&#x964D;&#x4F4E;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8BBF;&#x95EE;&#x538B;&#x529B;&#x3002;</p>
-<h4 id="11-&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;">1.1 &#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;</h4>
+<h4 id="11-&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;"><a name="11-&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;" class="anchor-navigation-ex-anchor" href="#11-&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1 &#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;</h4>
 <p>&#x5BF9;&#x4E8E;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;&#x6765;&#x8BF4;&#xFF0C;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x7684;&#x4EE3;&#x4EF7;&#x662F;&#x6BD4;&#x8F83;&#x6602;&#x8D35;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x9891;&#x7E41;&#x7684;&#x521B;&#x5EFA;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#xFF0C;&#x662F;&#x6BD4;&#x8F83;&#x8017;&#x8D39;&#x8D44;&#x6E90;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x6709;&#x5FC5;&#x8981;&#x5EFA;&#x7ACB; &#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#xFF0C;&#x4EE5;&#x63D0;&#x9AD8;&#x8BBF;&#x95EE;&#x7684;&#x6027;&#x80FD;&#x3002;</p>
-<h4 id="12-&#x51CF;&#x5C11;&#x5BF9;mysql&#x7684;&#x8BBF;&#x95EE;">1.2 &#x51CF;&#x5C11;&#x5BF9;MySQL&#x7684;&#x8BBF;&#x95EE;</h4>
-<h5 id="121-&#x907F;&#x514D;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x91CD;&#x590D;&#x68C0;&#x7D22;">1.2.1 &#x907F;&#x514D;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x91CD;&#x590D;&#x68C0;&#x7D22;</h5>
+<h4 id="12-&#x51CF;&#x5C11;&#x5BF9;mysql&#x7684;&#x8BBF;&#x95EE;"><a name="12-&#x51CF;&#x5C11;&#x5BF9;mysql&#x7684;&#x8BBF;&#x95EE;" class="anchor-navigation-ex-anchor" href="#12-&#x51CF;&#x5C11;&#x5BF9;mysql&#x7684;&#x8BBF;&#x95EE;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2 &#x51CF;&#x5C11;&#x5BF9;MySQL&#x7684;&#x8BBF;&#x95EE;</h4>
+<h5 id="121-&#x907F;&#x514D;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x91CD;&#x590D;&#x68C0;&#x7D22;"><a name="121-&#x907F;&#x514D;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x91CD;&#x590D;&#x68C0;&#x7D22;" class="anchor-navigation-ex-anchor" href="#121-&#x907F;&#x514D;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x91CD;&#x590D;&#x68C0;&#x7D22;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1 &#x907F;&#x514D;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x91CD;&#x590D;&#x68C0;&#x7D22;</h5>
 <p>&#x5728;&#x7F16;&#x5199;&#x5E94;&#x7528;&#x4EE3;&#x7801;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x80FD;&#x591F;&#x7406;&#x6E05;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8BBF;&#x95EE;&#x903B;&#x8F91;&#x3002;&#x80FD;&#x591F;&#x4E00;&#x6B21;&#x8FDE;&#x63A5;&#x5C31;&#x83B7;&#x53D6;&#x5230;&#x7ED3;&#x679C;&#x7684;&#xFF0C;&#x5C31;&#x4E0D;&#x7528;&#x4E24;&#x6B21;&#x8FDE;&#x63A5;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x5927;&#x5927;&#x51CF;&#x5C11;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x65E0;&#x7528;&#x7684;&#x91CD;&#x590D;&#x8BF7;&#x6C42;&#x3002;</p>
 <p>&#x6BD4;&#x5982; &#xFF0C;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x4E66;&#x7C4D;&#x7684;id &#x548C;name&#x5B57;&#x6BB5; &#xFF0C; &#x5219;&#x67E5;&#x8BE2;&#x5982;&#x4E0B;&#xFF1A; </p>
 <pre><code> select id , name from tb_book;
@@ -1158,20 +1162,20 @@
 <pre><code>select id , status from tb_book;
 </code></pre><p>&#x8FD9;&#x6837;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x5411;&#x6570;&#x636E;&#x5E93;&#x63D0;&#x4EA4;&#x4E24;&#x6B21;&#x8BF7;&#x6C42;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x5C31;&#x8981;&#x505A;&#x4E24;&#x6B21;&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#x3002;&#x5176;&#x5B9E;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x6761;SQL&#x8BED;&#x53E5;&#x5F97;&#x5230;&#x60F3;&#x8981;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
 <pre><code>select id, name , status from tb_book;
-</code></pre><h5 id="122-&#x589E;&#x52A0;cache&#x5C42;">1.2.2 &#x589E;&#x52A0;cache&#x5C42;</h5>
+</code></pre><h5 id="122-&#x589E;&#x52A0;cache&#x5C42;"><a name="122-&#x589E;&#x52A0;cache&#x5C42;" class="anchor-navigation-ex-anchor" href="#122-&#x589E;&#x52A0;cache&#x5C42;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2 &#x589E;&#x52A0;cache&#x5C42;</h5>
 <p>&#x5728;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x589E;&#x52A0; &#x7F13;&#x5B58; &#x5C42;&#x6765;&#x8FBE;&#x5230;&#x51CF;&#x8F7B;&#x6570;&#x636E;&#x5E93;&#x8D1F;&#x62C5;&#x7684;&#x76EE;&#x7684;&#x3002;&#x7F13;&#x5B58;&#x5C42;&#x6709;&#x5F88;&#x591A;&#x79CD;&#xFF0C;&#x4E5F;&#x6709;&#x5F88;&#x591A;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#xFF0C;&#x53EA;&#x8981;&#x80FD;&#x8FBE;&#x5230;&#x964D;&#x4F4E;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8D1F;&#x62C5;&#x53C8;&#x80FD;&#x6EE1;&#x8DB3;&#x5E94;&#x7528;&#x9700;&#x6C42;&#x5C31;&#x53EF;&#x4EE5;&#x3002;</p>
 <p>&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x90E8;&#x5206;&#x6570;&#x636E;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x62BD;&#x53D6;&#x51FA;&#x6765;&#x653E;&#x5230;&#x5E94;&#x7528;&#x7AEF;&#x4EE5;&#x6587;&#x672C;&#x65B9;&#x5F0F;&#x5B58;&#x50A8;&#xFF0C; &#x6216;&#x8005;&#x4F7F;&#x7528;&#x6846;&#x67B6;(Mybatis, Hibernate)&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;/&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;redis&#x6570;&#x636E;&#x5E93;&#x6765;&#x7F13;&#x5B58;&#x6570;&#x636E; &#x3002;</p>
-<h4 id="13-&#x8D1F;&#x8F7D;&#x5747;&#x8861;">1.3 &#x8D1F;&#x8F7D;&#x5747;&#x8861;</h4>
+<h4 id="13-&#x8D1F;&#x8F7D;&#x5747;&#x8861;"><a name="13-&#x8D1F;&#x8F7D;&#x5747;&#x8861;" class="anchor-navigation-ex-anchor" href="#13-&#x8D1F;&#x8F7D;&#x5747;&#x8861;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3 &#x8D1F;&#x8F7D;&#x5747;&#x8861;</h4>
 <p>&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x662F;&#x5E94;&#x7528;&#x4E2D;&#x4F7F;&#x7528;&#x975E;&#x5E38;&#x666E;&#x904D;&#x7684;&#x4E00;&#x79CD;&#x4F18;&#x5316;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x7684;&#x673A;&#x5236;&#x5C31;&#x662F;&#x5229;&#x7528;&#x67D0;&#x79CD;&#x5747;&#x8861;&#x7B97;&#x6CD5;&#xFF0C;&#x5C06;&#x56FA;&#x5B9A;&#x7684;&#x8D1F;&#x8F7D;&#x91CF;&#x5206;&#x5E03;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF0C; &#x4EE5;&#x6B64;&#x6765;&#x964D;&#x4F4E;&#x5355;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8D1F;&#x8F7D;&#xFF0C;&#x8FBE;&#x5230;&#x4F18;&#x5316;&#x7684;&#x6548;&#x679C;&#x3002;</p>
-<h5 id="131-&#x5229;&#x7528;mysql&#x590D;&#x5236;&#x5206;&#x6D41;&#x67E5;&#x8BE2;">1.3.1 &#x5229;&#x7528;MySQL&#x590D;&#x5236;&#x5206;&#x6D41;&#x67E5;&#x8BE2;</h5>
+<h5 id="131-&#x5229;&#x7528;mysql&#x590D;&#x5236;&#x5206;&#x6D41;&#x67E5;&#x8BE2;"><a name="131-&#x5229;&#x7528;mysql&#x590D;&#x5236;&#x5206;&#x6D41;&#x67E5;&#x8BE2;" class="anchor-navigation-ex-anchor" href="#131-&#x5229;&#x7528;mysql&#x590D;&#x5236;&#x5206;&#x6D41;&#x67E5;&#x8BE2;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1 &#x5229;&#x7528;MySQL&#x590D;&#x5236;&#x5206;&#x6D41;&#x67E5;&#x8BE2;</h5>
 <p>&#x901A;&#x8FC7;MySQL&#x7684;&#x4E3B;&#x4ECE;&#x590D;&#x5236;&#xFF0C;&#x5B9E;&#x73B0;&#x8BFB;&#x5199;&#x5206;&#x79BB;&#xFF0C;&#x4F7F;&#x589E;&#x5220;&#x6539;&#x64CD;&#x4F5C;&#x8D70;&#x4E3B;&#x8282;&#x70B9;&#xFF0C;&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#x8D70;&#x4ECE;&#x8282;&#x70B9;&#xFF0C;&#x4ECE;&#x800C;&#x53EF;&#x4EE5;&#x964D;&#x4F4E;&#x5355;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BFB;&#x5199;&#x538B;&#x529B;&#x3002;</p>
 <p><img src="assets/1.jpg" alt="1"> </p>
-<h5 id="132-&#x91C7;&#x7528;&#x5206;&#x5E03;&#x5F0F;&#x6570;&#x636E;&#x5E93;&#x67B6;&#x6784;">1.3.2 &#x91C7;&#x7528;&#x5206;&#x5E03;&#x5F0F;&#x6570;&#x636E;&#x5E93;&#x67B6;&#x6784;</h5>
+<h5 id="132-&#x91C7;&#x7528;&#x5206;&#x5E03;&#x5F0F;&#x6570;&#x636E;&#x5E93;&#x67B6;&#x6784;"><a name="132-&#x91C7;&#x7528;&#x5206;&#x5E03;&#x5F0F;&#x6570;&#x636E;&#x5E93;&#x67B6;&#x6784;" class="anchor-navigation-ex-anchor" href="#132-&#x91C7;&#x7528;&#x5206;&#x5E03;&#x5F0F;&#x6570;&#x636E;&#x5E93;&#x67B6;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2 &#x91C7;&#x7528;&#x5206;&#x5E03;&#x5F0F;&#x6570;&#x636E;&#x5E93;&#x67B6;&#x6784;</h5>
 <p>&#x5206;&#x5E03;&#x5F0F;&#x6570;&#x636E;&#x5E93;&#x67B6;&#x6784;&#x9002;&#x5408;&#x5927;&#x6570;&#x636E;&#x91CF;&#x3001;&#x8D1F;&#x8F7D;&#x9AD8;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5B83;&#x6709;&#x826F;&#x597D;&#x7684;&#x62D3;&#x5C55;&#x6027;&#x548C;&#x9AD8;&#x53EF;&#x7528;&#x6027;&#x3002;&#x901A;&#x8FC7;&#x5728;&#x591A;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x5206;&#x5E03;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5728;&#x591A;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#xFF0C;&#x63D0;&#x9AD8;&#x8BBF;&#x95EE;&#x6548;&#x7387;&#x3002;</p>
-<h3 id="2-mysql&#x4E2D;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x4F18;&#x5316;">2. Mysql&#x4E2D;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x4F18;&#x5316;</h3>
-<h4 id="21-&#x6982;&#x8FF0;">2.1 &#x6982;&#x8FF0;</h4>
+<h3 id="2-mysql&#x4E2D;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x4F18;&#x5316;"><a name="2-mysql&#x4E2D;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x4F18;&#x5316;" class="anchor-navigation-ex-anchor" href="#2-mysql&#x4E2D;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Mysql&#x4E2D;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x4F18;&#x5316;</h3>
+<h4 id="21-&#x6982;&#x8FF0;"><a name="21-&#x6982;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#21-&#x6982;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1 &#x6982;&#x8FF0;</h4>
 <p>&#x5F00;&#x542F;Mysql&#x7684;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#xFF0C;&#x5F53;&#x6267;&#x884C;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;SQL&#x8BED;&#x53E5;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5C31;&#x4F1A;&#x76F4;&#x63A5;&#x4ECE;&#x7F13;&#x5B58;&#x4E2D;&#x8BFB;&#x53D6;&#x7ED3;&#x679C;&#xFF0C;&#x5F53;&#x6570;&#x636E;&#x88AB;&#x4FEE;&#x6539;&#xFF0C;&#x4E4B;&#x524D;&#x7684;&#x7F13;&#x5B58;&#x4F1A;&#x5931;&#x6548;&#xFF0C;&#x4FEE;&#x6539;&#x6BD4;&#x8F83;&#x9891;&#x7E41;&#x7684;&#x8868;&#x4E0D;&#x9002;&#x5408;&#x505A;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x3002;</p>
-<h4 id="22-&#x64CD;&#x4F5C;&#x6D41;&#x7A0B;">2.2 &#x64CD;&#x4F5C;&#x6D41;&#x7A0B;</h4>
+<h4 id="22-&#x64CD;&#x4F5C;&#x6D41;&#x7A0B;"><a name="22-&#x64CD;&#x4F5C;&#x6D41;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#22-&#x64CD;&#x4F5C;&#x6D41;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2 &#x64CD;&#x4F5C;&#x6D41;&#x7A0B;</h4>
 <p> <img src="assets/20180919131632347.png" alt="20180919131632347"> </p>
 <ol>
 <li>&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x4E00;&#x6761;&#x67E5;&#x8BE2;&#x7ED9;&#x670D;&#x52A1;&#x5668;&#xFF1B;</li>
@@ -1180,7 +1184,7 @@
 <li>MySQL&#x6839;&#x636E;&#x4F18;&#x5316;&#x5668;&#x751F;&#x6210;&#x7684;&#x6267;&#x884C;&#x8BA1;&#x5212;&#xFF0C;&#x8C03;&#x7528;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x7684;API&#x6765;&#x6267;&#x884C;&#x67E5;&#x8BE2;&#xFF1B;</li>
 <li>&#x5C06;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</li>
 </ol>
-<h4 id="23-&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x914D;&#x7F6E;">2.3 &#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x914D;&#x7F6E;</h4>
+<h4 id="23-&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x914D;&#x7F6E;"><a name="23-&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#23-&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3 &#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x914D;&#x7F6E;</h4>
 <ol>
 <li><p>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x7684;MySQL&#x6570;&#x636E;&#x5E93;&#x662F;&#x5426;&#x652F;&#x6301;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#xFF1A;</p>
 <pre><code class="lang-SQL"><span class="hljs-keyword">SHOW</span> <span class="hljs-keyword">VARIABLES</span> <span class="hljs-keyword">LIKE</span> <span class="hljs-string">&apos;have_query_cache&apos;</span>;
@@ -1214,7 +1218,7 @@
 | Qcache_total_blocks     | &#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x4E2D;&#x7684;&#x5757;&#x603B;&#x6570;                                           |</p>
 </li>
 </ol>
-<h4 id="24-&#x5F00;&#x542F;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;">2.4 &#x5F00;&#x542F;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;</h4>
+<h4 id="24-&#x5F00;&#x542F;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;"><a name="24-&#x5F00;&#x542F;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#24-&#x5F00;&#x542F;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>2.4 &#x5F00;&#x542F;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;</h4>
 <p>MySQL&#x7684;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x9ED8;&#x8BA4;&#x662F;&#x5173;&#x95ED;&#x7684;&#xFF0C;&#x9700;&#x8981;&#x624B;&#x52A8;&#x914D;&#x7F6E;&#x53C2;&#x6570; query_cache_type &#xFF0C; &#x6765;&#x5F00;&#x542F;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x3002;query_cache_type &#x8BE5;&#x53C2;&#x6570;&#x7684;&#x53EF;&#x53D6;&#x503C;&#x6709;&#x4E09;&#x4E2A; &#xFF1A;</p>
 <table>
 <thead>
@@ -1242,7 +1246,7 @@
 <p><img src="assets/1555251383805.png" alt="1555251383805">         </p>
 <p>&#x914D;&#x7F6E;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#xFF0C;&#x91CD;&#x542F;&#x670D;&#x52A1;&#x65E2;&#x53EF;&#x751F;&#x6548; &#xFF1B;</p>
 <p>&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x6267;&#x884C;SQL&#x8BED;&#x53E5;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1; &#xFF0C;&#x6267;&#x884C;&#x4E00;&#x6761;&#x6BD4;&#x8F83;&#x8017;&#x65F6;&#x7684;SQL&#x8BED;&#x53E5;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x591A;&#x6267;&#x884C;&#x51E0;&#x6B21;&#xFF0C;&#x67E5;&#x770B;&#x540E;&#x9762;&#x51E0;&#x6B21;&#x7684;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF1B;&#x83B7;&#x53D6;&#x901A;&#x8FC7;&#x67E5;&#x770B;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x7684;&#x7F13;&#x5B58;&#x547D;&#x4E2D;&#x6570;&#xFF0C;&#x6765;&#x5224;&#x5B9A;&#x662F;&#x5426;&#x8D70;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x3002;</p>
-<h4 id="25-&#x67E5;&#x8BE2;&#x7F13;&#x5B58;select&#x9009;&#x9879;">2.5 &#x67E5;&#x8BE2;&#x7F13;&#x5B58;SELECT&#x9009;&#x9879;</h4>
+<h4 id="25-&#x67E5;&#x8BE2;&#x7F13;&#x5B58;select&#x9009;&#x9879;"><a name="25-&#x67E5;&#x8BE2;&#x7F13;&#x5B58;select&#x9009;&#x9879;" class="anchor-navigation-ex-anchor" href="#25-&#x67E5;&#x8BE2;&#x7F13;&#x5B58;select&#x9009;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>2.5 &#x67E5;&#x8BE2;&#x7F13;&#x5B58;SELECT&#x9009;&#x9879;</h4>
 <p>&#x53EF;&#x4EE5;&#x5728;SELECT&#x8BED;&#x53E5;&#x4E2D;&#x6307;&#x5B9A;&#x4E24;&#x4E2A;&#x4E0E;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x76F8;&#x5173;&#x7684;&#x9009;&#x9879; &#xFF1A;</p>
 <p>SQL_CACHE : &#x5982;&#x679C;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x662F;&#x53EF;&#x7F13;&#x5B58;&#x7684;&#xFF0C;&#x5E76;&#x4E14; query_cache_type &#x7CFB;&#x7EDF;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x4E3A;ON&#x6216; DEMAND &#xFF0C;&#x5219;&#x7F13;&#x5B58;&#x67E5;&#x8BE2;&#x7ED3;&#x679C; &#x3002;</p>
 <p>SQL_NO_CACHE : &#x670D;&#x52A1;&#x5668;&#x4E0D;&#x4F7F;&#x7528;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x3002;&#x5B83;&#x65E2;&#x4E0D;&#x68C0;&#x67E5;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#xFF0C;&#x4E5F;&#x4E0D;&#x68C0;&#x67E5;&#x7ED3;&#x679C;&#x662F;&#x5426;&#x5DF2;&#x7F13;&#x5B58;&#xFF0C;&#x4E5F;&#x4E0D;&#x7F13;&#x5B58;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x3002;</p>
@@ -1251,7 +1255,7 @@
 <span class="hljs-keyword">SELECT</span> SQL_NO_CACHE <span class="hljs-keyword">id</span>, <span class="hljs-keyword">name</span> <span class="hljs-keyword">FROM</span> customer;
 </code></pre>
 <p>&#x200B;    </p>
-<h4 id="26-&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x5931;&#x6548;&#x7684;&#x60C5;&#x51B5;">2.6 &#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x5931;&#x6548;&#x7684;&#x60C5;&#x51B5;</h4>
+<h4 id="26-&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x5931;&#x6548;&#x7684;&#x60C5;&#x51B5;"><a name="26-&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x5931;&#x6548;&#x7684;&#x60C5;&#x51B5;" class="anchor-navigation-ex-anchor" href="#26-&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x5931;&#x6548;&#x7684;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a>2.6 &#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#x5931;&#x6548;&#x7684;&#x60C5;&#x51B5;</h4>
 <p>1&#xFF09; SQL &#x8BED;&#x53E5;&#x4E0D;&#x4E00;&#x81F4;&#x7684;&#x60C5;&#x51B5;&#xFF0C; &#x8981;&#x60F3;&#x547D;&#x4E2D;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#xFF0C;&#x67E5;&#x8BE2;&#x7684;SQL&#x8BED;&#x53E5;&#x5FC5;&#x987B;&#x4E00;&#x81F4;&#x3002;</p>
 <pre><code class="lang-SQL">SQL1 : <span class="hljs-keyword">select</span> <span class="hljs-keyword">count</span>(*) <span class="hljs-keyword">from</span> tb_item;
 SQL2 : <span class="hljs-keyword">Select</span> <span class="hljs-keyword">count</span>(*) <span class="hljs-keyword">from</span> tb_item;
@@ -1269,56 +1273,56 @@ SQL3 : <span class="hljs-keyword">select</span> <span class="hljs-keyword">datab
 </code></pre>
 <p>5&#xFF09; &#x5728;&#x5B58;&#x50A8;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x89E6;&#x53D1;&#x5668;&#x6216;&#x4E8B;&#x4EF6;&#x7684;&#x4E3B;&#x4F53;&#x5185;&#x6267;&#x884C;&#x7684;&#x67E5;&#x8BE2;&#x3002;</p>
 <p>6&#xFF09; &#x5982;&#x679C;&#x8868;&#x66F4;&#x6539;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x8BE5;&#x8868;&#x7684;&#x6240;&#x6709;&#x9AD8;&#x901F;&#x7F13;&#x5B58;&#x67E5;&#x8BE2;&#x90FD;&#x5C06;&#x53D8;&#x4E3A;&#x65E0;&#x6548;&#x5E76;&#x4ECE;&#x9AD8;&#x901F;&#x7F13;&#x5B58;&#x4E2D;&#x5220;&#x9664;&#x3002;&#x8FD9;&#x5305;&#x62EC;&#x4F7F;&#x7528;<code>MERGE</code>&#x6620;&#x5C04;&#x5230;&#x5DF2;&#x66F4;&#x6539;&#x8868;&#x7684;&#x8868;&#x7684;&#x67E5;&#x8BE2;&#x3002;&#x4E00;&#x4E2A;&#x8868;&#x53EF;&#x4EE5;&#x88AB;&#x8BB8;&#x591A;&#x7C7B;&#x578B;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x5982;&#x88AB;&#x6539;&#x53D8; INSERT&#xFF0C; UPDATE&#xFF0C; DELETE&#xFF0C; TRUNCATE TABLE&#xFF0C; ALTER TABLE&#xFF0C; DROP TABLE&#xFF0C;&#x6216; DROP DATABASE &#x3002;</p>
-<h3 id="3-mysql&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x53CA;&#x4F18;&#x5316;">3. Mysql&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x53CA;&#x4F18;&#x5316;</h3>
-<h4 id="31-&#x5185;&#x5B58;&#x4F18;&#x5316;&#x539F;&#x5219;">3.1 &#x5185;&#x5B58;&#x4F18;&#x5316;&#x539F;&#x5219;</h4>
+<h3 id="3-mysql&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x53CA;&#x4F18;&#x5316;"><a name="3-mysql&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x53CA;&#x4F18;&#x5316;" class="anchor-navigation-ex-anchor" href="#3-mysql&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x53CA;&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>3. Mysql&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x53CA;&#x4F18;&#x5316;</h3>
+<h4 id="31-&#x5185;&#x5B58;&#x4F18;&#x5316;&#x539F;&#x5219;"><a name="31-&#x5185;&#x5B58;&#x4F18;&#x5316;&#x539F;&#x5219;" class="anchor-navigation-ex-anchor" href="#31-&#x5185;&#x5B58;&#x4F18;&#x5316;&#x539F;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1 &#x5185;&#x5B58;&#x4F18;&#x5316;&#x539F;&#x5219;</h4>
 <p>1&#xFF09; &#x5C06;&#x5C3D;&#x91CF;&#x591A;&#x7684;&#x5185;&#x5B58;&#x5206;&#x914D;&#x7ED9;MySQL&#x505A;&#x7F13;&#x5B58;&#xFF0C;&#x4F46;&#x8981;&#x7ED9;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x548C;&#x5176;&#x4ED6;&#x7A0B;&#x5E8F;&#x9884;&#x7559;&#x8DB3;&#x591F;&#x5185;&#x5B58;&#x3002;</p>
 <p>2&#xFF09; MyISAM &#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x7684;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x4F9D;&#x8D56;&#x4E8E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x81EA;&#x8EAB;&#x7684;IO&#x7F13;&#x5B58;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5982;&#x679C;&#x6709;MyISAM&#x8868;&#xFF0C;&#x5C31;&#x8981;&#x9884;&#x7559;&#x66F4;&#x591A;&#x7684;&#x5185;&#x5B58;&#x7ED9;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x505A;IO&#x7F13;&#x5B58;&#x3002;</p>
 <p>3&#xFF09; &#x6392;&#x5E8F;&#x533A;&#x3001;&#x8FDE;&#x63A5;&#x533A;&#x7B49;&#x7F13;&#x5B58;&#x662F;&#x5206;&#x914D;&#x7ED9;&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x4F1A;&#x8BDD;&#xFF08;session&#xFF09;&#x4E13;&#x7528;&#x7684;&#xFF0C;&#x5176;&#x9ED8;&#x8BA4;&#x503C;&#x7684;&#x8BBE;&#x7F6E;&#x8981;&#x6839;&#x636E;&#x6700;&#x5927;&#x8FDE;&#x63A5;&#x6570;&#x5408;&#x7406;&#x5206;&#x914D;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x592A;&#x5927;&#xFF0C;&#x4E0D;&#x4F46;&#x6D6A;&#x8D39;&#x8D44;&#x6E90;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x5E76;&#x53D1;&#x8FDE;&#x63A5;&#x8F83;&#x9AD8;&#x65F6;&#x4F1A;&#x5BFC;&#x81F4;&#x7269;&#x7406;&#x5185;&#x5B58;&#x8017;&#x5C3D;&#x3002;</p>
-<h4 id="32-myisam-&#x5185;&#x5B58;&#x4F18;&#x5316;">3.2 MyISAM &#x5185;&#x5B58;&#x4F18;&#x5316;</h4>
+<h4 id="32-myisam-&#x5185;&#x5B58;&#x4F18;&#x5316;"><a name="32-myisam-&#x5185;&#x5B58;&#x4F18;&#x5316;" class="anchor-navigation-ex-anchor" href="#32-myisam-&#x5185;&#x5B58;&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2 MyISAM &#x5185;&#x5B58;&#x4F18;&#x5316;</h4>
 <p>myisam&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x4F7F;&#x7528; key_buffer &#x7F13;&#x5B58;&#x7D22;&#x5F15;&#x5757;&#xFF0C;&#x52A0;&#x901F;myisam&#x7D22;&#x5F15;&#x7684;&#x8BFB;&#x5199;&#x901F;&#x5EA6;&#x3002;&#x5BF9;&#x4E8E;myisam&#x8868;&#x7684;&#x6570;&#x636E;&#x5757;&#xFF0C;mysql&#x6CA1;&#x6709;&#x7279;&#x522B;&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;&#xFF0C;&#x5B8C;&#x5168;&#x4F9D;&#x8D56;&#x4E8E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;IO&#x7F13;&#x5B58;&#x3002;</p>
-<h5 id="keybuffersize">key_buffer_size</h5>
+<h5 id="keybuffersize"><a name="keybuffersize" class="anchor-navigation-ex-anchor" href="#keybuffersize"><i class="fa fa-link" aria-hidden="true"></i></a>key_buffer_size</h5>
 <p>key_buffer_size&#x51B3;&#x5B9A;MyISAM&#x7D22;&#x5F15;&#x5757;&#x7F13;&#x5B58;&#x533A;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x76F4;&#x63A5;&#x5F71;&#x54CD;&#x5230;MyISAM&#x8868;&#x7684;&#x5B58;&#x53D6;&#x6548;&#x7387;&#x3002;&#x53EF;&#x4EE5;&#x5728;MySQL&#x53C2;&#x6570;&#x6587;&#x4EF6;&#x4E2D;&#x8BBE;&#x7F6E;key_buffer_size&#x7684;&#x503C;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E00;&#x822C;MyISAM&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5EFA;&#x8BAE;&#x81F3;&#x5C11;&#x5C06;1/4&#x53EF;&#x7528;&#x5185;&#x5B58;&#x5206;&#x914D;&#x7ED9;key_buffer_size&#x3002;</p>
 <p>&#x5728;/usr/my.cnf &#x4E2D;&#x505A;&#x5982;&#x4E0B;&#x914D;&#x7F6E;&#xFF1A;</p>
 <pre><code>key_buffer_size=512M
-</code></pre><h5 id="readbuffersize">read_buffer_size</h5>
+</code></pre><h5 id="readbuffersize"><a name="readbuffersize" class="anchor-navigation-ex-anchor" href="#readbuffersize"><i class="fa fa-link" aria-hidden="true"></i></a>read_buffer_size</h5>
 <p>&#x5982;&#x679C;&#x9700;&#x8981;&#x7ECF;&#x5E38;&#x987A;&#x5E8F;&#x626B;&#x63CF;myisam&#x8868;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x589E;&#x5927;read_buffer_size&#x7684;&#x503C;&#x6765;&#x6539;&#x5584;&#x6027;&#x80FD;&#x3002;&#x4F46;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;read_buffer_size&#x662F;&#x6BCF;&#x4E2A;session&#x72EC;&#x5360;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x9ED8;&#x8BA4;&#x503C;&#x8BBE;&#x7F6E;&#x592A;&#x5927;&#xFF0C;&#x5C31;&#x4F1A;&#x9020;&#x6210;&#x5185;&#x5B58;&#x6D6A;&#x8D39;&#x3002;</p>
-<h5 id="readrndbuffersize">read_rnd_buffer_size</h5>
+<h5 id="readrndbuffersize"><a name="readrndbuffersize" class="anchor-navigation-ex-anchor" href="#readrndbuffersize"><i class="fa fa-link" aria-hidden="true"></i></a>read_rnd_buffer_size</h5>
 <p>&#x5BF9;&#x4E8E;&#x9700;&#x8981;&#x505A;&#x6392;&#x5E8F;&#x7684;myisam&#x8868;&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x5982;&#x5E26;&#x6709;order by&#x5B50;&#x53E5;&#x7684;sql&#xFF0C;&#x9002;&#x5F53;&#x589E;&#x52A0; read_rnd_buffer_size &#x7684;&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x6539;&#x5584;&#x6B64;&#x7C7B;&#x7684;sql&#x6027;&#x80FD;&#x3002;&#x4F46;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F; read_rnd_buffer_size &#x662F;&#x6BCF;&#x4E2A;session&#x72EC;&#x5360;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x9ED8;&#x8BA4;&#x503C;&#x8BBE;&#x7F6E;&#x592A;&#x5927;&#xFF0C;&#x5C31;&#x4F1A;&#x9020;&#x6210;&#x5185;&#x5B58;&#x6D6A;&#x8D39;&#x3002;</p>
-<h4 id="33-innodb-&#x5185;&#x5B58;&#x4F18;&#x5316;">3.3 InnoDB &#x5185;&#x5B58;&#x4F18;&#x5316;</h4>
+<h4 id="33-innodb-&#x5185;&#x5B58;&#x4F18;&#x5316;"><a name="33-innodb-&#x5185;&#x5B58;&#x4F18;&#x5316;" class="anchor-navigation-ex-anchor" href="#33-innodb-&#x5185;&#x5B58;&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3 InnoDB &#x5185;&#x5B58;&#x4F18;&#x5316;</h4>
 <p>innodb&#x7528;&#x4E00;&#x5757;&#x5185;&#x5B58;&#x533A;&#x505A;IO&#x7F13;&#x5B58;&#x6C60;&#xFF0C;&#x8BE5;&#x7F13;&#x5B58;&#x6C60;&#x4E0D;&#x4EC5;&#x7528;&#x6765;&#x7F13;&#x5B58;innodb&#x7684;&#x7D22;&#x5F15;&#x5757;&#xFF0C;&#x800C;&#x4E14;&#x4E5F;&#x7528;&#x6765;&#x7F13;&#x5B58;innodb&#x7684;&#x6570;&#x636E;&#x5757;&#x3002;</p>
-<h5 id="innodbbufferpoolsize">innodb_buffer_pool_size</h5>
+<h5 id="innodbbufferpoolsize"><a name="innodbbufferpoolsize" class="anchor-navigation-ex-anchor" href="#innodbbufferpoolsize"><i class="fa fa-link" aria-hidden="true"></i></a>innodb_buffer_pool_size</h5>
 <p>&#x8BE5;&#x53D8;&#x91CF;&#x51B3;&#x5B9A;&#x4E86; innodb &#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x8868;&#x6570;&#x636E;&#x548C;&#x7D22;&#x5F15;&#x6570;&#x636E;&#x7684;&#x6700;&#x5927;&#x7F13;&#x5B58;&#x533A;&#x5927;&#x5C0F;&#x3002;&#x5728;&#x4FDD;&#x8BC1;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x53CA;&#x5176;&#x4ED6;&#x7A0B;&#x5E8F;&#x6709;&#x8DB3;&#x591F;&#x5185;&#x5B58;&#x53EF;&#x7528;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;innodb_buffer_pool_size &#x7684;&#x503C;&#x8D8A;&#x5927;&#xFF0C;&#x7F13;&#x5B58;&#x547D;&#x4E2D;&#x7387;&#x8D8A;&#x9AD8;&#xFF0C;&#x8BBF;&#x95EE;InnoDB&#x8868;&#x9700;&#x8981;&#x7684;&#x78C1;&#x76D8;I/O &#x5C31;&#x8D8A;&#x5C11;&#xFF0C;&#x6027;&#x80FD;&#x4E5F;&#x5C31;&#x8D8A;&#x9AD8;&#x3002;</p>
 <pre><code>innodb_buffer_pool_size=512M
-</code></pre><h5 id="innodblogbuffersize">innodb_log_buffer_size</h5>
+</code></pre><h5 id="innodblogbuffersize"><a name="innodblogbuffersize" class="anchor-navigation-ex-anchor" href="#innodblogbuffersize"><i class="fa fa-link" aria-hidden="true"></i></a>innodb_log_buffer_size</h5>
 <p>&#x51B3;&#x5B9A;&#x4E86;innodb&#x91CD;&#x505A;&#x65E5;&#x5FD7;&#x7F13;&#x5B58;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x5BF9;&#x4E8E;&#x53EF;&#x80FD;&#x4EA7;&#x751F;&#x5927;&#x91CF;&#x66F4;&#x65B0;&#x8BB0;&#x5F55;&#x7684;&#x5927;&#x4E8B;&#x52A1;&#xFF0C;&#x589E;&#x52A0;innodb_log_buffer_size&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x53EF;&#x4EE5;&#x907F;&#x514D;innodb&#x5728;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x524D;&#x5C31;&#x6267;&#x884C;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x65E5;&#x5FD7;&#x5199;&#x5165;&#x78C1;&#x76D8;&#x64CD;&#x4F5C;&#x3002;</p>
 <pre><code>innodb_log_buffer_size=10M
-</code></pre><h3 id="4-mysql&#x5E76;&#x53D1;&#x53C2;&#x6570;&#x8C03;&#x6574;">4. Mysql&#x5E76;&#x53D1;&#x53C2;&#x6570;&#x8C03;&#x6574;</h3>
+</code></pre><h3 id="4-mysql&#x5E76;&#x53D1;&#x53C2;&#x6570;&#x8C03;&#x6574;"><a name="4-mysql&#x5E76;&#x53D1;&#x53C2;&#x6570;&#x8C03;&#x6574;" class="anchor-navigation-ex-anchor" href="#4-mysql&#x5E76;&#x53D1;&#x53C2;&#x6570;&#x8C03;&#x6574;"><i class="fa fa-link" aria-hidden="true"></i></a>4. Mysql&#x5E76;&#x53D1;&#x53C2;&#x6570;&#x8C03;&#x6574;</h3>
 <p>&#x4ECE;&#x5B9E;&#x73B0;&#x4E0A;&#x6765;&#x8BF4;&#xFF0C;MySQL Server &#x662F;&#x591A;&#x7EBF;&#x7A0B;&#x7ED3;&#x6784;&#xFF0C;&#x5305;&#x62EC;&#x540E;&#x53F0;&#x7EBF;&#x7A0B;&#x548C;&#x5BA2;&#x6237;&#x670D;&#x52A1;&#x7EBF;&#x7A0B;&#x3002;&#x591A;&#x7EBF;&#x7A0B;&#x53EF;&#x4EE5;&#x6709;&#x6548;&#x5229;&#x7528;&#x670D;&#x52A1;&#x5668;&#x8D44;&#x6E90;&#xFF0C;&#x63D0;&#x9AD8;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5E76;&#x53D1;&#x6027;&#x80FD;&#x3002;&#x5728;Mysql&#x4E2D;&#xFF0C;&#x63A7;&#x5236;&#x5E76;&#x53D1;&#x8FDE;&#x63A5;&#x548C;&#x7EBF;&#x7A0B;&#x7684;&#x4E3B;&#x8981;&#x53C2;&#x6570;&#x5305;&#x62EC; max_connections&#x3001;back_log&#x3001;thread_cache_size&#x3001;table_open_cahce&#x3002;</p>
-<h4 id="41-maxconnections">4.1 max_connections</h4>
+<h4 id="41-maxconnections"><a name="41-maxconnections" class="anchor-navigation-ex-anchor" href="#41-maxconnections"><i class="fa fa-link" aria-hidden="true"></i></a>4.1 max_connections</h4>
 <p>&#x91C7;&#x7528;max_connections &#x63A7;&#x5236;&#x5141;&#x8BB8;&#x8FDE;&#x63A5;&#x5230;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x6700;&#x5927;&#x6570;&#x91CF;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x662F; 151&#x3002;&#x5982;&#x679C;&#x72B6;&#x6001;&#x53D8;&#x91CF; connection_errors_max_connections &#x4E0D;&#x4E3A;&#x96F6;&#xFF0C;&#x5E76;&#x4E14;&#x4E00;&#x76F4;&#x589E;&#x957F;&#xFF0C;&#x5219;&#x8BF4;&#x660E;&#x4E0D;&#x65AD;&#x6709;&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;&#x56E0;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6570;&#x5DF2;&#x8FBE;&#x5230;&#x5141;&#x8BB8;&#x6700;&#x5927;&#x503C;&#x800C;&#x5931;&#x8D25;&#xFF0C;&#x8FD9;&#x662F;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x589E;&#x5927;max_connections &#x7684;&#x503C;&#x3002;</p>
 <p>Mysql &#x6700;&#x5927;&#x53EF;&#x652F;&#x6301;&#x7684;&#x8FDE;&#x63A5;&#x6570;&#xFF0C;&#x53D6;&#x51B3;&#x4E8E;&#x5F88;&#x591A;&#x56E0;&#x7D20;&#xFF0C;&#x5305;&#x62EC;&#x7ED9;&#x5B9A;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5E73;&#x53F0;&#x7684;&#x7EBF;&#x7A0B;&#x5E93;&#x7684;&#x8D28;&#x91CF;&#x3001;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#x3001;&#x6BCF;&#x4E2A;&#x8FDE;&#x63A5;&#x7684;&#x8D1F;&#x8377;&#x3001;CPU&#x7684;&#x5904;&#x7406;&#x901F;&#x5EA6;&#xFF0C;&#x671F;&#x671B;&#x7684;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#x7B49;&#x3002;&#x5728;Linux &#x5E73;&#x53F0;&#x4E0B;&#xFF0C;&#x6027;&#x80FD;&#x597D;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x652F;&#x6301; 500-1000 &#x4E2A;&#x8FDE;&#x63A5;&#x4E0D;&#x662F;&#x96BE;&#x4E8B;&#xFF0C;&#x9700;&#x8981;&#x6839;&#x636E;&#x670D;&#x52A1;&#x5668;&#x6027;&#x80FD;&#x8FDB;&#x884C;&#x8BC4;&#x4F30;&#x8BBE;&#x5B9A;&#x3002;</p>
-<h4 id="42-backlog">4.2 back_log</h4>
+<h4 id="42-backlog"><a name="42-backlog" class="anchor-navigation-ex-anchor" href="#42-backlog"><i class="fa fa-link" aria-hidden="true"></i></a>4.2 back_log</h4>
 <p>back_log &#x53C2;&#x6570;&#x63A7;&#x5236;MySQL&#x76D1;&#x542C;TCP&#x7AEF;&#x53E3;&#x65F6;&#x8BBE;&#x7F6E;&#x7684;&#x79EF;&#x538B;&#x8BF7;&#x6C42;&#x6808;&#x5927;&#x5C0F;&#x3002;&#x5982;&#x679C;MySql&#x7684;&#x8FDE;&#x63A5;&#x6570;&#x8FBE;&#x5230;max_connections&#x65F6;&#xFF0C;&#x65B0;&#x6765;&#x7684;&#x8BF7;&#x6C42;&#x5C06;&#x4F1A;&#x88AB;&#x5B58;&#x5728;&#x5806;&#x6808;&#x4E2D;&#xFF0C;&#x4EE5;&#x7B49;&#x5F85;&#x67D0;&#x4E00;&#x8FDE;&#x63A5;&#x91CA;&#x653E;&#x8D44;&#x6E90;&#xFF0C;&#x8BE5;&#x5806;&#x6808;&#x7684;&#x6570;&#x91CF;&#x5373;back_log&#xFF0C;&#x5982;&#x679C;&#x7B49;&#x5F85;&#x8FDE;&#x63A5;&#x7684;&#x6570;&#x91CF;&#x8D85;&#x8FC7;back_log&#xFF0C;&#x5C06;&#x4E0D;&#x88AB;&#x6388;&#x4E88;&#x8FDE;&#x63A5;&#x8D44;&#x6E90;&#xFF0C;&#x5C06;&#x4F1A;&#x62A5;&#x9519;&#x3002;5.6.6 &#x7248;&#x672C;&#x4E4B;&#x524D;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; 50 &#xFF0C; &#x4E4B;&#x540E;&#x7684;&#x7248;&#x672C;&#x9ED8;&#x8BA4;&#x4E3A; 50 + &#xFF08;max_connections / 5&#xFF09;&#xFF0C; &#x4F46;&#x6700;&#x5927;&#x4E0D;&#x8D85;&#x8FC7;900&#x3002;</p>
 <p>&#x5982;&#x679C;&#x9700;&#x8981;&#x6570;&#x636E;&#x5E93;&#x5728;&#x8F83;&#x77ED;&#x7684;&#x65F6;&#x95F4;&#x5185;&#x5904;&#x7406;&#x5927;&#x91CF;&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;&#xFF0C; &#x53EF;&#x4EE5;&#x8003;&#x8651;&#x9002;&#x5F53;&#x589E;&#x5927;back_log &#x7684;&#x503C;&#x3002;</p>
-<h4 id="43-tableopencache">4.3 table_open_cache</h4>
+<h4 id="43-tableopencache"><a name="43-tableopencache" class="anchor-navigation-ex-anchor" href="#43-tableopencache"><i class="fa fa-link" aria-hidden="true"></i></a>4.3 table_open_cache</h4>
 <p>&#x8BE5;&#x53C2;&#x6570;&#x7528;&#x6765;&#x63A7;&#x5236;&#x6240;&#x6709;SQL&#x8BED;&#x53E5;&#x6267;&#x884C;&#x7EBF;&#x7A0B;&#x53EF;&#x6253;&#x5F00;&#x8868;&#x7F13;&#x5B58;&#x7684;&#x6570;&#x91CF;&#xFF0C; &#x800C;&#x5728;&#x6267;&#x884C;SQL&#x8BED;&#x53E5;&#x65F6;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;SQL&#x6267;&#x884C;&#x7EBF;&#x7A0B;&#x81F3;&#x5C11;&#x8981;&#x6253;&#x5F00; 1 &#x4E2A;&#x8868;&#x7F13;&#x5B58;&#x3002;&#x8BE5;&#x53C2;&#x6570;&#x7684;&#x503C;&#x5E94;&#x8BE5;&#x6839;&#x636E;&#x8BBE;&#x7F6E;&#x7684;&#x6700;&#x5927;&#x8FDE;&#x63A5;&#x6570; max_connections &#x4EE5;&#x53CA;&#x6BCF;&#x4E2A;&#x8FDE;&#x63A5;&#x6267;&#x884C;&#x5173;&#x8054;&#x67E5;&#x8BE2;&#x4E2D;&#x6D89;&#x53CA;&#x7684;&#x8868;&#x7684;&#x6700;&#x5927;&#x6570;&#x91CF;&#x6765;&#x8BBE;&#x5B9A; &#xFF1A;</p>
 <p>&#x200B;    max_connections x N &#xFF1B;</p>
-<h4 id="44-threadcachesize">4.4 thread_cache_size</h4>
+<h4 id="44-threadcachesize"><a name="44-threadcachesize" class="anchor-navigation-ex-anchor" href="#44-threadcachesize"><i class="fa fa-link" aria-hidden="true"></i></a>4.4 thread_cache_size</h4>
 <p>&#x4E3A;&#x4E86;&#x52A0;&#x5FEB;&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;&#x7684;&#x901F;&#x5EA6;&#xFF0C;MySQL &#x4F1A;&#x7F13;&#x5B58;&#x4E00;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x5BA2;&#x6237;&#x670D;&#x52A1;&#x7EBF;&#x7A0B;&#x4EE5;&#x5907;&#x91CD;&#x7528;&#xFF0C;&#x901A;&#x8FC7;&#x53C2;&#x6570; thread_cache_size &#x53EF;&#x63A7;&#x5236; MySQL &#x7F13;&#x5B58;&#x5BA2;&#x6237;&#x670D;&#x52A1;&#x7EBF;&#x7A0B;&#x7684;&#x6570;&#x91CF;&#x3002;</p>
-<h4 id="45-innodblockwaittimeout">4.5 innodb_lock_wait_timeout</h4>
+<h4 id="45-innodblockwaittimeout"><a name="45-innodblockwaittimeout" class="anchor-navigation-ex-anchor" href="#45-innodblockwaittimeout"><i class="fa fa-link" aria-hidden="true"></i></a>4.5 innodb_lock_wait_timeout</h4>
 <p>&#x8BE5;&#x53C2;&#x6570;&#x662F;&#x7528;&#x6765;&#x8BBE;&#x7F6E;InnoDB &#x4E8B;&#x52A1;&#x7B49;&#x5F85;&#x884C;&#x9501;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x662F;50ms &#xFF0C; &#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x52A8;&#x6001;&#x8BBE;&#x7F6E;&#x3002;&#x5BF9;&#x4E8E;&#x9700;&#x8981;&#x5FEB;&#x901F;&#x53CD;&#x9988;&#x7684;&#x4E1A;&#x52A1;&#x7CFB;&#x7EDF;&#x6765;&#x8BF4;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x884C;&#x9501;&#x7684;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x8C03;&#x5C0F;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x4E8B;&#x52A1;&#x957F;&#x65F6;&#x95F4;&#x6302;&#x8D77;&#xFF1B; &#x5BF9;&#x4E8E;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x7684;&#x6279;&#x91CF;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x6765;&#x8BF4;&#xFF0C; &#x53EF;&#x4EE5;&#x5C06;&#x884C;&#x9501;&#x7684;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x8C03;&#x5927;&#xFF0C; &#x4EE5;&#x907F;&#x514D;&#x53D1;&#x751F;&#x5927;&#x7684;&#x56DE;&#x6EDA;&#x64CD;&#x4F5C;&#x3002;</p>
-<h3 id="5-mysql&#x9501;&#x95EE;&#x9898;">5. Mysql&#x9501;&#x95EE;&#x9898;</h3>
-<h4 id="51-&#x9501;&#x6982;&#x8FF0;">5.1 &#x9501;&#x6982;&#x8FF0;</h4>
+<h3 id="5-mysql&#x9501;&#x95EE;&#x9898;"><a name="5-mysql&#x9501;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#5-mysql&#x9501;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>5. Mysql&#x9501;&#x95EE;&#x9898;</h3>
+<h4 id="51-&#x9501;&#x6982;&#x8FF0;"><a name="51-&#x9501;&#x6982;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#51-&#x9501;&#x6982;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>5.1 &#x9501;&#x6982;&#x8FF0;</h4>
 <p>&#x9501;&#x662F;&#x8BA1;&#x7B97;&#x673A;&#x534F;&#x8C03;&#x591A;&#x4E2A;&#x8FDB;&#x7A0B;&#x6216;&#x7EBF;&#x7A0B;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#x67D0;&#x4E00;&#x8D44;&#x6E90;&#x7684;&#x673A;&#x5236;&#xFF08;&#x907F;&#x514D;&#x4E89;&#x62A2;&#xFF09;&#x3002;</p>
 <p>&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x9664;&#x4F20;&#x7EDF;&#x7684;&#x8BA1;&#x7B97;&#x8D44;&#x6E90;&#xFF08;&#x5982; CPU&#x3001;RAM&#x3001;I/O &#x7B49;&#xFF09;&#x7684;&#x4E89;&#x7528;&#x4EE5;&#x5916;&#xFF0C;&#x6570;&#x636E;&#x4E5F;&#x662F;&#x4E00;&#x79CD;&#x4F9B;&#x8BB8;&#x591A;&#x7528;&#x6237;&#x5171;&#x4EAB;&#x7684;&#x8D44;&#x6E90;&#x3002;&#x5982;&#x4F55;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x3001;&#x6709;&#x6548;&#x6027;&#x662F;&#x6240;&#x6709;&#x6570;&#x636E;&#x5E93;&#x5FC5;&#x987B;&#x89E3;&#x51B3;&#x7684;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x9501;&#x51B2;&#x7A81;&#x4E5F;&#x662F;&#x5F71;&#x54CD;&#x6570;&#x636E;&#x5E93;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#x6027;&#x80FD;&#x7684;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x56E0;&#x7D20;&#x3002;&#x4ECE;&#x8FD9;&#x4E2A;&#x89D2;&#x5EA6;&#x6765;&#x8BF4;&#xFF0C;&#x9501;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x800C;&#x8A00;&#x663E;&#x5F97;&#x5C24;&#x5176;&#x91CD;&#x8981;&#xFF0C;&#x4E5F;&#x66F4;&#x52A0;&#x590D;&#x6742;&#x3002;</p>
-<h4 id="52-&#x9501;&#x5206;&#x7C7B;">5.2 &#x9501;&#x5206;&#x7C7B;</h4>
+<h4 id="52-&#x9501;&#x5206;&#x7C7B;"><a name="52-&#x9501;&#x5206;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#52-&#x9501;&#x5206;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2 &#x9501;&#x5206;&#x7C7B;</h4>
 <p>&#x4ECE;&#x5BF9;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x7684;&#x7C92;&#x5EA6;&#x5206; &#xFF1A; </p>
 <p>1&#xFF09; &#x8868;&#x9501;&#xFF1A;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x4F1A;&#x9501;&#x5B9A;&#x6574;&#x4E2A;&#x8868;&#x3002;</p>
 <p>2&#xFF09; &#x884C;&#x9501;&#xFF1A;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x4F1A;&#x9501;&#x5B9A;&#x5F53;&#x524D;&#x64CD;&#x4F5C;&#x884C;&#x3002;</p>
 <p>&#x4ECE;&#x5BF9;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x7684;&#x7C7B;&#x578B;&#x5206;&#xFF1A;</p>
 <p>1&#xFF09; &#x8BFB;&#x9501;&#xFF08;&#x5171;&#x4EAB;&#x9501;&#xFF09;&#xFF1A;&#x9488;&#x5BF9;&#x540C;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#xFF0C;&#x591A;&#x4E2A;&#x8BFB;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x8FDB;&#x884C;&#x800C;&#x4E0D;&#x4F1A;&#x4E92;&#x76F8;&#x5F71;&#x54CD;&#x3002;</p>
 <p>2&#xFF09; &#x5199;&#x9501;&#xFF08;&#x6392;&#x5B83;&#x9501;&#xFF09;&#xFF1A;&#x5F53;&#x524D;&#x64CD;&#x4F5C;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#x4E4B;&#x524D;&#xFF0C;&#x5B83;&#x4F1A;&#x963B;&#x65AD;&#x5176;&#x4ED6;&#x5199;&#x9501;&#x548C;&#x8BFB;&#x9501;&#x3002;</p>
-<h4 id="53-mysql-&#x9501;">5.3 Mysql &#x9501;</h4>
+<h4 id="53-mysql-&#x9501;"><a name="53-mysql-&#x9501;" class="anchor-navigation-ex-anchor" href="#53-mysql-&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3 Mysql &#x9501;</h4>
 <p>&#x76F8;&#x5BF9;&#x5176;&#x4ED6;&#x6570;&#x636E;&#x5E93;&#x800C;&#x8A00;&#xFF0C;MySQL&#x7684;&#x9501;&#x673A;&#x5236;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF0C;&#x5176;&#x6700;&#x663E;&#x8457;&#x7684;&#x7279;&#x70B9;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x652F;&#x6301;&#x4E0D;&#x540C;&#x7684;&#x9501;&#x673A;&#x5236;&#x3002;&#x4E0B;&#x8868;&#x4E2D;&#x7F57;&#x5217;&#x51FA;&#x4E86;&#x5404;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x5BF9;&#x9501;&#x7684;&#x652F;&#x6301;&#x60C5;&#x51B5;&#xFF1A;
 | &#x5B58;&#x50A8;&#x5F15;&#x64CE; | &#x8868;&#x7EA7;&#x9501; | &#x884C;&#x7EA7;&#x9501; | &#x9875;&#x9762;&#x9501; |
 | -------- | ------ | ------ | ------ |
@@ -1350,16 +1354,16 @@ SQL3 : <span class="hljs-keyword">select</span> <span class="hljs-keyword">datab
 </tbody>
 </table>
 <p>&#x4ECE;&#x4E0A;&#x8FF0;&#x7279;&#x70B9;&#x53EF;&#x89C1;&#xFF0C;&#x5F88;&#x96BE;&#x7B3C;&#x7EDF;&#x5730;&#x8BF4;&#x54EA;&#x79CD;&#x9501;&#x66F4;&#x597D;&#xFF0C;&#x53EA;&#x80FD;&#x5C31;&#x5177;&#x4F53;&#x5E94;&#x7528;&#x7684;&#x7279;&#x70B9;&#x6765;&#x8BF4;&#x54EA;&#x79CD;&#x9501;&#x66F4;&#x5408;&#x9002;&#xFF01;&#x4EC5;&#x4ECE;&#x9501;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x8BF4;&#xFF1A;&#x8868;&#x7EA7;&#x9501;&#x66F4;&#x9002;&#x5408;&#x4E8E;&#x4EE5;&#x67E5;&#x8BE2;&#x4E3A;&#x4E3B;&#xFF0C;&#x53EA;&#x6709;&#x5C11;&#x91CF;&#x6309;&#x7D22;&#x5F15;&#x6761;&#x4EF6;&#x66F4;&#x65B0;&#x6570;&#x636E;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x5982;Web &#x5E94;&#x7528;&#xFF1B;&#x800C;&#x884C;&#x7EA7;&#x9501;&#x5219;&#x66F4;&#x9002;&#x5408;&#x4E8E;&#x6709;&#x5927;&#x91CF;&#x6309;&#x7D22;&#x5F15;&#x6761;&#x4EF6;&#x5E76;&#x53D1;&#x66F4;&#x65B0;&#x5C11;&#x91CF;&#x4E0D;&#x540C;&#x6570;&#x636E;&#xFF0C;&#x540C;&#x65F6;&#x53C8;&#x6709;&#x5E76;&#x67E5;&#x8BE2;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x5982;&#x4E00;&#x4E9B;&#x5728;&#x7EBF;&#x4E8B;&#x52A1;&#x5904;&#x7406;&#xFF08;OLTP&#xFF09;&#x7CFB;&#x7EDF;&#x3002;</p>
-<h4 id="52-myisam-&#x8868;&#x9501;">5.2 MyISAM &#x8868;&#x9501;</h4>
+<h4 id="52-myisam-&#x8868;&#x9501;"><a name="52-myisam-&#x8868;&#x9501;" class="anchor-navigation-ex-anchor" href="#52-myisam-&#x8868;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2 MyISAM &#x8868;&#x9501;</h4>
 <p>MyISAM &#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x53EA;&#x652F;&#x6301;&#x8868;&#x9501;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;MySQL&#x5F00;&#x59CB;&#x51E0;&#x4E2A;&#x7248;&#x672C;&#x4E2D;&#x552F;&#x4E00;&#x652F;&#x6301;&#x7684;&#x9501;&#x7C7B;&#x578B;&#x3002;</p>
-<h5 id="521-&#x5982;&#x4F55;&#x52A0;&#x8868;&#x9501;">5.2.1 &#x5982;&#x4F55;&#x52A0;&#x8868;&#x9501;</h5>
+<h5 id="521-&#x5982;&#x4F55;&#x52A0;&#x8868;&#x9501;"><a name="521-&#x5982;&#x4F55;&#x52A0;&#x8868;&#x9501;" class="anchor-navigation-ex-anchor" href="#521-&#x5982;&#x4F55;&#x52A0;&#x8868;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2.1 &#x5982;&#x4F55;&#x52A0;&#x8868;&#x9501;</h5>
 <p>MyISAM &#x5728;&#x6267;&#x884C;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#xFF08;SELECT&#xFF09;&#x524D;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x7ED9;&#x6D89;&#x53CA;&#x7684;&#x6240;&#x6709;&#x8868;&#x52A0;&#x8BFB;&#x9501;&#xFF0C;&#x5728;&#x6267;&#x884C;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#xFF08;UPDATE&#x3001;DELETE&#x3001;INSERT &#x7B49;&#xFF09;&#x524D;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x7ED9;&#x6D89;&#x53CA;&#x7684;&#x8868;&#x52A0;&#x5199;&#x9501;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x7528;&#x6237;&#x5E72;&#x9884;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x7528;&#x6237;&#x4E00;&#x822C;&#x4E0D;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x7528; LOCK TABLE &#x547D;&#x4EE4;&#x7ED9; MyISAM &#x8868;&#x663E;&#x5F0F;&#x52A0;&#x9501;&#x3002;</p>
 <p>&#x663E;&#x793A;&#x52A0;&#x8868;&#x9501;&#x8BED;&#x6CD5;&#xFF1A;</p>
 <pre><code class="lang-SQL">&#x52A0;&#x8BFB;&#x9501; &#xFF1A; <span class="hljs-keyword">lock</span> <span class="hljs-keyword">table</span> table_name <span class="hljs-keyword">read</span>;
 
 &#x52A0;&#x5199;&#x9501; &#xFF1A; <span class="hljs-keyword">lock</span> <span class="hljs-keyword">table</span> table_name write&#xFF1B;
 </code></pre>
-<h5 id="522-&#x8BFB;&#x9501;&#x6848;&#x4F8B;">5.2.2 &#x8BFB;&#x9501;&#x6848;&#x4F8B;</h5>
+<h5 id="522-&#x8BFB;&#x9501;&#x6848;&#x4F8B;"><a name="522-&#x8BFB;&#x9501;&#x6848;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#522-&#x8BFB;&#x9501;&#x6848;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2.2 &#x8BFB;&#x9501;&#x6848;&#x4F8B;</h5>
 <p>&#x51C6;&#x5907;&#x73AF;&#x5883;</p>
 <pre><code class="lang-SQL"><span class="hljs-keyword">create</span> <span class="hljs-keyword">database</span> demo_03 <span class="hljs-keyword">default</span> <span class="hljs-keyword">charset</span>=utf8mb4;
 
@@ -1417,7 +1421,7 @@ SQL3 : <span class="hljs-keyword">select</span> <span class="hljs-keyword">datab
 <pre><code>insert into tb_book values(null,&apos;Mysql&#x9AD8;&#x7EA7;&apos;,&apos;2088-01-01&apos;,&apos;1&apos;);
 </code></pre><p><img src="assets/1553907403957.png" alt="1553907403957"> </p>
 <p>&#x5F53;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x4E00;&#x4E2D;&#x91CA;&#x653E;&#x9501;&#x6307;&#x4EE4; unlock tables  &#x540E; &#xFF0C; &#x5BA2;&#x6237;&#x7AEF;&#x4E8C;&#x4E2D;&#x7684; inesrt &#x8BED;&#x53E5; &#xFF0C; &#x7ACB;&#x5373;&#x6267;&#x884C; &#xFF1B;</p>
-<h5 id="523-&#x5199;&#x9501;&#x6848;&#x4F8B;">5.2.3 &#x5199;&#x9501;&#x6848;&#x4F8B;</h5>
+<h5 id="523-&#x5199;&#x9501;&#x6848;&#x4F8B;"><a name="523-&#x5199;&#x9501;&#x6848;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#523-&#x5199;&#x9501;&#x6848;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2.3 &#x5199;&#x9501;&#x6848;&#x4F8B;</h5>
 <p>&#x5BA2;&#x6237;&#x7AEF; &#x4E00; :</p>
 <p>1&#xFF09;&#x83B7;&#x5F97;tb_book &#x8868;&#x7684;&#x5199;&#x9501; </p>
 <pre><code>lock table tb_book write ;
@@ -1435,7 +1439,7 @@ SQL3 : <span class="hljs-keyword">select</span> <span class="hljs-keyword">datab
 </code></pre><p><img src="assets/1553908019755.png" alt="1553908019755"> </p>
 <p>&#x5F53;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x4E00;&#x4E2D;&#x91CA;&#x653E;&#x9501;&#x6307;&#x4EE4; unlock tables  &#x540E; &#xFF0C; &#x5BA2;&#x6237;&#x7AEF;&#x4E8C;&#x4E2D;&#x7684; select &#x8BED;&#x53E5; &#xFF0C; &#x7ACB;&#x5373;&#x6267;&#x884C; &#xFF1B;</p>
 <p><img src="assets/1553908131373.png" alt="1553908131373"> </p>
-<h5 id="524-&#x7ED3;&#x8BBA;">5.2.4 &#x7ED3;&#x8BBA;</h5>
+<h5 id="524-&#x7ED3;&#x8BBA;"><a name="524-&#x7ED3;&#x8BBA;" class="anchor-navigation-ex-anchor" href="#524-&#x7ED3;&#x8BBA;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2.4 &#x7ED3;&#x8BBA;</h5>
 <p>&#x9501;&#x6A21;&#x5F0F;&#x7684;&#x76F8;&#x4E92;&#x517C;&#x5BB9;&#x6027;&#x5982;&#x8868;&#x4E2D;&#x6240;&#x793A;&#xFF1A;</p>
 <p><img src="../../../../%E6%95%99%E5%AD%A6%E8%B5%84%E6%96%99/%E8%AF%BE%E7%A8%8B%E8%90%A5%E9%94%80/Mysql%E9%AB%98%E7%BA%A7/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/day-03/%E6%96%87%E6%A1%A3/assets/1553905621992.png" alt="1553905621992"> </p>
 <p>&#x7531;&#x4E0A;&#x8868;&#x53EF;&#x89C1;&#xFF1A; </p>
@@ -1443,7 +1447,7 @@ SQL3 : <span class="hljs-keyword">select</span> <span class="hljs-keyword">datab
 <p>&#x200B;    2&#xFF09; &#x5BF9;MyISAM &#x8868;&#x7684;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x5219;&#x4F1A;&#x963B;&#x585E;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x5BF9;&#x540C;&#x4E00;&#x8868;&#x7684;&#x8BFB;&#x548C;&#x5199;&#x64CD;&#x4F5C;&#xFF1B;</p>
 <p>&#x200B;    &#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x5C31;&#x662F;&#x8BFB;&#x9501;&#x4F1A;&#x963B;&#x585E;&#x5199;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x4F1A;&#x963B;&#x585E;&#x8BFB;&#x3002;&#x800C;&#x5199;&#x9501;&#xFF0C;&#x5219;&#x65E2;&#x4F1A;&#x963B;&#x585E;&#x8BFB;&#xFF0C;&#x53C8;&#x4F1A;&#x963B;&#x585E;&#x5199;&#x3002;</p>
 <p>&#x6B64;&#x5916;&#xFF0C;MyISAM &#x7684;&#x8BFB;&#x5199;&#x9501;&#x8C03;&#x5EA6;&#x662F;&#x5199;&#x4F18;&#x5148;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;MyISAM&#x4E0D;&#x9002;&#x5408;&#x505A;&#x5199;&#x4E3A;&#x4E3B;&#x7684;&#x8868;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x7684;&#x539F;&#x56E0;&#x3002;&#x56E0;&#x4E3A;&#x5199;&#x9501;&#x540E;&#xFF0C;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x4E0D;&#x80FD;&#x505A;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#xFF0C;&#x5927;&#x91CF;&#x7684;&#x66F4;&#x65B0;&#x4F1A;&#x4F7F;&#x67E5;&#x8BE2;&#x5F88;&#x96BE;&#x5F97;&#x5230;&#x9501;&#xFF0C;&#x4ECE;&#x800C;&#x9020;&#x6210;&#x6C38;&#x8FDC;&#x963B;&#x585E;&#x3002;</p>
-<h5 id="525-&#x67E5;&#x770B;&#x9501;&#x7684;&#x4E89;&#x7528;&#x60C5;&#x51B5;">5.2.5 &#x67E5;&#x770B;&#x9501;&#x7684;&#x4E89;&#x7528;&#x60C5;&#x51B5;</h5>
+<h5 id="525-&#x67E5;&#x770B;&#x9501;&#x7684;&#x4E89;&#x7528;&#x60C5;&#x51B5;"><a name="525-&#x67E5;&#x770B;&#x9501;&#x7684;&#x4E89;&#x7528;&#x60C5;&#x51B5;" class="anchor-navigation-ex-anchor" href="#525-&#x67E5;&#x770B;&#x9501;&#x7684;&#x4E89;&#x7528;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2.5 &#x67E5;&#x770B;&#x9501;&#x7684;&#x4E89;&#x7528;&#x60C5;&#x51B5;</h5>
 <pre><code>show open tables&#xFF1B;
 </code></pre><p><img src="../../../../%E6%95%99%E5%AD%A6%E8%B5%84%E6%96%99/%E8%AF%BE%E7%A8%8B%E8%90%A5%E9%94%80/Mysql%E9%AB%98%E7%BA%A7/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/day-03/%E6%96%87%E6%A1%A3/assets/1556443073322.png" alt="1556443073322"> </p>
 <p>In_user : &#x8868;&#x5F53;&#x524D;&#x88AB;&#x67E5;&#x8BE2;&#x4F7F;&#x7528;&#x7684;&#x6B21;&#x6570;&#x3002;&#x5982;&#x679C;&#x8BE5;&#x6570;&#x4E3A;&#x96F6;&#xFF0C;&#x5219;&#x8868;&#x662F;&#x6253;&#x5F00;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x524D;&#x6CA1;&#x6709;&#x88AB;&#x4F7F;&#x7528;&#x3002;</p>
@@ -1452,11 +1456,11 @@ SQL3 : <span class="hljs-keyword">select</span> <span class="hljs-keyword">datab
 </code></pre><p><img src="../../../../%E6%95%99%E5%AD%A6%E8%B5%84%E6%96%99/%E8%AF%BE%E7%A8%8B%E8%90%A5%E9%94%80/Mysql%E9%AB%98%E7%BA%A7/%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/day-03/%E6%96%87%E6%A1%A3/assets/1556443170082.png" alt="1556443170082"> </p>
 <p>Table_locks_immediate &#xFF1A; &#x6307;&#x7684;&#x662F;&#x80FD;&#x591F;&#x7ACB;&#x5373;&#x83B7;&#x5F97;&#x8868;&#x7EA7;&#x9501;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x6BCF;&#x7ACB;&#x5373;&#x83B7;&#x53D6;&#x9501;&#xFF0C;&#x503C;&#x52A0;1&#x3002;</p>
 <p>Table_locks_waited &#xFF1A; &#x6307;&#x7684;&#x662F;&#x4E0D;&#x80FD;&#x7ACB;&#x5373;&#x83B7;&#x53D6;&#x8868;&#x7EA7;&#x9501;&#x800C;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x6BCF;&#x7B49;&#x5F85;&#x4E00;&#x6B21;&#xFF0C;&#x8BE5;&#x503C;&#x52A0;1&#xFF0C;&#x6B64;&#x503C;&#x9AD8;&#x8BF4;&#x660E;&#x5B58;&#x5728;&#x7740;&#x8F83;&#x4E3A;&#x4E25;&#x91CD;&#x7684;&#x8868;&#x7EA7;&#x9501;&#x4E89;&#x7528;&#x60C5;&#x51B5;&#x3002;</p>
-<h4 id="53-innodb-&#x884C;&#x9501;">5.3 InnoDB &#x884C;&#x9501;</h4>
-<h5 id="531-&#x884C;&#x9501;&#x4ECB;&#x7ECD;">5.3.1 &#x884C;&#x9501;&#x4ECB;&#x7ECD;</h5>
+<h4 id="53-innodb-&#x884C;&#x9501;"><a name="53-innodb-&#x884C;&#x9501;" class="anchor-navigation-ex-anchor" href="#53-innodb-&#x884C;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3 InnoDB &#x884C;&#x9501;</h4>
+<h5 id="531-&#x884C;&#x9501;&#x4ECB;&#x7ECD;"><a name="531-&#x884C;&#x9501;&#x4ECB;&#x7ECD;" class="anchor-navigation-ex-anchor" href="#531-&#x884C;&#x9501;&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3.1 &#x884C;&#x9501;&#x4ECB;&#x7ECD;</h5>
 <p>&#x884C;&#x9501;&#x7279;&#x70B9; &#xFF1A;&#x504F;&#x5411;InnoDB &#x5B58;&#x50A8;&#x5F15;&#x64CE;&#xFF0C;&#x5F00;&#x9500;&#x5927;&#xFF0C;&#x52A0;&#x9501;&#x6162;&#xFF1B;&#x4F1A;&#x51FA;&#x73B0;&#x6B7B;&#x9501;&#xFF1B;&#x9501;&#x5B9A;&#x7C92;&#x5EA6;&#x6700;&#x5C0F;&#xFF0C;&#x53D1;&#x751F;&#x9501;&#x51B2;&#x7A81;&#x7684;&#x6982;&#x7387;&#x6700;&#x4F4E;,&#x5E76;&#x53D1;&#x5EA6;&#x4E5F;&#x6700;&#x9AD8;&#x3002;</p>
 <p>InnoDB &#x4E0E; MyISAM &#x7684;&#x6700;&#x5927;&#x4E0D;&#x540C;&#x6709;&#x4E24;&#x70B9;&#xFF1A;&#x4E00;&#x662F;&#x652F;&#x6301;&#x4E8B;&#x52A1;&#xFF1B;&#x4E8C;&#x662F; &#x91C7;&#x7528;&#x4E86;&#x884C;&#x7EA7;&#x9501;&#x3002;</p>
-<h5 id="532-&#x80CC;&#x666F;&#x77E5;&#x8BC6;">5.3.2 &#x80CC;&#x666F;&#x77E5;&#x8BC6;</h5>
+<h5 id="532-&#x80CC;&#x666F;&#x77E5;&#x8BC6;"><a name="532-&#x80CC;&#x666F;&#x77E5;&#x8BC6;" class="anchor-navigation-ex-anchor" href="#532-&#x80CC;&#x666F;&#x77E5;&#x8BC6;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3.2 &#x80CC;&#x666F;&#x77E5;&#x8BC6;</h5>
 <p><strong>&#x4E8B;&#x52A1;&#x53CA;&#x5176;ACID&#x5C5E;&#x6027;</strong></p>
 <p>&#x4E8B;&#x52A1;&#x662F;&#x7531;&#x4E00;&#x7EC4;SQL&#x8BED;&#x53E5;&#x7EC4;&#x6210;&#x7684;&#x903B;&#x8F91;&#x5904;&#x7406;&#x5355;&#x5143;&#x3002;</p>
 <p>&#x4E8B;&#x52A1;&#x5177;&#x6709;&#x4EE5;&#x4E0B;4&#x4E2A;&#x7279;&#x6027;&#xFF0C;&#x7B80;&#x79F0;&#x4E3A;&#x4E8B;&#x52A1;ACID&#x5C5E;&#x6027;&#x3002;</p>
@@ -1561,7 +1565,7 @@ SQL3 : <span class="hljs-keyword">select</span> <span class="hljs-keyword">datab
 <p>Mysql &#x7684;&#x6570;&#x636E;&#x5E93;&#x7684;&#x9ED8;&#x8BA4;&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x4E3A; Repeatable read &#xFF0C; &#x67E5;&#x770B;&#x65B9;&#x5F0F;&#xFF1A;</p>
 <pre><code>show variables like &apos;tx_isolation&apos;;
 </code></pre><p><img src="assets/1554331600009.png" alt="1554331600009">  </p>
-<h5 id="533-innodb-&#x7684;&#x884C;&#x9501;&#x6A21;&#x5F0F;">5.3.3 InnoDB &#x7684;&#x884C;&#x9501;&#x6A21;&#x5F0F;</h5>
+<h5 id="533-innodb-&#x7684;&#x884C;&#x9501;&#x6A21;&#x5F0F;"><a name="533-innodb-&#x7684;&#x884C;&#x9501;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#533-innodb-&#x7684;&#x884C;&#x9501;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3.3 InnoDB &#x7684;&#x884C;&#x9501;&#x6A21;&#x5F0F;</h5>
 <p>InnoDB  &#x5B9E;&#x73B0;&#x4E86;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x884C;&#x9501;&#x3002;</p>
 <ul>
 <li>&#x5171;&#x4EAB;&#x9501;&#xFF08;S&#xFF09;&#xFF1A;&#x53C8;&#x79F0;&#x4E3A;&#x8BFB;&#x9501;&#xFF0C;&#x7B80;&#x79F0;S&#x9501;&#xFF0C;&#x5171;&#x4EAB;&#x9501;&#x5C31;&#x662F;&#x591A;&#x4E2A;&#x4E8B;&#x52A1;&#x5BF9;&#x4E8E;&#x540C;&#x4E00;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x5171;&#x4EAB;&#x4E00;&#x628A;&#x9501;&#xFF0C;&#x90FD;&#x80FD;&#x8BBF;&#x95EE;&#x5230;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x662F;&#x53EA;&#x80FD;&#x8BFB;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;&#x3002;</li>
@@ -1573,7 +1577,7 @@ SQL3 : <span class="hljs-keyword">select</span> <span class="hljs-keyword">datab
 <pre><code>&#x5171;&#x4EAB;&#x9501;&#xFF08;S&#xFF09;&#xFF1A;SELECT * FROM table_name WHERE ... LOCK IN SHARE MODE
 
 &#x6392;&#x4ED6;&#x9501;&#xFF08;X) &#xFF1A;SELECT * FROM table_name WHERE ... FOR UPDATE
-</code></pre><h5 id="534-&#x6848;&#x4F8B;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;">5.3.4 &#x6848;&#x4F8B;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</h5>
+</code></pre><h5 id="534-&#x6848;&#x4F8B;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;"><a name="534-&#x6848;&#x4F8B;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#534-&#x6848;&#x4F8B;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3.4 &#x6848;&#x4F8B;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</h5>
 <pre><code class="lang-sql"><span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> test_innodb_lock(
     <span class="hljs-keyword">id</span> <span class="hljs-built_in">int</span>(<span class="hljs-number">11</span>),
     <span class="hljs-keyword">name</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">16</span>),
@@ -1593,7 +1597,7 @@ SQL3 : <span class="hljs-keyword">select</span> <span class="hljs-keyword">datab
 <span class="hljs-keyword">create</span> <span class="hljs-keyword">index</span> idx_test_innodb_lock_id <span class="hljs-keyword">on</span> test_innodb_lock(<span class="hljs-keyword">id</span>);
 <span class="hljs-keyword">create</span> <span class="hljs-keyword">index</span> idx_test_innodb_lock_name <span class="hljs-keyword">on</span> test_innodb_lock(<span class="hljs-keyword">name</span>);
 </code></pre>
-<h5 id="535-&#x884C;&#x9501;&#x57FA;&#x672C;&#x6F14;&#x793A;">5.3.5 &#x884C;&#x9501;&#x57FA;&#x672C;&#x6F14;&#x793A;</h5>
+<h5 id="535-&#x884C;&#x9501;&#x57FA;&#x672C;&#x6F14;&#x793A;"><a name="535-&#x884C;&#x9501;&#x57FA;&#x672C;&#x6F14;&#x793A;" class="anchor-navigation-ex-anchor" href="#535-&#x884C;&#x9501;&#x57FA;&#x672C;&#x6F14;&#x793A;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3.5 &#x884C;&#x9501;&#x57FA;&#x672C;&#x6F14;&#x793A;</h5>
 <table>
 <thead>
 <tr>
@@ -1632,7 +1636,7 @@ SQL3 : <span class="hljs-keyword">select</span> <span class="hljs-keyword">datab
 </tr>
 </tbody>
 </table>
-<h5 id="536-&#x65E0;&#x7D22;&#x5F15;&#x884C;&#x9501;&#x5347;&#x7EA7;&#x4E3A;&#x8868;&#x9501;">5.3.6 &#x65E0;&#x7D22;&#x5F15;&#x884C;&#x9501;&#x5347;&#x7EA7;&#x4E3A;&#x8868;&#x9501;</h5>
+<h5 id="536-&#x65E0;&#x7D22;&#x5F15;&#x884C;&#x9501;&#x5347;&#x7EA7;&#x4E3A;&#x8868;&#x9501;"><a name="536-&#x65E0;&#x7D22;&#x5F15;&#x884C;&#x9501;&#x5347;&#x7EA7;&#x4E3A;&#x8868;&#x9501;" class="anchor-navigation-ex-anchor" href="#536-&#x65E0;&#x7D22;&#x5F15;&#x884C;&#x9501;&#x5347;&#x7EA7;&#x4E3A;&#x8868;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3.6 &#x65E0;&#x7D22;&#x5F15;&#x884C;&#x9501;&#x5347;&#x7EA7;&#x4E3A;&#x8868;&#x9501;</h5>
 <p>&#x5982;&#x679C;&#x4E0D;&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x6761;&#x4EF6;&#x68C0;&#x7D22;&#x6570;&#x636E;&#xFF0C;&#x90A3;&#x4E48;InnoDB&#x5C06;&#x5BF9;&#x8868;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x8BB0;&#x5F55;&#x52A0;&#x9501;&#xFF0C;&#x5B9E;&#x9645;&#x6548;&#x679C;&#x8DDF;&#x8868;&#x9501;&#x4E00;&#x6837;&#x3002;</p>
 <p>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x8868;&#x7684;&#x7D22;&#x5F15; &#xFF1A; show  index  from test_innodb_lock ;</p>
 <p><img src="assets/1554385956215.png" alt="1554385956215"> </p>
@@ -1663,7 +1667,7 @@ SQL3 : <span class="hljs-keyword">select</span> <span class="hljs-keyword">datab
 </tbody>
 </table>
 <p>&#x7531;&#x4E8E; &#x6267;&#x884C;&#x66F4;&#x65B0;&#x65F6; &#xFF0C; name&#x5B57;&#x6BB5;&#x672C;&#x6765;&#x4E3A;varchar&#x7C7B;&#x578B;&#xFF0C; &#x6211;&#x4EEC;&#x662F;&#x4F5C;&#x4E3A;&#x6570;&#x7EC4;&#x7C7B;&#x578B;&#x4F7F;&#x7528;&#xFF0C;&#x5B58;&#x5728;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x7D22;&#x5F15;&#x5931;&#x6548;&#xFF0C;&#x6700;&#x7EC8;&#x884C;&#x9501;&#x53D8;&#x4E3A;&#x8868;&#x9501; &#xFF1B;</p>
-<h5 id="537-&#x95F4;&#x9699;&#x9501;&#x5371;&#x5BB3;">5.3.7 &#x95F4;&#x9699;&#x9501;&#x5371;&#x5BB3;</h5>
+<h5 id="537-&#x95F4;&#x9699;&#x9501;&#x5371;&#x5BB3;"><a name="537-&#x95F4;&#x9699;&#x9501;&#x5371;&#x5BB3;" class="anchor-navigation-ex-anchor" href="#537-&#x95F4;&#x9699;&#x9501;&#x5371;&#x5BB3;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3.7 &#x95F4;&#x9699;&#x9501;&#x5371;&#x5BB3;</h5>
 <p>&#x5F53;&#x6211;&#x4EEC;&#x7528;&#x8303;&#x56F4;&#x6761;&#x4EF6;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4F7F;&#x7528;&#x76F8;&#x7B49;&#x6761;&#x4EF6;&#x68C0;&#x7D22;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x8BF7;&#x6C42;&#x5171;&#x4EAB;&#x6216;&#x6392;&#x4ED6;&#x9501;&#x65F6;&#xFF0C;InnoDB&#x4F1A;&#x7ED9;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x7684;&#x5DF2;&#x6709;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x52A0;&#x9501;&#xFF1B; &#x5BF9;&#x4E8E;&#x952E;&#x503C;&#x5728;&#x6761;&#x4EF6;&#x8303;&#x56F4;&#x5185;&#x4F46;&#x5E76;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x53EB;&#x505A; &quot;&#x95F4;&#x9699;&#xFF08;GAP&#xFF09;&quot; &#xFF0C; InnoDB&#x4E5F;&#x4F1A;&#x5BF9;&#x8FD9;&#x4E2A; &quot;&#x95F4;&#x9699;&quot; &#x52A0;&#x9501;&#xFF0C;&#x8FD9;&#x79CD;&#x9501;&#x673A;&#x5236;&#x5C31;&#x662F;&#x6240;&#x8C13;&#x7684; &#x95F4;&#x9699;&#x9501;&#xFF08;Next-Key&#x9501;&#xFF09; &#x3002;</p>
 <p>&#x793A;&#x4F8B; &#xFF1A; </p>
 <table>
@@ -1700,7 +1704,7 @@ SQL3 : <span class="hljs-keyword">select</span> <span class="hljs-keyword">datab
 </tr>
 </tbody>
 </table>
-<h5 id="538-innodb-&#x884C;&#x9501;&#x4E89;&#x7528;&#x60C5;&#x51B5;">5.3.8 InnoDB &#x884C;&#x9501;&#x4E89;&#x7528;&#x60C5;&#x51B5;</h5>
+<h5 id="538-innodb-&#x884C;&#x9501;&#x4E89;&#x7528;&#x60C5;&#x51B5;"><a name="538-innodb-&#x884C;&#x9501;&#x4E89;&#x7528;&#x60C5;&#x51B5;" class="anchor-navigation-ex-anchor" href="#538-innodb-&#x884C;&#x9501;&#x4E89;&#x7528;&#x60C5;&#x51B5;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3.8 InnoDB &#x884C;&#x9501;&#x4E89;&#x7528;&#x60C5;&#x51B5;</h5>
 <pre><code class="lang-sql"><span class="hljs-keyword">show</span>  <span class="hljs-keyword">status</span> <span class="hljs-keyword">like</span> <span class="hljs-string">&apos;innodb_row_lock%&apos;</span>;
 </code></pre>
 <p><img src="assets/1556455943670.png" alt="1556455943670"></p>
@@ -1716,7 +1720,7 @@ Innodb_row_lock_waits: &#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x540E;&#x5230;&#x73B0;&
 
 
 &#x5F53;&#x7B49;&#x5F85;&#x7684;&#x6B21;&#x6570;&#x5F88;&#x9AD8;&#xFF0C;&#x800C;&#x4E14;&#x6BCF;&#x6B21;&#x7B49;&#x5F85;&#x7684;&#x65F6;&#x957F;&#x4E5F;&#x4E0D;&#x5C0F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x5206;&#x6790;&#x7CFB;&#x7EDF;&#x4E2D;&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x6709;&#x5982;&#x6B64;&#x591A;&#x7684;&#x7B49;&#x5F85;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;&#x5206;&#x6790;&#x7ED3;&#x679C;&#x7740;&#x624B;&#x5236;&#x5B9A;&#x4F18;&#x5316;&#x8BA1;&#x5212;&#x3002;
-</code></pre><h5 id="539-&#x603B;&#x7ED3;">5.3.9 &#x603B;&#x7ED3;</h5>
+</code></pre><h5 id="539-&#x603B;&#x7ED3;"><a name="539-&#x603B;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#539-&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3.9 &#x603B;&#x7ED3;</h5>
 <p>InnoDB&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x7531;&#x4E8E;&#x5B9E;&#x73B0;&#x4E86;&#x884C;&#x7EA7;&#x9501;&#x5B9A;&#xFF0C;&#x867D;&#x7136;&#x5728;&#x9501;&#x5B9A;&#x673A;&#x5236;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x9762;&#x5E26;&#x6765;&#x4E86;&#x6027;&#x80FD;&#x635F;&#x8017;&#x53EF;&#x80FD;&#x6BD4;&#x8868;&#x9501;&#x4F1A;&#x66F4;&#x9AD8;&#x4E00;&#x4E9B;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x6574;&#x4F53;&#x5E76;&#x53D1;&#x5904;&#x7406;&#x80FD;&#x529B;&#x65B9;&#x9762;&#x8981;&#x8FDC;&#x8FDC;&#x7531;&#x4E8E;MyISAM&#x7684;&#x8868;&#x9501;&#x7684;&#x3002;&#x5F53;&#x7CFB;&#x7EDF;&#x5E76;&#x53D1;&#x91CF;&#x8F83;&#x9AD8;&#x7684;&#x65F6;&#x5019;&#xFF0C;InnoDB&#x7684;&#x6574;&#x4F53;&#x6027;&#x80FD;&#x548C;MyISAM&#x76F8;&#x6BD4;&#x5C31;&#x4F1A;&#x6709;&#x6BD4;&#x8F83;&#x660E;&#x663E;&#x7684;&#x4F18;&#x52BF;&#x3002;</p>
 <p>&#x4F46;&#x662F;&#xFF0C;InnoDB&#x7684;&#x884C;&#x7EA7;&#x9501;&#x540C;&#x6837;&#x4E5F;&#x6709;&#x5176;&#x8106;&#x5F31;&#x7684;&#x4E00;&#x9762;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E0D;&#x5F53;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x8BA9;InnoDB&#x7684;&#x6574;&#x4F53;&#x6027;&#x80FD;&#x8868;&#x73B0;&#x4E0D;&#x4EC5;&#x4E0D;&#x80FD;&#x6BD4;MyISAM&#x9AD8;&#xFF0C;&#x751A;&#x81F3;&#x53EF;&#x80FD;&#x4F1A;&#x66F4;&#x5DEE;&#x3002;</p>
 <p>&#x4F18;&#x5316;&#x5EFA;&#x8BAE;&#xFF1A;</p>
@@ -1727,8 +1731,8 @@ Innodb_row_lock_waits: &#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x540E;&#x5230;&#x73B0;&
 <li>&#x5C3D;&#x91CF;&#x63A7;&#x5236;&#x4E8B;&#x52A1;&#x5927;&#x5C0F;&#xFF0C;&#x51CF;&#x5C11;&#x9501;&#x5B9A;&#x8D44;&#x6E90;&#x91CF;&#x548C;&#x65F6;&#x95F4;&#x957F;&#x5EA6;</li>
 <li>&#x5C3D;&#x53EF;&#x4F7F;&#x7528;&#x4F4E;&#x7EA7;&#x522B;&#x4E8B;&#x52A1;&#x9694;&#x79BB;&#xFF08;&#x4F46;&#x662F;&#x9700;&#x8981;&#x4E1A;&#x52A1;&#x5C42;&#x9762;&#x6EE1;&#x8DB3;&#x9700;&#x6C42;&#xFF09;</li>
 </ul>
-<h3 id="6-&#x5E38;&#x7528;sql&#x6280;&#x5DE7;">6. &#x5E38;&#x7528;SQL&#x6280;&#x5DE7;</h3>
-<h4 id="61-sql&#x6267;&#x884C;&#x987A;&#x5E8F;">6.1 SQL&#x6267;&#x884C;&#x987A;&#x5E8F;</h4>
+<h3 id="6-&#x5E38;&#x7528;sql&#x6280;&#x5DE7;"><a name="6-&#x5E38;&#x7528;sql&#x6280;&#x5DE7;" class="anchor-navigation-ex-anchor" href="#6-&#x5E38;&#x7528;sql&#x6280;&#x5DE7;"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x5E38;&#x7528;SQL&#x6280;&#x5DE7;</h3>
+<h4 id="61-sql&#x6267;&#x884C;&#x987A;&#x5E8F;"><a name="61-sql&#x6267;&#x884C;&#x987A;&#x5E8F;" class="anchor-navigation-ex-anchor" href="#61-sql&#x6267;&#x884C;&#x987A;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>6.1 SQL&#x6267;&#x884C;&#x987A;&#x5E8F;</h4>
 <p>&#x7F16;&#x5199;&#x987A;&#x5E8F;</p>
 <pre><code class="lang-SQL"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">DISTINCT</span>
     &lt;<span class="hljs-keyword">select</span> <span class="hljs-keyword">list</span>&gt;
@@ -1766,7 +1770,7 @@ ORDER BY    &lt;order_by_condition&gt;
 
 LIMIT        &lt;limit_params&gt;
 </code></pre>
-<h4 id="62-&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4F7F;&#x7528;">6.2 &#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4F7F;&#x7528;</h4>
+<h4 id="62-&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4F7F;&#x7528;"><a name="62-&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#62-&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>6.2 &#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4F7F;&#x7528;</h4>
 <p>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;Regular Expression&#xFF09;&#x662F;&#x6307;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x6216;&#x8005;&#x5339;&#x914D;&#x4E00;&#x7CFB;&#x5217;&#x7B26;&#x5408;&#x67D0;&#x4E2A;&#x53E5;&#x6CD5;&#x89C4;&#x5219;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5355;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
 <table>
 <thead>
@@ -1840,7 +1844,7 @@ LIMIT        &lt;limit_params&gt;
 select * from emp where name regexp &apos;2$&apos;;
 
 select * from emp where name regexp &apos;[uvw]&apos;;
-</code></pre><h4 id="63-mysql-&#x5E38;&#x7528;&#x51FD;&#x6570;">6.3 MySQL &#x5E38;&#x7528;&#x51FD;&#x6570;</h4>
+</code></pre><h4 id="63-mysql-&#x5E38;&#x7528;&#x51FD;&#x6570;"><a name="63-mysql-&#x5E38;&#x7528;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#63-mysql-&#x5E38;&#x7528;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>6.3 MySQL &#x5E38;&#x7528;&#x51FD;&#x6570;</h4>
 <p>&#x6570;&#x5B57;&#x51FD;&#x6570;</p>
 <table>
 <thead>
@@ -2094,6 +2098,7 @@ select * from emp where name regexp &apos;[uvw]&apos;;
 </tbody>
 </table>
 
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
                                 </section>
                             
@@ -2136,7 +2141,7 @@ select * from emp where name regexp &apos;[uvw]&apos;;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MySQL 高级03","level":"1.3.4.6","depth":3,"next":{"title":"MySQL 高级04","level":"1.3.4.7","depth":3,"path":"back/MySQL 高级/Mysql高级-day04.md","ref":"./back/MySQL 高级/Mysql高级-day04.md","articles":[]},"previous":{"title":"MySQL 高级02","level":"1.3.4.5","depth":3,"path":"back/MySQL 高级/Mysql高级-day02.md","ref":"./back/MySQL 高级/Mysql高级-day02.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button"],"pluginsConfig":{"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"back/MySQL 高级/Mysql高级-day03.md","mtime":"2019-05-05T01:24:03.607Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-31T08:53:45.469Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"MySQL 高级03","level":"1.3.4.6","depth":3,"next":{"title":"MySQL 高级04","level":"1.3.4.7","depth":3,"path":"back/MySQL 高级/Mysql高级-day04.md","ref":"./back/MySQL 高级/Mysql高级-day04.md","articles":[]},"previous":{"title":"MySQL 高级02","level":"1.3.4.5","depth":3,"path":"back/MySQL 高级/Mysql高级-day02.md","ref":"./back/MySQL 高级/Mysql高级-day02.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["code","popup","anchor-navigation-ex"],"pluginsConfig":{"search":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevelIcon":false,"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":false,"multipleH2":false,"associatedWithSummary":true,"multipleH3":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"multipleH4":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"back/MySQL 高级/Mysql高级-day03.md","mtime":"2019-05-05T01:24:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-09-21T07:47:11.084Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -2146,7 +2151,7 @@ select * from emp where name regexp &apos;[uvw]&apos;;
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
         
     
         

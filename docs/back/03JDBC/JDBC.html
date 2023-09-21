@@ -17,7 +17,11 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
                 
             
                 
@@ -1144,8 +1148,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="jdbc">JDBC</h1>
-<h2 id="jdbc&#x6982;&#x8FF0;">JDBC&#x6982;&#x8FF0;</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#jdbc"><b></b>JDBC</a></li><ul><li><span class="title-icon "></span><a href="#jdbc&#x6982;&#x8FF0;"><b></b>JDBC&#x6982;&#x8FF0;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;"><b></b>&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;&#x8868;&#x64CD;&#x4F5C;"><b></b>&#x521B;&#x5EFA;&#x8868;&#x64CD;&#x4F5C;</a></li><ul><li><span class="title-icon "></span><a href="#connection&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;"><b></b>Connection&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#statement&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;"><b></b>Statement&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</a></li></ul><li><span class="title-icon "></span><a href="#dql&#x64CD;&#x4F5C;-&#x67E5;&#x8BE2;&#x591A;&#x6761;&#x8BED;&#x53E5;"><b></b>DQL&#x64CD;&#x4F5C; &#x67E5;&#x8BE2;&#x591A;&#x6761;&#x8BED;&#x53E5;</a></li><li><span class="title-icon "></span><a href="#dao&#x7684;&#x601D;&#x60F3;&#x548C;&#x8BBE;&#x8BA1;&#x5206;&#x6790;"><b></b>DAO&#x7684;&#x601D;&#x60F3;&#x548C;&#x8BBE;&#x8BA1;&#x5206;&#x6790;</a></li><li><span class="title-icon "></span><a href="#dao&#x7684;get&#x548C;list&#x65B9;&#x6CD5;"><b></b>DAO&#x7684;get&#x548C;list&#x65B9;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784;---&#x62BD;&#x53D6;&#x51FA;jdbcutil&#x7C7B;"><b></b>Jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784; - &#x62BD;&#x53D6;&#x51FA;JdbcUtil&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784;---&#x62BD;&#x53D6;&#x51FA;dbproperties&#x6587;&#x4EF6;"><b></b>Jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784; - &#x62BD;&#x53D6;&#x51FA;db.properties&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#preparedstatement&#x57FA;&#x672C;&#x4F7F;&#x7528;"><b></b>PreparedStatement&#x57FA;&#x672C;&#x4F7F;&#x7528;</a></li><ul><li><span class="title-icon "></span><a href="#statement&#x548C;preparedstatement&#x7684;&#x533A;&#x522B;"><b></b>Statement&#x548C;PreparedStatement&#x7684;&#x533A;&#x522B;</a></li></ul><li><span class="title-icon "></span><a href="#jdbc&#x7684;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;"><b></b>JDBC&#x7684;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;</a></li><li><span class="title-icon "></span><a href="#jdbc&#x7684;&#x6279;&#x91CF;&#x64CD;&#x4F5C;"><b></b>JDBC&#x7684;&#x6279;&#x91CF;&#x64CD;&#x4F5C;</a></li><li><span class="title-icon "></span><a href="#blob&#x548C;text&#x7C7B;&#x578B;&#x5904;&#x7406;"><b></b>BLOB&#x548C;TEXT&#x7C7B;&#x578B;&#x5904;&#x7406;</a></li><li><span class="title-icon "></span><a href="#&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;"><b></b>&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5982;&#x4F55;&#x5728;jdbc&#x4E2D;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;&#x5462;"><b></b>&#x5982;&#x4F55;&#x5728;JDBC&#x4E2D;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;&#x5462;</a></li></ul><li><span class="title-icon "></span><a href="#&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;"><b></b>&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;_1"><b></b>&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;&#x7684;datasource&#x7684;&#x5B9E;&#x73B0;"><b></b>&#x5E38;&#x7528;&#x7684;DataSource&#x7684;&#x5B9E;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x548C;&#x4E0D;&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;"><b></b>&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x548C;&#x4E0D;&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;?</a></li></ul><li><span class="title-icon "></span><a href="#dbcp&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;"><b></b>DBCP&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;</a></li><li><span class="title-icon "></span><a href="#dbcp&#x8FDE;&#x63A5;&#x6C60;"><b></b>DBCP&#x8FDE;&#x63A5;&#x6C60;:</a></li><li><span class="title-icon "></span><a href="#druid&#x8FDE;&#x63A5;&#x6C60;&#x4F7F;&#x7528;"><b></b>Druid&#x8FDE;&#x63A5;&#x6C60;&#x4F7F;&#x7528;</a></li><li><span class="title-icon "></span><a href="#jdbctemplate&#x7684;dml&#x589E;&#x5220;&#x6539;&#x64CD;&#x4F5C;&#x6A21;&#x677F;"><b></b>JdbcTemplate&#x7684;DML(&#x589E;&#x5220;&#x6539;)&#x64CD;&#x4F5C;&#x6A21;&#x677F;</a></li><ul><li><span class="title-icon "></span><a href="#execute&#x548C;executeupdate"><b></b>execute()&#x548C;executeUpdate()</a></li></ul><li><span class="title-icon "></span><a href="#jdbctemplate&#x7684;dql&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#x6A21;&#x677F;"><b></b>JdbcTemplate&#x7684;DQL(&#x67E5;&#x8BE2;)&#x64CD;&#x4F5C;&#x6A21;&#x677F;</a></li></ul></ul></div><a href="#jdbc" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="jdbc"><a name="jdbc" class="anchor-navigation-ex-anchor" href="#jdbc"><i class="fa fa-link" aria-hidden="true"></i></a>JDBC</h1>
+<h2 id="jdbc&#x6982;&#x8FF0;"><a name="jdbc&#x6982;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#jdbc&#x6982;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>JDBC&#x6982;&#x8FF0;</h2>
 <p>01</p>
 <p>&#x6301;&#x4E45;&#x5316;(persistence)</p>
 <p>JPA:JavaEE&#x7684;&#x89C4;&#x8303;&#xFF0C;Java persistence api</p>
@@ -1153,7 +1157,7 @@
 <blockquote>
 <p>Java.util&#x5305;</p>
 </blockquote>
-<h2 id="&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;">&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;</h2>
+<h2 id="&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;"><a name="&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;</h2>
 <p>02</p>
 <ol>
 <li><p>&#x52A0;&#x8F7D;&#x6CE8;&#x518C;&#x9A71;&#x52A8;</p>
@@ -1179,37 +1183,37 @@
 &gt;
 &gt; &#x5F00;&#x53D1;&#x5EFA;&#x8BAE;:<font color="blue">&#x4F9D;&#x7136;&#x8FD8;&#x662F;&#x5EFA;&#x8BAE;&#x624B;&#x52A8;&#x7684;&#x52A0;&#x8F7D;&#x6CE8;&#x518C;&#x9A71;&#x52A8;. &#x5982;&#x6B64;,&#x53EF;&#x4EE5;&#x517C;&#x5BB9;&#x4E4B;&#x524D;&#x7684;JDK&#x7248;&#x672C;,&#x5728;JavaWeb&#x4E2D;&#x5FC5;&#x987B;&#x624B;&#x52A8;&#x52A0;&#x8F7D;</font>
 
-<h2 id="&#x521B;&#x5EFA;&#x8868;&#x64CD;&#x4F5C;">&#x521B;&#x5EFA;&#x8868;&#x64CD;&#x4F5C;</h2>
+<h2 id="&#x521B;&#x5EFA;&#x8868;&#x64CD;&#x4F5C;"><a name="&#x521B;&#x5EFA;&#x8868;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x8868;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;&#x8868;&#x64CD;&#x4F5C;</h2>
 <p>03</p>
-<h3 id="connection&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;">Connection&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h3>
+<h3 id="connection&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;"><a name="connection&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#connection&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>Connection&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h3>
 <p><code>Statement createStatement()</code>&#x521B;&#x5EFA;&#x4E00;&#x4E2A; Statement &#x5BF9;&#x8C61;&#x6765;&#x5C06; SQL &#x8BED;&#x53E5;&#x53D1;&#x9001;&#x5230;&#x6570;&#x636E;&#x5E93;</p>
 <p><code>PreparedStatement prepareStatement(String sql)</code> :&#x83B7;&#x53D6;&#x9884;&#x7F16;&#x8BD1;&#x8BED;&#x53E5;&#x5BF9;&#x8C61;</p>
 <p>  &#x53C2;&#x6570;:sql,&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x9759;&#x6001;SQL,&#x800C;&#x662F;&#x5E26;&#x6709;&#x5360;&#x4F4D;&#x7B26;&#x7684;SQL(<strong>?</strong>)</p>
-<h3 id="statement&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;">Statement&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h3>
+<h3 id="statement&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;"><a name="statement&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#statement&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>Statement&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h3>
 <p>&#x7528;&#x4E8E;&#x6267;&#x884C;<strong>&#x9759;&#x6001; SQL</strong> (<strong>&#x5199;&#x6B7B;&#x7684;SQL</strong>,&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x8FD0;&#x884C;&#x7684;*SQL)&#x8BED;&#x53E5;&#x5E76;&#x8FD4;&#x56DE;&#x5B83;&#x6240;&#x751F;&#x6210;&#x7ED3;&#x679C;&#x7684;&#x5BF9;&#x8C61; </p>
 <p><code>int executeUpdate(String sql)</code>:&#x53EF;&#x4EE5;&#x6267;&#x884C;DML(&#x589E;&#x5220;&#x6539;)&#x548C;DDL&#x8BED;&#x53E5;,&#x5982;&#x679C;&#x662F;&#x6267;&#x884C;DDL&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x8FD4;&#x56DE;,&#x6267;&#x884C;DML&#x8FD4;&#x56DE;&#x53D7;&#x5F71;&#x54CD;&#x7684;&#x884C;&#x6570;</p>
 <p><code>ResultSet executeQuery(String sql)</code> :&#x6267;&#x884C;&#x7ED9;&#x5B9A;&#x7684; DQL&#x8BED;&#x53E5;&#xFF0C;&#x8BE5;&#x8BED;&#x53E5;&#x6267;&#x884C;&#x4E4B;&#x540E;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; ResultSet &#x5BF9;&#x8C61;</p>
-<h2 id="dql&#x64CD;&#x4F5C;-&#x67E5;&#x8BE2;&#x591A;&#x6761;&#x8BED;&#x53E5;">DQL&#x64CD;&#x4F5C; &#x67E5;&#x8BE2;&#x591A;&#x6761;&#x8BED;&#x53E5;</h2>
+<h2 id="dql&#x64CD;&#x4F5C;-&#x67E5;&#x8BE2;&#x591A;&#x6761;&#x8BED;&#x53E5;"><a name="dql&#x64CD;&#x4F5C;-&#x67E5;&#x8BE2;&#x591A;&#x6761;&#x8BED;&#x53E5;" class="anchor-navigation-ex-anchor" href="#dql&#x64CD;&#x4F5C;-&#x67E5;&#x8BE2;&#x591A;&#x6761;&#x8BED;&#x53E5;"><i class="fa fa-link" aria-hidden="true"></i></a>DQL&#x64CD;&#x4F5C; &#x67E5;&#x8BE2;&#x591A;&#x6761;&#x8BED;&#x53E5;</h2>
 <p>07</p>
 <p><img src="img/03_07.png" alt="img/03_07.png"></p>
-<h2 id="dao&#x7684;&#x601D;&#x60F3;&#x548C;&#x8BBE;&#x8BA1;&#x5206;&#x6790;">DAO&#x7684;&#x601D;&#x60F3;&#x548C;&#x8BBE;&#x8BA1;&#x5206;&#x6790;</h2>
+<h2 id="dao&#x7684;&#x601D;&#x60F3;&#x548C;&#x8BBE;&#x8BA1;&#x5206;&#x6790;"><a name="dao&#x7684;&#x601D;&#x60F3;&#x548C;&#x8BBE;&#x8BA1;&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#dao&#x7684;&#x601D;&#x60F3;&#x548C;&#x8BBE;&#x8BA1;&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>DAO&#x7684;&#x601D;&#x60F3;&#x548C;&#x8BBE;&#x8BA1;&#x5206;&#x6790;</h2>
 <p>09</p>
 <p>&#x4EC0;&#x4E48;&#x662F;DAO</p>
 <blockquote>
 <p>&#x4E3B;&#x8981;&#x5C31;&#x5305;&#x62EC;CRUD(&#x589E;&#x5220;&#x6539;&#x67E5;&#x64CD;&#x4F5C;)</p>
 <p>DAO(Data Access Object)&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x8BBF;&#x95EE;&#x63A5;&#x53E3;&#xFF0C;&#x6570;&#x636E;&#x8BBF;&#x95EE;&#xFF1A;&#x987E;&#x540D;&#x601D;&#x4E49;&#x5C31;&#x662F;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x6253;&#x4EA4;&#x9053;&#x3002;&#x5939;&#x5728;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x8D44;&#x6E90;&#x4E2D;&#x95F4;</p>
 </blockquote>
-<h2 id="dao&#x7684;get&#x548C;list&#x65B9;&#x6CD5;">DAO&#x7684;get&#x548C;list&#x65B9;&#x6CD5;</h2>
+<h2 id="dao&#x7684;get&#x548C;list&#x65B9;&#x6CD5;"><a name="dao&#x7684;get&#x548C;list&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#dao&#x7684;get&#x548C;list&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>DAO&#x7684;get&#x548C;list&#x65B9;&#x6CD5;</h2>
 <p>12</p>
 <p><img src="img/03_12.png" alt="img/03_12.png"></p>
-<h2 id="jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784;---&#x62BD;&#x53D6;&#x51FA;jdbcutil&#x7C7B;">Jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784; - &#x62BD;&#x53D6;&#x51FA;JdbcUtil&#x7C7B;</h2>
+<h2 id="jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784;---&#x62BD;&#x53D6;&#x51FA;jdbcutil&#x7C7B;"><a name="jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784;---&#x62BD;&#x53D6;&#x51FA;jdbcutil&#x7C7B;" class="anchor-navigation-ex-anchor" href="#jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784;---&#x62BD;&#x53D6;&#x51FA;jdbcutil&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>Jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784; - &#x62BD;&#x53D6;&#x51FA;JdbcUtil&#x7C7B;</h2>
 <p>16</p>
 <p>&#x5728;&#x9759;&#x6001;&#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x53BB;&#x52A0;&#x8F7D;&#x548C;&#x6CE8;&#x518C;&#x6570;&#x636E;&#x5E93;&#x9A71;&#x52A8;&#xFF0C;&#x53EA;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x6B21;</p>
 <p>Connection&#x5BF9;&#x8C61;&#x9700;&#x8981;&#x4FDD;&#x8BC1;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x653E;&#x5728;&#x9759;&#x6001;&#x4EE3;&#x7801;&#x5757;&#x4E2D;</p>
 <p><img src="img/03_16.png" alt="img/03_16.png"></p>
 <p>&#x5728;JdbcUtil&#x7C7B;&#x4E2D;&#x63D0;&#x4F9B;close&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x5173;&#x95ED;&#x4E09;&#x4E2A;&#x8D44;&#x6E90;&#x5BF9;&#x8C61;</p>
 <p><img src="img/03_16_2.png" alt="img/03_16_2.png"></p>
-<h2 id="jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784;---&#x62BD;&#x53D6;&#x51FA;dbproperties&#x6587;&#x4EF6;">Jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784; - &#x62BD;&#x53D6;&#x51FA;db.properties&#x6587;&#x4EF6;</h2>
+<h2 id="jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784;---&#x62BD;&#x53D6;&#x51FA;dbproperties&#x6587;&#x4EF6;"><a name="jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784;---&#x62BD;&#x53D6;&#x51FA;dbproperties&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784;---&#x62BD;&#x53D6;&#x51FA;dbproperties&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>Jdbc&#x4EE3;&#x7801;&#x91CD;&#x6784; - &#x62BD;&#x53D6;&#x51FA;db.properties&#x6587;&#x4EF6;</h2>
 <p>17</p>
 <p>&#x628A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8FDE;&#x63A5;&#x4FE1;&#x606F;&#x5B58;&#x653E;&#x5230;&#x5C5E;&#x6027;&#x6587;&#x4EF6;&#x4E2D;(db.properties)</p>
 <pre><code class="lang-properties">#key=value
@@ -1220,9 +1224,9 @@ password=admin
 </code></pre>
 <p>JdbcUtil&#x5BF9;&#x5E94;&#x4EE3;&#x7801;&#x66F4;&#x6539;&#xFF0C;&#x53CD;&#x5C04;&#x673A;&#x5236;</p>
 <p><img src="img/03_17.png" alt="img/03_17.png"></p>
-<h2 id="preparedstatement&#x57FA;&#x672C;&#x4F7F;&#x7528;">PreparedStatement&#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
+<h2 id="preparedstatement&#x57FA;&#x672C;&#x4F7F;&#x7528;"><a name="preparedstatement&#x57FA;&#x672C;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#preparedstatement&#x57FA;&#x672C;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>PreparedStatement&#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
 <p>18</p>
-<h3 id="statement&#x548C;preparedstatement&#x7684;&#x533A;&#x522B;">Statement&#x548C;PreparedStatement&#x7684;&#x533A;&#x522B;</h3>
+<h3 id="statement&#x548C;preparedstatement&#x7684;&#x533A;&#x522B;"><a name="statement&#x548C;preparedstatement&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#statement&#x548C;preparedstatement&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>Statement&#x548C;PreparedStatement&#x7684;&#x533A;&#x522B;</h3>
 <p>PreparedStatement &#x7684;&#x4F18;&#x70B9;</p>
 <ol>
 <li><p>PreparedStatement &#x4EE3;&#x7801;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#x548C;&#x53EF;&#x7EF4;&#x62A4;&#x6027;(SQL&#x6A21;&#x677F;,&#x4F7F;&#x7528;&#x5360;&#x4F4D;&#x7B26;&#x8868;&#x793A;&#x53C2;&#x6570;)</p>
@@ -1241,7 +1245,7 @@ value                                                    &#x9700;&#x8981;&#x8BBE
 </ol>
 <p>&#x53EF;&#x4EE5;&#x9632;&#x6B62;SQL&#x6CE8;&#x5165;:&#x6F14;&#x793A;&#x767B;&#x9646;&#x64CD;&#x4F5C;
 &#x9009;&#x62E9;:&#x4F7F;&#x7528;PreparedStatement</p>
-<h2 id="jdbc&#x7684;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;">JDBC&#x7684;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;</h2>
+<h2 id="jdbc&#x7684;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;"><a name="jdbc&#x7684;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;" class="anchor-navigation-ex-anchor" href="#jdbc&#x7684;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>JDBC&#x7684;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;</h2>
 <p>22</p>
 <ol>
 <li>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;,&#x5728;JDBC&#x4E2D;&#x6267;&#x884C;DML&#x64CD;&#x4F5C;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;,&#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x5F97;&#x8BBE;&#x7F6E;&#x4E8B;&#x52A1;&#x7684;&#x624B;&#x52A8;&#x63D0;&#x4EA4;&#x673A;&#x5236;(&#x53D6;&#x6D88;&#x4E8B;&#x52A1;&#x7684;&#x81EA;&#x52A8;&#x63D0;&#x4EA4;)</li>
@@ -1267,7 +1271,7 @@ value                                                    &#x9700;&#x8981;&#x8BBE
     <span class="hljs-comment">//&#x91CA;&#x653E;&#x8D44;&#x6E90;</span>
 }
 </code></pre>
-<h2 id="jdbc&#x7684;&#x6279;&#x91CF;&#x64CD;&#x4F5C;">JDBC&#x7684;&#x6279;&#x91CF;&#x64CD;&#x4F5C;</h2>
+<h2 id="jdbc&#x7684;&#x6279;&#x91CF;&#x64CD;&#x4F5C;"><a name="jdbc&#x7684;&#x6279;&#x91CF;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#jdbc&#x7684;&#x6279;&#x91CF;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>JDBC&#x7684;&#x6279;&#x91CF;&#x64CD;&#x4F5C;</h2>
 <p>23</p>
 <p>JDBC&#x7684;&#x6279;&#x91CF;&#x5904;&#x7406;&#x8BED;&#x53E5;&#x5305;&#x62EC;&#x4E0B;&#x9762;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;</p>
 <blockquote>
@@ -1281,12 +1285,12 @@ value                                                    &#x9700;&#x8981;&#x8BBE
 &#x4F46;&#x662F;,&#x5728;<font color="red">&#x65B0;&#x7684;JDBC&#x9A71;&#x52A8;</font>&#x4E2D;,&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;<code>rewriteBatchedStatements=true</code>&#x6765;&#x4F18;&#x5316;.</p>
 <pre><code class="lang-properties">url=jdbc:mysql://localhost:3306/jdbcdemo?rewriteBatchedStatements=true
 </code></pre>
-<h2 id="blob&#x548C;text&#x7C7B;&#x578B;&#x5904;&#x7406;">BLOB&#x548C;TEXT&#x7C7B;&#x578B;&#x5904;&#x7406;</h2>
+<h2 id="blob&#x548C;text&#x7C7B;&#x578B;&#x5904;&#x7406;"><a name="blob&#x548C;text&#x7C7B;&#x578B;&#x5904;&#x7406;" class="anchor-navigation-ex-anchor" href="#blob&#x548C;text&#x7C7B;&#x578B;&#x5904;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>BLOB&#x548C;TEXT&#x7C7B;&#x578B;&#x5904;&#x7406;</h2>
 <p>24</p>
 <p><img src="img/03_24.png" alt="img/03_24.png"></p>
-<h2 id="&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;">&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;</h2>
+<h2 id="&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;"><a name="&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;" class="anchor-navigation-ex-anchor" href="#&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;</h2>
 <p>25</p>
-<h3 id="&#x5982;&#x4F55;&#x5728;jdbc&#x4E2D;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;&#x5462;">&#x5982;&#x4F55;&#x5728;JDBC&#x4E2D;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;&#x5462;</h3>
+<h3 id="&#x5982;&#x4F55;&#x5728;jdbc&#x4E2D;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;&#x5462;"><a name="&#x5982;&#x4F55;&#x5728;jdbc&#x4E2D;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;&#x5462;" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x4F55;&#x5728;jdbc&#x4E2D;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;&#x5462;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5982;&#x4F55;&#x5728;JDBC&#x4E2D;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;&#x5462;</h3>
 <p><strong>Statement</strong></p>
 <p><code>int executeUpdate(String sql,int autoGeneratedKeys)</code></p>
 <blockquote>
@@ -1302,21 +1306,21 @@ value                                                    &#x9700;&#x8981;&#x8BBE
 </blockquote>
 <font color="blue">Hibernate&#x4E2D;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x8FD4;&#x56DE;</font>
 
-<h2 id="&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;">&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;</h2>
+<h2 id="&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;"><a name="&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;</h2>
 <p>29</p>
-<h3 id="&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;">&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;</h3>
+<h3 id="&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;_1"><a name="&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;_1" class="anchor-navigation-ex-anchor" href="#&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FDE;&#x63A5;&#x6C60;&#x6982;&#x8FF0;</h3>
 <p>&#x5728;Java&#x4E2D;,&#x8FDE;&#x63A5;&#x6C60;&#x4F7F;&#x7528;javax.sql.DataSource&#x63A5;&#x53E3;&#x6765;&#x8868;&#x793A;&#x8FDE;&#x63A5;&#x6C60;/&#x6570;&#x636E;&#x6E90;</p>
 <blockquote>
 <p>DataSource&#x548C;JDBC&#x4E00;&#x6837;&#x4EC5;&#x4EC5;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;,&#x7531;&#x5404;&#x5927;&#x670D;&#x52A1;&#x5668;&#x5382;&#x5546;&#x6765;&#x5B9E;&#x73B0;(Tomcat,JBoss&#x7B49;)</p>
 </blockquote>
-<h3 id="&#x5E38;&#x7528;&#x7684;datasource&#x7684;&#x5B9E;&#x73B0;">&#x5E38;&#x7528;&#x7684;DataSource&#x7684;&#x5B9E;&#x73B0;</h3>
+<h3 id="&#x5E38;&#x7528;&#x7684;datasource&#x7684;&#x5B9E;&#x73B0;"><a name="&#x5E38;&#x7528;&#x7684;datasource&#x7684;&#x5B9E;&#x73B0;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x7684;datasource&#x7684;&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x7528;&#x7684;DataSource&#x7684;&#x5B9E;&#x73B0;</h3>
 <ul>
 <li>C3P0:  Hibernate&#x63A8;&#x8350;&#x7684;,&#x4F46;&#x662F;&#x8BE5;&#x8FDE;&#x63A5;&#x6C60;&#x5728;07&#x5E74;&#x4E4B;&#x540E;&#x5C31;&#x4E0D;&#x518D;&#x66F4;&#x65B0;&#x4E86;,&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;:&#x6027;&#x80FD;&#x592A;&#x592A;&#x5DEE;&#x4E86;</li>
 <li>DBCP:  Apache&#x7EC4;&#x7EC7;&#x7684;&#x9879;&#x76EE;,Spring&#x63A8;&#x8350;&#x7684;.  &#x771F;&#x5FC3;&#x4E0D;&#x9519;</li>
 <li>Druid:  &#x963F;&#x91CC;&#x5DF4;&#x5DF4;&#x7684;&#x9879;&#x76EE;(&#x5FB7;&#x9C81;&#x4F0A;),&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x597D;&#x8FDE;&#x63A5;&#x6C60;</li>
 </ul>
 <p>DataSource(&#x6570;&#x636E;&#x6E90;)&#x548C;&#x8FDE;&#x63A5;&#x6C60;(Connection Pool)&#x662F;&#x540C;&#x4E00;&#x4E2A;</p>
-<h3 id="&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x548C;&#x4E0D;&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;">&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x548C;&#x4E0D;&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;?</h3>
+<h3 id="&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x548C;&#x4E0D;&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;"><a name="&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x548C;&#x4E0D;&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x548C;&#x4E0D;&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x548C;&#x4E0D;&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;?</h3>
 <p>&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;</p>
 <blockquote>
 <p>&#x6CA1;&#x6709;&#x8FDE;&#x63A5;&#x6C60;: &#x901A;&#x8FC7;DriverManager&#x6765;&#x83B7;&#x53D6;,&#x76F4;&#x63A5;&#x548C;DBMS&#x8FDE;&#x63A5;.
@@ -1328,9 +1332,9 @@ value                                                    &#x9700;&#x8981;&#x8BBE
 <p>&#x6CA1;&#x6709;&#x8FDE;&#x63A5;&#x6C60;: conn.close():&#x548C;&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;(DBMS)&#x65AD;&#x5F00;&#x8FDE;&#x63A5;.
 &#x5B58;&#x5728;&#x8FDE;&#x63A5;&#x6C60;: conn.close():&#x628A;Connection&#x5BF9;&#x8C61;&#x5F52;&#x8FD8;&#x7ED9;&#x8FDE;&#x63A5;&#x6C60;,&#x5E76;&#x6CA1;&#x6709;&#x548C;DBMS&#x65AD;&#x5F00;.</p>
 </blockquote>
-<h2 id="dbcp&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;">DBCP&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
+<h2 id="dbcp&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;"><a name="dbcp&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#dbcp&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>DBCP&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
 <p>30</p>
-<h2 id="dbcp&#x8FDE;&#x63A5;&#x6C60;">DBCP&#x8FDE;&#x63A5;&#x6C60;:</h2>
+<h2 id="dbcp&#x8FDE;&#x63A5;&#x6C60;"><a name="dbcp&#x8FDE;&#x63A5;&#x6C60;" class="anchor-navigation-ex-anchor" href="#dbcp&#x8FDE;&#x63A5;&#x6C60;"><i class="fa fa-link" aria-hidden="true"></i></a>DBCP&#x8FDE;&#x63A5;&#x6C60;:</h2>
 <p>&#x73AF;&#x5883;&#x51C6;&#x5907;</p>
 <ul>
 <li><p>commons-dbcp.jar</p>
@@ -1343,7 +1347,7 @@ value                                                    &#x9700;&#x8981;&#x8BBE
 <li>\commons-dbcp-1.3-src\doc\BasicDataSourceExample.java</li>
 </ul>
 <p><img src="img/03_30.png" alt="img/03_30.png"></p>
-<h2 id="druid&#x8FDE;&#x63A5;&#x6C60;&#x4F7F;&#x7528;">Druid&#x8FDE;&#x63A5;&#x6C60;&#x4F7F;&#x7528;</h2>
+<h2 id="druid&#x8FDE;&#x63A5;&#x6C60;&#x4F7F;&#x7528;"><a name="druid&#x8FDE;&#x63A5;&#x6C60;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#druid&#x8FDE;&#x63A5;&#x6C60;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>Druid&#x8FDE;&#x63A5;&#x6C60;&#x4F7F;&#x7528;</h2>
 <p>32</p>
 <p>Druid&#x8FDE;&#x63A5;&#x6C60;(&#x5FB7;&#x9C81;&#x4F0A;),&#x963F;&#x91CC;&#x5DF4;&#x5DF4;&#x7684;&#x8FDE;&#x63A5;&#x6C60;,&#x53F7;&#x79F0;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x597D;&#x7684;&#x8FDE;&#x63A5;&#x6C60;.
 <a href="https://github.com/alibaba/druid/wiki" target="_blank">https://github.com/alibaba/druid/wiki</a>
@@ -1355,7 +1359,7 @@ Java&#x8BED;&#x8A00;&#x9886;&#x57DF;&#x6027;&#x80FD;&#x6700;&#x597D;&#x7684;&#x6
 </ul>
 <p>Druid&#x548C;DBCP&#x7684;&#x8FDE;&#x63A5;&#x5C5E;&#x6027;&#x662F;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;,&#x521B;&#x5EFA;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x5BF9;&#x8C61;&#x4E0D;&#x540C;.</p>
 <p><img src="img/03_32.png" alt="img/03_32.png"></p>
-<h2 id="jdbctemplate&#x7684;dml&#x589E;&#x5220;&#x6539;&#x64CD;&#x4F5C;&#x6A21;&#x677F;">JdbcTemplate&#x7684;DML(&#x589E;&#x5220;&#x6539;)&#x64CD;&#x4F5C;&#x6A21;&#x677F;</h2>
+<h2 id="jdbctemplate&#x7684;dml&#x589E;&#x5220;&#x6539;&#x64CD;&#x4F5C;&#x6A21;&#x677F;"><a name="jdbctemplate&#x7684;dml&#x589E;&#x5220;&#x6539;&#x64CD;&#x4F5C;&#x6A21;&#x677F;" class="anchor-navigation-ex-anchor" href="#jdbctemplate&#x7684;dml&#x589E;&#x5220;&#x6539;&#x64CD;&#x4F5C;&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>JdbcTemplate&#x7684;DML(&#x589E;&#x5220;&#x6539;)&#x64CD;&#x4F5C;&#x6A21;&#x677F;</h2>
 <p>33</p>
 <pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">update</span><span class="hljs-params">(String sql,Object... args)</span> </span>{
     Conncetion conn = <span class="hljs-keyword">null</span>;
@@ -1376,7 +1380,7 @@ Java&#x8BED;&#x8A00;&#x9886;&#x57DF;&#x6027;&#x80FD;&#x6700;&#x597D;&#x7684;&#x6
     }
 }
 </code></pre>
-<h3 id="execute&#x548C;executeupdate">execute()&#x548C;executeUpdate()</h3>
+<h3 id="execute&#x548C;executeupdate"><a name="execute&#x548C;executeupdate" class="anchor-navigation-ex-anchor" href="#execute&#x548C;executeupdate"><i class="fa fa-link" aria-hidden="true"></i></a>execute()&#x548C;executeUpdate()</h3>
 <p>&#x76F8;&#x540C;&#x70B9;</p>
 <ul>
 <li>&#x90FD;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x589E;&#x5220;&#x6539;&#x64CD;&#x4F5C;</li>
@@ -1394,7 +1398,7 @@ Java&#x8BED;&#x8A00;&#x9886;&#x57DF;&#x6027;&#x80FD;&#x6700;&#x597D;&#x7684;&#x6
 </ul>
 </li>
 </ul>
-<h2 id="jdbctemplate&#x7684;dql&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#x6A21;&#x677F;">JdbcTemplate&#x7684;DQL(&#x67E5;&#x8BE2;)&#x64CD;&#x4F5C;&#x6A21;&#x677F;</h2>
+<h2 id="jdbctemplate&#x7684;dql&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#x6A21;&#x677F;"><a name="jdbctemplate&#x7684;dql&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#x6A21;&#x677F;" class="anchor-navigation-ex-anchor" href="#jdbctemplate&#x7684;dql&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>JdbcTemplate&#x7684;DQL(&#x67E5;&#x8BE2;)&#x64CD;&#x4F5C;&#x6A21;&#x677F;</h2>
 <p>37</p>
 <p>&#x5185;&#x7701;&#x673A;&#x5236;</p>
 <p><strong>&#x5FC5;&#x987B;&#x8981;&#x5236;&#x5B9A;&#x7684;&#x89C4;&#x8303;</strong></p>
@@ -1495,6 +1499,7 @@ Java&#x8BED;&#x8A00;&#x9886;&#x57DF;&#x6027;&#x80FD;&#x6700;&#x597D;&#x7684;&#x6
 }
 </code></pre>
 
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
                                 </section>
                             
@@ -1537,7 +1542,7 @@ Java&#x8BED;&#x8A00;&#x9886;&#x57DF;&#x6027;&#x80FD;&#x6700;&#x597D;&#x7684;&#x6
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JDBC","level":"1.3.5","depth":2,"next":{"title":"JavaWeb","level":"1.3.6","depth":2,"path":"back/04JavaWeb/JavaWeb.md","ref":"./back/04JavaWeb/JavaWeb.md","articles":[]},"previous":{"title":"MySQL 高级04","level":"1.3.4.7","depth":3,"path":"back/MySQL 高级/Mysql高级-day04.md","ref":"./back/MySQL 高级/Mysql高级-day04.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button"],"pluginsConfig":{"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"back/03JDBC/JDBC.md","mtime":"2022-07-24T02:13:46.591Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-31T08:53:45.469Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JDBC","level":"1.3.5","depth":2,"next":{"title":"JavaWeb","level":"1.3.6","depth":2,"path":"back/04JavaWeb/JavaWeb.md","ref":"./back/04JavaWeb/JavaWeb.md","articles":[]},"previous":{"title":"MySQL 高级04","level":"1.3.4.7","depth":3,"path":"back/MySQL 高级/Mysql高级-day04.md","ref":"./back/MySQL 高级/Mysql高级-day04.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["code","popup","anchor-navigation-ex"],"pluginsConfig":{"search":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevelIcon":false,"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":false,"multipleH2":false,"associatedWithSummary":true,"multipleH3":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"multipleH4":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"back/03JDBC/JDBC.md","mtime":"2022-07-24T02:13:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-09-21T07:47:11.084Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1547,7 +1552,7 @@ Java&#x8BED;&#x8A00;&#x9886;&#x57DF;&#x6027;&#x80FD;&#x6700;&#x597D;&#x7684;&#x6
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
         
     
         

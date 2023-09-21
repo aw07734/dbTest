@@ -17,7 +17,11 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
                 
             
                 
@@ -1144,8 +1148,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="vue--vuex-&#x6E90;&#x7801;&#x89E3;&#x6790;">Vue &amp; Vuex &#x6E90;&#x7801;&#x89E3;&#x6790;</h2>
-<h3 id="vuex-&#x6E90;&#x7801;&#x89E3;&#x6790;">vuex &#x6E90;&#x7801;&#x89E3;&#x6790;</h3>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#vue--vuex-&#x6E90;&#x7801;&#x89E3;&#x6790;"><b></b>Vue &amp; Vuex &#x6E90;&#x7801;&#x89E3;&#x6790;</a></li><ul><li><span class="title-icon "></span><a href="#vuex-&#x6E90;&#x7801;&#x89E3;&#x6790;"><b></b>vuex &#x6E90;&#x7801;&#x89E3;&#x6790;</a></li><li><span class="title-icon "></span><a href="#vue-&#x6E90;&#x7801;&#x89E3;&#x6790;"><b></b>vue &#x6E90;&#x7801;&#x89E3;&#x6790;</a></li><li><span class="title-icon "></span><a href="#patch-&#x66F4;&#x65B0;"><b></b>patch &#x66F4;&#x65B0;</a></li><li><span class="title-icon "></span><a href="#&#x4E8B;&#x4EF6;"><b></b>&#x4E8B;&#x4EF6;</a></li></ul><li><span class="title-icon "></span><a href="#&#x901A;&#x8FC7;&#x624B;&#x5199;&#x4E86;&#x89E3;"><b></b>&#x901A;&#x8FC7;&#x624B;&#x5199;&#x4E86;&#x89E3;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="vue--vuex-&#x6E90;&#x7801;&#x89E3;&#x6790;"><a name="vue--vuex-&#x6E90;&#x7801;&#x89E3;&#x6790;" class="anchor-navigation-ex-anchor" href="#vue--vuex-&#x6E90;&#x7801;&#x89E3;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>Vue &amp; Vuex &#x6E90;&#x7801;&#x89E3;&#x6790;</h2>
+<h3 id="vuex-&#x6E90;&#x7801;&#x89E3;&#x6790;"><a name="vuex-&#x6E90;&#x7801;&#x89E3;&#x6790;" class="anchor-navigation-ex-anchor" href="#vuex-&#x6E90;&#x7801;&#x89E3;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>vuex &#x6E90;&#x7801;&#x89E3;&#x6790;</h3>
 <p>&#x6CE8;&#x518C;&#x66F4;&#x65B0;&#x4E0E;&#x4F9D;&#x8D56;&#x6536;&#x96C6;</p>
 <pre><code class="lang-js"><span class="hljs-keyword">const</span> storeData = {
     key: <span class="hljs-string">&apos;value&apos;</span>
@@ -1160,8 +1164,8 @@
     }
 });
 </code></pre>
-<h3 id="vue-&#x6E90;&#x7801;&#x89E3;&#x6790;">vue &#x6E90;&#x7801;&#x89E3;&#x6790;</h3>
-<h4 id="&#x54CD;&#x5E94;&#x5F0F;&#x539F;&#x7406;">&#x54CD;&#x5E94;&#x5F0F;&#x539F;&#x7406;</h4>
+<h3 id="vue-&#x6E90;&#x7801;&#x89E3;&#x6790;"><a name="vue-&#x6E90;&#x7801;&#x89E3;&#x6790;" class="anchor-navigation-ex-anchor" href="#vue-&#x6E90;&#x7801;&#x89E3;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>vue &#x6E90;&#x7801;&#x89E3;&#x6790;</h3>
+<h4 id="&#x54CD;&#x5E94;&#x5F0F;&#x539F;&#x7406;"><a name="&#x54CD;&#x5E94;&#x5F0F;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x54CD;&#x5E94;&#x5F0F;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x54CD;&#x5E94;&#x5F0F;&#x539F;&#x7406;</h4>
 <p>vue &#x4F9D;&#x8D56; defineProperty, &#x52AB;&#x6301;&#x6240;&#x6709; data &#x4E2D;&#x7684; key, &#x4ECE;&#x800C;&#x505A;&#x4E8C;&#x6B21;&#x64CD;&#x4F5C;.</p>
 <pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Vue</span> </span>{
     <span class="hljs-keyword">constructor</span>(options) {
@@ -1188,11 +1192,11 @@
 }
 </code></pre>
 <p>&#x7B2C;&#x4E00;&#x6B65;&#x662F;&#x5C06;&#x6570;&#x636E; data &#x8F6C;&#x5316;&#x4E3A;&#x4E86; observer &#x7684;&#x6570;&#x636E;, &#x8FD9;&#x6837;&#x5F53;&#x6211;&#x4EEC;&#x8C03;&#x7528; data.xxx = something &#x7684;&#x65F6;&#x5019;, &#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; defineProperty &#x6267;&#x884C;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;.</p>
-<h4 id="&#x4F9D;&#x8D56;&#x6536;&#x96C6;">&#x4F9D;&#x8D56;&#x6536;&#x96C6;</h4>
+<h4 id="&#x4F9D;&#x8D56;&#x6536;&#x96C6;"><a name="&#x4F9D;&#x8D56;&#x6536;&#x96C6;" class="anchor-navigation-ex-anchor" href="#&#x4F9D;&#x8D56;&#x6536;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F9D;&#x8D56;&#x6536;&#x96C6;</h4>
 <p>&#x4F9D;&#x8D56;&#x6536;&#x96C6;&#x662F;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x6B65;, &#x6211;&#x4EEC;&#x5728;&#x6BCF;&#x6B21;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x7684;&#x65F6;&#x5019;, &#x9700;&#x8981;&#x53BB;&#x6709;&#x610F;&#x8BC6;&#x7684;&#x66F4;&#x65B0;&#x4F9D;&#x8D56;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x90E8;&#x5206;&#x7684;&#x4EE3;&#x7801;.</p>
 <p>&#x6BCF;&#x6B21;&#x5728;&#x521B;&#x5EFA; Vue &#x5B9E;&#x4F8B;&#x7684;&#x65F6;&#x5019;, &#x6211;&#x4EEC;&#x5462;&#x9996;&#x5148;&#x4F1A;&#x6307;&#x5B9A;&#x6240;&#x6709;&#x7684; data &#x6570;&#x636E;, &#x5728;&#x89E6;&#x53D1; getter &#x7684;&#x65F6;&#x5019;, &#x5C06;&#x5F53;&#x524D;&#x7684;&#x4F9D;&#x8D56;&#x8FDB;&#x884C;&#x6536;&#x96C6;, &#x6700;&#x540E;&#x6240;&#x6709;&#x7684; data &#x6570;&#x636E;&#x5C31;&#x4F1A;&#x88AB;&#x6536;&#x96C6;.</p>
 <p><img src="img/vue-process.png" alt=""></p>
-<h4 id="vnode">VNODE</h4>
+<h4 id="vnode"><a name="vnode" class="anchor-navigation-ex-anchor" href="#vnode"><i class="fa fa-link" aria-hidden="true"></i></a>VNODE</h4>
 <pre><code class="lang-ts"><span class="hljs-comment">// vnode.d.ts</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> Vnode {
     tag?: <span class="hljs-built_in">string</span>;
@@ -1244,12 +1248,12 @@
 <li><p>createElement: &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x865A;&#x62DF;&#x8282;&#x70B9;</p>
 </li>
 </ul>
-<h3 id="patch-&#x66F4;&#x65B0;">patch &#x66F4;&#x65B0;</h3>
+<h3 id="patch-&#x66F4;&#x65B0;"><a name="patch-&#x66F4;&#x65B0;" class="anchor-navigation-ex-anchor" href="#patch-&#x66F4;&#x65B0;"><i class="fa fa-link" aria-hidden="true"></i></a>patch &#x66F4;&#x65B0;</h3>
 <p>&#x5728; patch &#x7684;&#x8FC7;&#x7A0B;&#x4E2D;, &#x5982;&#x679C;&#x4E24;&#x4E2A; VNode &#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x540C;&#x4E00;&#x4E2A; VNode(sameVnode), &#x5219;&#x4F1A;&#x8FDB;&#x884C;&#x6DF1;&#x5EA6;&#x7684;&#x6BD4;&#x8F83;, &#x5F97;&#x51FA;&#x6700;&#x5C0F;&#x5DEE;&#x5F02;, &#x5426;&#x5219;&#x76F4;&#x63A5;&#x5220;&#x9664;&#x65E7;&#x6709; DOM &#x8282;&#x70B9;, &#x521B;&#x5EFA;&#x65B0;&#x7684; DOM &#x8282;&#x70B9;.</p>
 <p>&#x8FD9;&#x91CC;&#x4E3B;&#x8981;&#x9700;&#x8981;&#x5173;&#x6CE8;&#x5BF9;&#x6BD4;&#x8FC7;&#x7A0B;&#x4EE5;&#x53CA;&#x66F4;&#x65B0;&#x8FC7;&#x7A0B;, &#x4E3B;&#x8981;&#x9700;&#x8981;&#x770B;&#x7684;&#x662F; updateChildren &#x65B9;&#x6CD5;, &#x4E3B;&#x8981;&#x4F1A;&#x8FDB;&#x884C;&#x5F53;&#x524D; vnode &#x5BF9;&#x6BD4;&#x7684;&#x8FC7;&#x7A0B;.</p>
-<h3 id="&#x4E8B;&#x4EF6;">&#x4E8B;&#x4EF6;</h3>
+<h3 id="&#x4E8B;&#x4EF6;"><a name="&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8B;&#x4EF6;</h3>
 <p>instance/events.js &#x4E2D;&#x5B9A;&#x4E49;&#x4E86; $on&#x3001;$once&#x3001;$off&#x3001;$emit &#x51E0;&#x4E2A;&#x65B9;&#x6CD5;.</p>
-<h2 id="&#x901A;&#x8FC7;&#x624B;&#x5199;&#x4E86;&#x89E3;">&#x901A;&#x8FC7;&#x624B;&#x5199;&#x4E86;&#x89E3;</h2>
+<h2 id="&#x901A;&#x8FC7;&#x624B;&#x5199;&#x4E86;&#x89E3;"><a name="&#x901A;&#x8FC7;&#x624B;&#x5199;&#x4E86;&#x89E3;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;&#x624B;&#x5199;&#x4E86;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x8FC7;&#x624B;&#x5199;&#x4E86;&#x89E3;</h2>
 <p>index.html</p>
 <pre><code class="lang-html"><span class="hljs-meta">&lt;!doctype html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
@@ -1524,6 +1528,7 @@
 }
 </code></pre>
 
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
                                 </section>
                             
@@ -1566,7 +1571,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"vue&vuex源码解析","level":"1.2.13","depth":2,"next":{"title":"小程序基础","level":"1.2.14","depth":2,"path":"front/16小程序基础.md","ref":"./front/16小程序基础.md","articles":[]},"previous":{"title":"vue组件库设计","level":"1.2.12","depth":2,"path":"front/14vue组件库设计.md","ref":"./front/14vue组件库设计.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button"],"pluginsConfig":{"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"front/15vue&vuex源码解析.md","mtime":"2022-09-25T07:11:43.162Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-31T08:53:45.469Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"vue&vuex源码解析","level":"1.2.13","depth":2,"next":{"title":"小程序基础","level":"1.2.14","depth":2,"path":"front/16小程序基础.md","ref":"./front/16小程序基础.md","articles":[]},"previous":{"title":"vue组件库设计","level":"1.2.12","depth":2,"path":"front/14vue组件库设计.md","ref":"./front/14vue组件库设计.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["code","popup","anchor-navigation-ex"],"pluginsConfig":{"search":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevelIcon":false,"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":false,"multipleH2":false,"associatedWithSummary":true,"multipleH3":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"multipleH4":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"front/15vue&vuex源码解析.md","mtime":"2022-09-25T07:11:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-09-21T07:47:11.084Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1576,7 +1581,7 @@
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
         
     
         
